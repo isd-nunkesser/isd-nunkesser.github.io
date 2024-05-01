@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Software Design App Engineering</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Software Design App Engineering</h1>
+</section>
+
+<section id="app-engineering" class="slide level3">
+<h3>App Engineering</h3>
+<p><img data-src="../images/book/black/tools.png" id="id" class="class"
+height="590" /><br />
+</p>
+</section>
+<section>
+<section id="was-ist-software" class="title-slide slide level2">
+<h2>Was ist Software?</h2>
+
+</section>
+<section id="programme-und-dokumentation" class="slide level3">
+<h3>Programme und Dokumentation</h3>
+<ul>
+<li>Sammlung von Artefakten</li>
+<li>lateinisch <em>artis</em> (Handwerk) und <em>factum</em> (das
+Gemachte)</li>
+<li>Ergebnisse eines Arbeitsprozesses</li>
+</ul>
+</section>
+<section id="gründe-zur-entwicklung" class="slide level3">
+<h3>Gründe zur Entwicklung</h3>
+<ul>
+<li>Bedürfnisse eines Kunden (Individualsoftware)</li>
+<li>Marktchancen (Softwareprodukt)</li>
+</ul>
+</section>
+<section id="eigenschaften-guter-software" class="slide level3">
+<h3>Eigenschaften guter Software</h3>
+<ul>
+<li>Bereitstellung der benötigten Funktionalität und Performanz</li>
+<li>Wartbar</li>
+<li>Verlässlich</li>
+<li>Nutzbar</li>
+</ul>
+</section>
+<section id="komplexitätsarten" class="slide level3">
+<h3>Komplexitätsarten</h3>
+<div id="left">
+<p><strong>Funktionen</strong></p>
+<ul>
+<li>Anzahl der zu erfüllenden Funktionen</li>
+</ul>
+<p><strong>Daten</strong></p>
+<ul>
+<li>Viele/komplexe Daten</li>
+</ul>
+<p><strong>Algorithmik</strong></p>
+<ul>
+<li>Z.B. komplexe Berechnungen</li>
+</ul>
+</div>
+<div id="right">
+<p><strong>Zeitabhängiges Verhalten</strong></p>
+<ul>
+<li>Nebenläufigkeit, Synchronisation, Zeitbedingungen</li>
+</ul>
+<p><strong>Umgebung</strong></p>
+<ul>
+<li>Eingebettete Systeme</li>
+</ul>
+<p><strong>Benutzungsoberfläche</strong></p>
+<ul>
+<li>Komplexe Interaktion</li>
+</ul>
+</div>
+</section>
+<section id="arten-von-software" class="slide level3">
+<h3>Arten von Software</h3>
+<div id="left">
+<p><strong>Administrativ, kaufmännisch,
+betriebswirtschaftlich</strong></p>
+<ul>
+<li>Komplexe Daten und/oder Funktionen</li>
+</ul>
+<p><strong>Technisch-wissenschaftlich</strong></p>
+<ul>
+<li>Komplexe Funktionen und Algorithmen</li>
+</ul>
+</div>
+<div id="right">
+<p><strong>Softwareintensiv</strong></p>
+<ul>
+<li>Algorithmik, zeitabhängiges Verhalten, Umgebung</li>
+</ul>
+<p><strong>GUI-intensiv</strong></p>
+<ul>
+<li>Komplexe Benutzungsoberfläche</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="warum-ist-entwicklung-schwierig"
+class="title-slide slide level2">
+<h2>Warum ist Entwicklung schwierig?</h2>
+
+</section>
+<section id="software-ist-immateriell" class="slide level3">
+<h3>Software ist immateriell</h3>
+<ul>
+<li>„Anfassen“ oder „Sehen“ nur indirekt möglich</li>
+<li>Dokumentation und Code divergieren</li>
+<li>Entwicklungsfortschritt nicht objektiv messbar</li>
+</ul>
+</section>
+<section id="software-altert" class="slide level3">
+<h3>Software altert</h3>
+<ul>
+<li>Indirekte Alterung: Einsatzumgebung ändert sich</li>
+<li>Rahmenbedingungen ändern sich</li>
+</ul>
+</section>
+<section id="software-ist-leicht-änderbar" class="slide level3">
+<h3>Software ist leicht änderbar</h3>
+<ul>
+<li>Leichte Änderbarkeit bedingt aber auch häufigere Seiteneffekte</li>
+</ul>
+</section>
+<section id="software-ist-schwierig-zu-messen" class="slide level3">
+<h3>Software ist schwierig zu messen</h3>
+<ul>
+<li>Qualität schwer quantifizierbar</li>
+<li>Korrelation zwischen Messbarem und Qualität unklar</li>
+</ul>
+</section>
+<section id="große-verteilte-teams" class="slide level3">
+<h3>Große, verteilte Teams</h3>
+<ul>
+<li>Abstimmung</li>
+<li>Unterschiedlicher Stil und Qualität</li>
+<li>Viel Arbeit an „fremdem“ Code</li>
+</ul>
+</section>
+<section id="abbruchraten-nach-fp-1995" class="slide level3">
+<h3>Abbruchraten nach FP (1995)</h3>
+<p><img data-src="../images/sd/abbruchblack.svg" /></p>
+</section></section>
+<section>
+<section id="apps" class="title-slide slide level2">
+<h2>Apps</h2>
+
+</section>
+<section id="computerworld-1981" class="slide level3">
+<h3>Computerworld (1981)</h3>
+<p><img data-src="../images/mobile/black/stellenanzeige.png" /><br />
+</p>
+</section>
+<section id="macapp-1985" class="slide level3">
+<h3>MacApp (1985)</h3>
+<p><img data-src="../images/mobile/MacApp.png" /><br />
+</p>
+</section>
+<section id="ios-apps-2007" class="slide level3">
+<h3>iOS Apps (2007)</h3>
+<blockquote>
+<p>The full Safari engine is inside of iPhone. And so, you can write
+amazing Web 2.0 and Ajax apps that look exactly and behave exactly like
+apps on the iPhone. And these apps can integrate perfectly with iPhone
+services. […] And guess what? There’s no SDK that you need!</p>
+</blockquote>
+<p><a href="../videos/mobile/WWDC2007WebApps.mp4">Steve Jobs</a></p>
+</section>
+<section id="eine-milliarde-apps-2009" class="slide level3">
+<h3>Eine Milliarde Apps (2009)</h3>
+<p><img data-src="../images/mobile/one-billion-apps.png" /><br />
+</p>
+</section></section>
+<section>
+<section id="was-ist-software-design" class="title-slide slide level2">
+<h2>Was ist Software Design?</h2>
+
+</section>
+<section id="grundlagen" class="slide level3">
+<h3>Grundlagen</h3>
+<p>Verbindung von</p>
+<ul>
+<li>Software Engineering</li>
+<li>Usability Engineering</li>
+</ul>
+</section>
+<section id="ausgangspunkt" class="slide level3">
+<h3>Ausgangspunkt</h3>
+<blockquote>
+<p>„Design is relevant to all software engineering activities and is the
+central integrating activity that ties the others together.”</p>
+</blockquote>
+<p>Peter Freeman (1976)</p>
+</section>
+<section class="slide level3">
+
+<blockquote>
+<p>„Design encompasses all the activities involved in conceptualizing,
+framing, implementing, commissioning, and ultimately modifying complex
+systems. [...] Specifying an artifact means you are shaping the design
+to meet its requirements.”</p>
+</blockquote>
+<p>Peter Freeman / David Hart (2004)</p>
+</section>
+<section id="analogie-zum-bauhaus" class="slide level3">
+<h3>Analogie zum Bauhaus</h3>
+<div id="left">
+<blockquote>
+<p>„We have to pull the whole thing together. We have to destroy these
+separations between painting and sculpture and architecture and design
+and so on. It is all one.”</p>
+</blockquote>
+<p>Walter Gropius</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/sd/ross-sokolovski-JUHbj2ZV5hE-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;">Photo by
+<a href="https://unsplash.com/@ross_sokolovski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ross
+Sokolovski</a> on
+<a href="https://unsplash.com/s/photos/bauhaus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section class="slide level3">
+
+<blockquote>
+<p>„I had to bring in two types of teachers into the Bauhaus. One for
+the technique and one for the form. And I married these two in each
+workshop. [...] When we later moved over to Dessau, the first generation
+of young people educated in the Bauhaus were now ready to be head of the
+workshops.”</p>
+</blockquote>
+<p>Walter Gropius</p>
+</section>
+<section class="slide level3">
+
+<blockquote>
+<p>„We developed really quite an understanding that anything we do,
+where it a painting or a building or a chair or anything, we have to
+study the human being using it. That is the starting point. Not this or
+that aesthetic idea. That is the true functionalism.”</p>
+</blockquote>
+<p>Walter Gropius</p>
+</section></section>
+<section>
+<section id="qualitästssicherung" class="title-slide slide level2">
+<h2>Qualitästssicherung</h2>
+
+</section>
+<section id="überblick" class="slide level3">
+<h3>Überblick</h3>
+<p><img data-src="../images/sd/black/Qualitaetssicherung.svg" /></p>
+</section></section>
+<section>
+<section id="werkzeuge" class="title-slide slide level2">
+<h2>Werkzeuge</h2>
+
+</section>
+<section id="lösung-von-aufgaben" class="slide level3">
+<h3>Lösung von Aufgaben</h3>
+<p><img data-src="../images/sd/black/Werkzeuge1.png" id="id"
+class="class" height="570" alt="Quelle: @Balzert2010" /><br />
+</p>
+</section>
+<section id="essentielle-werkzeuge" class="slide level3">
+<h3>Essentielle Werkzeuge</h3>
+<p><strong>Editor</strong></p>
+<p>Schreiben von Code für Software</p>
+<p><strong>Übersetzer/Binder/Interpreter</strong></p>
+<p>Erstellung ausführbaren Codes</p>
+<div class="fragment">
+<p>Heute typischerweise verbunden in IDE (integrated development
+environment)</p>
+</div>
+</section>
+<section id="jetbrains-ides" class="slide level3">
+<h3>JetBrains IDEs</h3>
+<ul>
+<li>Für Studierende kostenfrei nutzbar</li>
+<li>Rider (.NET)</li>
+<li>IntelliJ IDEA (JVM)</li>
+<li>Android Studio (Android)</li>
+<li>App Code (iOS)</li>
+<li>PyCharm (Python)</li>
+<li>WebStorm (JavaScript)</li>
+</ul>
+</section>
+<section id="ides" class="slide level3">
+<h3>IDEs</h3>
+<ul>
+<li>Xcode (iOS, macOS)</li>
+<li>Visual Studio (.NET)</li>
+<li>Visual Studio Code (leichtgewichtiger Allzweckeditor)</li>
+</ul>
+</section>
+<section id="weitere-werkzeuge" class="slide level3">
+<h3>Weitere Werkzeuge</h3>
+<ul>
+<li>Software besteht aus Artefakten (Dokumente und Code)</li>
+<li>Es gibt unzählige Werkzeuge verschiedenste Artefakte zu
+erstellen</li>
+<li>Artefakte selbst sollten mindestens versionsverwaltet werden</li>
+</ul>
+</section></section>
+<section>
+<section id="versionskontrollsysteme" class="title-slide slide level2">
+<h2>Versionskontrollsysteme</h2>
+
+</section>
+<section id="überblick-1" class="slide level3">
+<h3>Überblick</h3>
+<div id="left">
+<p>git ist aktuell dominant</p>
+<p><strong>Einige Alternativen</strong></p>
+<ul>
+<li>SVN (Subversion) – anders als git zentral</li>
+<li>Proprietäre Systeme</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/Git-Logo-2Color.svg"
+alt="Quelle: @GitLogo" /><br />
+</p>
+</div>
+</section>
+<section id="funktionsweise" class="slide level3">
+<h3>Funktionsweise</h3>
+<ul>
+<li>Auf zentralem Server wird aktueller Stand von Dateien gehalten</li>
+<li>Nutzer können lokale Änderungen senden und globale Änderungen
+empfangen (Konflikte möglich)</li>
+<li>Alle Änderungen werden versioniert</li>
+<li>Manuelles Versionieren möglich</li>
+</ul>
+</section>
+<section id="vorteil-von-git" class="slide level3">
+<h3>Vorteil von git</h3>
+<ul>
+<li>git ist dezentral</li>
+<li>git ist gut im Zusammenführen von Änderungen an gleicher Datei</li>
+<li>git ist flexibel und ermöglicht verschiedene “Workflows”
+<ul>
+<li>Centralized Workflow</li>
+<li>Feature Branch Workflow</li>
+<li>Gitflow Workflow</li>
+<li>Forking Workflow</li>
+</ul></li>
+</ul>
+</section>
+<section id="grundlagen-1" class="slide level3">
+<h3>Grundlagen</h3>
+<ul>
+<li>Ein „Repository“ dient als verwalteter Speicherort für digitale
+Objekte</li>
+<li>git ist dezentral: lokale und entfernte Repositories existieren
+autark</li>
+<li>Ein „Commit“ führt Änderungen zunächst in lokalem Repository durch
+(vorher ist „Add“ nötig)</li>
+<li>Erst ein Push bringt diese Änderungen in ein zentrales Repository
+(Änderungen beziehen über „Pull“)</li>
+<li>Aussagekräftige Kommentare sind wichtig!</li>
+</ul>
+</section>
+<section id="happy-path-im-centralized-workflow" class="slide level3">
+<h3>„Happy Path“ im Centralized Workflow</h3>
+<ul>
+<li>Pullen, bevor man selbst Änderungen vornimmt</li>
+<li>Abgestimmte lokale Änderungen durchführen (ggfs. mit lokalen
+Zwischencommits)</li>
+<li>Lauffähigkeit der Änderungen prüfen</li>
+<li>Änderungen mit aussagekräftigem Kommentar commiten und pushen</li>
+</ul>
+</section>
+<section id="realität-änderungskonflikte" class="slide level3">
+<h3>Realität: Änderungskonflikte</h3>
+<ul>
+<li>Es wird immer mal wieder vorkommen, dass Änderungen in Konflikt
+stehen</li>
+<li>Synchronisieren und Mergen zum Konfliktlösen</li>
+</ul>
+</section>
+<section id="vcs-für-ihr-semesterprojekt" class="slide level3">
+<h3>VCS für ihr Semesterprojekt</h3>
+<ul>
+<li>Einladung über Link</li>
+<li>Team beitreten oder neu gründen</li>
+</ul>
+<p><img
+data-src="../images/sd/classroom.github.com_group-assignment-invitations_921ef1ad11317f8512a84ca870e40fb5(iPad).png" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Leeres Repository</strong></p>
+<p><img
+data-src="../images/sd/github.com_isd-nunkesser_test-testteam(iPad).png" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Leeres Wiki</strong></p>
+<p><img
+data-src="../images/sd/github.com_isd-nunkesser_test-testteam_wiki(iPad).png" /><br />
+</p>
+</section></section>
+<section>
+<section id="anforderungs-dokumentation"
+class="title-slide slide level2">
+<h2>Anforderungs-dokumentation</h2>
+
+</section>
+<section id="textverarbeitungsprogramme" class="slide level3">
+<h3>Textverarbeitungsprogramme</h3>
+<ul>
+<li>Für viele Dokumentationszwecke einsetzbar</li>
+<li>Beispiele
+<ul>
+<li>LibreOffice Writer</li>
+<li>Microsoft Word</li>
+<li>Apple Pages</li>
+</ul></li>
+<li>Gerne natürlich auch LaTeX</li>
+</ul>
+</section>
+<section id="kollaboration-wissensmanagement" class="slide level3">
+<h3>Kollaboration / Wissensmanagement</h3>
+<ul>
+<li>Für viele Dokumentationszwecke einsetzbar</li>
+<li>Beispiele
+<ul>
+<li>Atlassian Confluence</li>
+<li>MediaWiki</li>
+<li>Microsoft SharePoint</li>
+</ul></li>
+<li>In Bitbucket und GitHub sind einfache Wikis integriert!</li>
+</ul>
+</section>
+<section id="spezielle-werkzeuge" class="slide level3">
+<h3>Spezielle Werkzeuge</h3>
+<ul>
+<li>Es existieren zahllose weitere spezielle Tools</li>
+<li>Führt hier zu weit</li>
+<li>Beispiele:
+<ul>
+<li>Serena Dimensions RM</li>
+<li>IBM Rational DOORS</li>
+<li>IBM Rational Requisite Pro</li>
+<li>PTC Integrity</li>
+<li>objectiFRM</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="projektplanung" class="title-slide slide level2">
+<h2>Projektplanung</h2>
+
+</section>
+<section id="microsoft-project" class="slide level3">
+<h3>Microsoft Project</h3>
+<ul>
+<li>Projektmanagementstandard</li>
+<li>Kommerzielles Produkt</li>
+<li>Nur für Windows</li>
+</ul>
+</section>
+<section id="projectwizards-merlin-project" class="slide level3">
+<h3>ProjectWizards Merlin Project</h3>
+<ul>
+<li>Beste Alternative für macOS</li>
+<li>Kommerzielles Produkt</li>
+</ul>
+</section></section>
+<section>
+<section id="konzeption" class="title-slide slide level2">
+<h2>Konzeption</h2>
+
+</section>
+<section id="uml-modellierung" class="slide level3">
+<h3>UML-Modellierung</h3>
+<p><strong>Kostenfrei für Studenten</strong></p>
+<ul>
+<li>Modelio</li>
+<li>Visual Paradigm Community Edition</li>
+<li>gliffy (nur Zeichnen)</li>
+<li>PlantUML (nur Zeichnen)</li>
+</ul>
+<p><strong>Verbreitet in der Industrie</strong></p>
+<ul>
+<li>SparxSystems Enterprise Architect</li>
+<li>No Magic MagicDraw</li>
+<li>IBM Rational Rhapsody / Software Architect</li>
+</ul>
+</section>
+<section id="schnittstellendesign" class="slide level3">
+<h3>Schnittstellendesign</h3>
+<p><strong>Kostenfrei für Hochschulen</strong></p>
+<ul>
+<li>Axure RP</li>
+<li>Sketch</li>
+<li>Figma</li>
+</ul>
+<p><strong>Spannende Alternativen</strong></p>
+<ul>
+<li>Adobe XD</li>
+</ul>
+</section></section>
+<section>
+<section id="durchführung" class="title-slide slide level2">
+<h2>Durchführung</h2>
+
+</section>
+<section id="aufgabenmanagement" class="slide level3">
+<h3>Aufgabenmanagement</h3>
+<ul>
+<li>Verwaltung und Zuweisen von Aufgaben</li>
+<li>Beispiele
+<ul>
+<li>Atlassian JIRA</li>
+<li>MantisBT</li>
+</ul></li>
+<li>In Bitbucket und GitHub ist einfaches Aufgabenmanagement
+integriert!</li>
+</ul>
+</section>
+<section id="testmanagement" class="slide level3">
+<h3>Testmanagement</h3>
+<ul>
+<li>Verwaltung und Durchführung von Tests</li>
+<li>Beispiele
+<ul>
+<li>inflectra SpiraTest</li>
+<li>HP Quality Center</li>
+<li>QMetry</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="beispiel" class="title-slide slide level2">
+<h2>Beispiel</h2>
+
+</section>
+<section id="aufbau-bei-adesso-mobile-solutions" class="slide level3">
+<h3>Aufbau bei adesso mobile solutions</h3>
+<p><img data-src="../images/uml/black/Infrastruktur_AMS.svg" id="id"
+class="class" height="570" alt="Quelle: Christopher Gretzki" /><br />
+</p>
+</section>
+<section id="tools-für-dieses-semester" class="slide level3">
+<h3>Tools für dieses Semester</h3>
+<p><img data-src="../images/uml/black/Infrastruktur_ISD.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
