@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="189px" preserveAspectRatio="none" style="width:772px;height:189px;background:#000000;" version="1.1" viewBox="0 0 772 189" width="772px" zoomAndPan="magnify"><defs/><g><g id="alarm1"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="61" x="7" y="56"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="7" x2="68" y1="78" y2="78"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="41" x="17" y="70.2402">alarm 1</text></g><g id="alarm2"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="61" x="137" y="7"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="137" x2="198" y1="29" y2="29"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="41" x="147" y="21.2402">alarm 2</text></g><ellipse cx="426.5" cy="173" fill="#DDDDDD" rx="10" ry="10" style="stroke:none;stroke-width:1.0;"/><g id="time"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="50" x="533" y="85"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="533" x2="583" y1="107" y2="107"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="23" x="546.5" y="99.2402">time</text></g><g id="chime"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="53" x="267" y="7"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="267" x2="320" y1="29" y2="29"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="33" x="277" y="21.2402">chime</text></g><g id="stopwatch"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="75" x="389" y="7"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="389" x2="464" y1="29" y2="29"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="55" x="399" y="21.2402">stopwatch</text></g><g id="date"><rect fill="#0E0E0E" height="50" rx="12.5" ry="12.5" style="stroke:#E7E7E7;stroke-width:0.5;" width="50" x="715" y="85"/><line style="stroke:#E7E7E7;stroke-width:0.5;" x1="715" x2="765" y1="107" y2="107"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="24" x="728" y="99.2402">date</text></g><!--MD5=[3c83cba34cabb0db327ef2d94ea6aa12]
+link *start to time--><g id="link_*start_time"><path d="M436,168.87 C454.42,159.9 498.78,138.32 528.36,123.93 " fill="none" id="*start-to-time" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="532.97,121.69,523.1268,122.0241,528.4725,123.8745,526.622,129.2202,532.97,121.69" style="stroke:#E7E7E7;stroke-width:1.0;"/></g><!--MD5=[f51fe68816a844d8f0a128140713bd40]
+link time to alarm1--><g id="link_time_alarm1"><path d="M532.65,110 C506.63,110 464.15,110 427.5,110 C166.5,110 166.5,110 166.5,110 C134.24,110 98.52,101.13 73.03,93.2 " fill="none" id="time-to-alarm1" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="68.07,91.63,75.4327,98.1714,72.8344,93.1466,77.8593,90.5483,68.07,91.63" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="290" y="106.2402">a</text></g><!--MD5=[3379d82901c480e618e2a77d466fd746]
+link alarm1 to alarm2--><g id="link_alarm1_alarm2"><path d="M68.19,69.64 C87.33,62.31 112.29,52.75 132.27,45.1 " fill="none" id="alarm1-to-alarm2" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="136.97,43.3,127.135,42.7773,132.2996,45.0853,129.9915,50.2499,136.97,43.3" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="99" y="52.2402">a</text></g><!--MD5=[d23da9def05ab4219888225e61d600f9]
+link alarm2 to chime--><g id="link_alarm2_chime"><path d="M198.2,32 C217.32,32 242.14,32 261.51,32 " fill="none" id="alarm2-to-chime" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="266.82,32,257.82,28,261.82,32,257.82,36,266.82,32" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="229" y="28.2402">a</text></g><!--MD5=[5354c33f71985c12de19de898d9520f1]
+link chime to stopwatch--><g id="link_chime_stopwatch"><path d="M320.07,32 C338.12,32 362.72,32 383.61,32 " fill="none" id="chime-to-stopwatch" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="388.84,32,379.84,28,383.84,32,379.84,36,388.84,32" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="351" y="28.2402">a</text></g><!--MD5=[d8f746af57128f1dda3d31141f67c679]
+link stopwatch to time--><g id="link_stopwatch_time"><path d="M464.26,54.14 C484.53,66.35 509.33,81.29 528.18,92.64 " fill="none" id="stopwatch-to-time" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="532.84,95.45,527.2003,87.3757,528.5588,92.867,523.0675,94.2256,532.84,95.45" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="495" y="70.2402">a</text></g><!--MD5=[9d7d3e4dda0c3e4e44de54df4e65d0a6]
+link time to date--><g id="link_time_date"><path d="M583.17,101.78 C592.39,99.05 603.07,96.35 613,95 C644.71,90.68 653.29,90.68 685,95 C693.22,96.12 701.96,98.16 709.96,100.38 " fill="none" id="time-to-date" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="714.83,101.78,707.2926,95.4407,710.0262,100.3932,705.0737,103.1268,714.83,101.78" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="645.5" y="88.2402">d</text></g><!--MD5=[a1e63c869837d836e486f5232f215d41]
+link date to time--><g id="link_date_time"><path d="M714.83,112.17 C705.51,112.91 694.77,113.64 685,114 C653.02,115.18 644.98,115.18 613,114 C605.06,113.71 596.48,113.17 588.55,112.58 " fill="none" id="date-to-time" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="583.17,112.17,591.8347,116.8523,588.1551,112.5557,592.4517,108.8761,583.17,112.17" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="7" x="645.5" y="110.2402">d</text></g><!--MD5=[a1e63c869837d836e486f5232f215d41]
+link date to time--><g id="link_date_time"><path d="M714.91,125.03 C705.88,129.85 695.3,134.57 685,137 C653.86,144.35 644.14,144.35 613,137 C604.47,134.99 595.75,131.41 587.87,127.5 " fill="none" id="date-to-time-1" style="stroke:#E7E7E7;stroke-width:1.0;"/><polygon fill="#E7E7E7" points="583.09,125.03,589.2631,132.7042,587.5361,127.3174,592.9229,125.5904,583.09,125.03" style="stroke:#E7E7E7;stroke-width:1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacing" textLength="70" x="614" y="133.2402">2 min in date</text></g><!--MD5=[ff8b92552363175e7087e88c2250afa4]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+left to right direction
+
+state "alarm 1" as alarm1
+state "alarm 2" as alarm2
+
+[*] - -> time
+time - -> alarm1 : a
+alarm1 - -> alarm2 : a
+alarm2 - -> chime : a
+chime - -> stopwatch : a
+stopwatch - -> time : a
+time - -> date : d
+date - -> time : d
+date - -> time : 2 min in date
+@enduml
+
+PlantUML version 1.2022.2(Sat Mar 05 17:30:19 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

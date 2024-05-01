@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 670 334" style="enable-background:new 0 0 670 334;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_2_);fill:#0D0D0D;}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'HelveticaNeue';}
+	.st4{font-size:16px;}
+	.st5{clip-path:url(#SVGID_2_);fill:#333333;}
+	.st6{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st7{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st8{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="670" height="334"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<rect x="174.8" class="st0" width="170" height="333.1"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 219.6476 20.0005)" class="st2 st3 st4">Framework</text>
+	</g>
+	<rect x="187.9" y="229" class="st5" width="145" height="94.5"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 236.8649 282)" class="st2 st3 st4">Bridge</text>
+	</g>
+	<rect class="st0" width="170" height="333.1"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 70.3281 20.0005)" class="st2 st3 st4">App</text>
+	</g>
+	<rect x="12" y="37.5" class="st5" width="145" height="286"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 39.8999 167.8151)" class="st2 st3 st4">HTML, CSS, </text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 44.3481 186.2628)" class="st2 st3 st4">JavaScript, </text>
+	</g>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 23.1641 204.7116)" class="st2 st3 st4">Plugins (optional)</text>
+	</g>
+	<line class="st6" x1="165.7" y1="224.7" x2="179.2" y2="232"/>
+	<polygon class="st7" points="186.2,235.9 180.7,229.4 177.8,234.7 	"/>
+	<polygon class="st8" points="186.2,235.9 180.7,229.4 177.8,234.7 	"/>
+	<polygon class="st7" points="158.7,220.9 164.3,227.3 167.1,222 	"/>
+	<polygon class="st8" points="158.7,220.9 164.3,227.3 167.1,222 	"/>
+	<rect x="349.6" class="st0" width="320" height="333.1"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 479.3592 20.0005)" class="st2 st3 st4">Platform</text>
+	</g>
+	<rect x="363.8" y="231" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 405.3655 251.75)" class="st2 st3 st4">Location</text>
+	</g>
+	<rect x="510.3" y="231" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 548.1614 251.75)" class="st2 st3 st4">Bluetooth</text>
+	</g>
+	<rect x="363.8" y="262" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 415.5892 282.75)" class="st2 st3 st4">Audio</text>
+	</g>
+	<rect x="510.3" y="262" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 553.6492 282.75)" class="st2 st3 st4">Sensors</text>
+	</g>
+	<rect x="363.8" y="293.5" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 408.1815 314.25)" class="st2 st3 st4">Camera</text>
+	</g>
+	<rect x="510.3" y="293.5" class="st5" width="145" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 569.4974 314.25)" class="st2 st3 st4">etc.</text>
+	</g>
+	<rect x="363.8" y="37.5" class="st5" width="130" height="61"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 395.9612 73.7756)"><tspan x="0" y="0" class="st2 st3 st4">W</tspan><tspan x="13.9" y="0" class="st2 st3 st4">eb</tspan><tspan x="32" y="0" class="st2 st3 st4">V</tspan><tspan x="41.5" y="0" class="st2 st3 st4">iew</tspan></text>
+	</g>
+	<rect x="525.3" y="37.5" class="st5" width="130" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 563.5174 58.2756)" class="st2 st3 st4">Canvas</text>
+	</g>
+	<rect x="525.3" y="68.5" class="st5" width="130" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 566.1815 89.2756)" class="st2 st3 st4">Events</text>
+	</g>
+	<line class="st6" x1="503.7" y1="68.2" x2="515.4" y2="68.3"/>
+	<polygon class="st7" points="523.4,68.3 515.4,65.3 515.4,71.3 	"/>
+	<polygon class="st8" points="523.4,68.3 515.4,65.3 515.4,71.3 	"/>
+	<polygon class="st7" points="495.7,68.2 503.7,71.2 503.7,65.2 	"/>
+	<polygon class="st8" points="495.7,68.2 503.7,71.2 503.7,65.2 	"/>
+	<rect x="363.8" y="181" class="st5" width="291.5" height="30"/>
+	<g class="st1">
+		<text transform="matrix(1 0 0 1 455.9593 201.7628)" class="st2 st3 st4">High level APIs</text>
+	</g>
+	<line class="st6" x1="166.4" y1="153.7" x2="354.4" y2="92.3"/>
+	<polygon class="st7" points="362,89.8 353.5,89.5 355.4,95.2 	"/>
+	<polygon class="st8" points="362,89.8 353.5,89.5 355.4,95.2 	"/>
+	<polygon class="st7" points="158.8,156.2 167.3,156.6 165.5,150.9 	"/>
+	<polygon class="st8" points="158.8,156.2 167.3,156.6 165.5,150.9 	"/>
+	<line class="st6" x1="342.8" y1="276.7" x2="353.9" y2="276.8"/>
+	<polygon class="st7" points="361.9,276.8 354,273.8 353.9,279.8 	"/>
+	<polygon class="st8" points="361.9,276.8 354,273.8 353.9,279.8 	"/>
+	<polygon class="st7" points="334.8,276.7 342.8,279.7 342.8,273.7 	"/>
+	<polygon class="st8" points="334.8,276.7 342.8,279.7 342.8,273.7 	"/>
+	<line class="st6" x1="342.3" y1="249.8" x2="453.6" y2="214"/>
+	<polygon class="st7" points="461.2,211.6 452.7,211.2 454.5,216.9 	"/>
+	<polygon class="st8" points="461.2,211.6 452.7,211.2 454.5,216.9 	"/>
+	<polygon class="st7" points="334.7,252.3 343.3,252.7 341.4,247 	"/>
+	<polygon class="st8" points="334.7,252.3 343.3,252.7 341.4,247 	"/>
+</g>
+</svg>

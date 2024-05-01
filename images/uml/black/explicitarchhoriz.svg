@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="375px" preserveAspectRatio="none" style="width:371px;height:375px;background:#000000;" version="1.1" viewBox="0 0 371 375" width="371px" zoomAndPan="magnify"><defs><filter height="300%" id="f8hrodoes0n34" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[c41bd8c6a841e0afce7dd5a1c89d735f]
+cluster Mock Core--><rect fill="#000000" filter="url(#f8hrodoes0n34)" height="105" style="stroke: #FFFFFF; stroke-width: 1.5;" width="216" x="144" y="24"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="221" y="35.2402">Mock Core</text><!--MD5=[64ded33063b381d0c076867f0602b0cd]
+cluster Core Ports (driving)--><rect fill="#000000" filter="url(#f8hrodoes0n34)" height="211" style="stroke: #FFFFFF; stroke-width: 1.5;" width="216" x="144" y="153"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="196" y="164.2402">Core Ports (driving)</text><!--MD5=[3fc59b17a2df0e8aa43d25b99d46893c]
+cluster User Interface--><rect fill="#000000" filter="url(#f8hrodoes0n34)" height="93" style="stroke: #FFFFFF; stroke-width: 1.5;" width="98" x="22" y="159"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="30" y="170.2402">User Interface</text><!--MD5=[a3624a2a5a43b8ade92fe710669ccfb9]
+class CommandHandler--><rect fill="#070707" filter="url(#f8hrodoes0n34)" height="58" id="CommandHandler" style="stroke: #C7C7C7; stroke-width: 1.5;" width="184" x="160" y="55"/><ellipse cx="205" cy="70" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M206.834,74.248 Q206.4238,74.459 205.9727,74.5645 Q205.5215,74.6699 205.0234,74.6699 Q203.2539,74.6699 202.3223,73.5039 Q201.3906,72.3379 201.3906,70.1348 Q201.3906,67.9258 202.3223,66.7598 Q203.2539,65.5938 205.0234,65.5938 Q205.5215,65.5938 205.9785,65.6992 Q206.4355,65.8047 206.834,66.0156 L206.834,67.9375 Q206.3887,67.5273 205.9697,67.3369 Q205.5508,67.1465 205.1055,67.1465 Q204.1563,67.1465 203.6729,67.8994 Q203.1895,68.6523 203.1895,70.1348 Q203.1895,71.6113 203.6729,72.3643 Q204.1563,73.1172 205.1055,73.1172 Q205.5508,73.1172 205.9697,72.9268 Q206.3887,72.7363 206.834,72.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="224" y="73.2402">MockCommand</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161" x2="343" y1="85" y2="85"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161" x2="343" y1="93" y2="93"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="172" x="166" y="106.2402">OutDTO Execute(InDTO inDTO)</text><!--MD5=[521817ab83e81da341a3f4b5e91bae41]
+class Command--><rect fill="#070707" filter="url(#f8hrodoes0n34)" height="58" id="Command" style="stroke: #C7C7C7; stroke-width: 1.5;" width="184" x="160" y="184"/><ellipse cx="219.5" cy="199" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M217.0078,196.2754 L217.0078,194.752 L222.2168,194.752 L222.2168,196.2754 L220.4766,196.2754 L220.4766,201.9766 L222.2168,201.9766 L222.2168,203.5 L217.0078,203.5 L217.0078,201.9766 L218.748,201.9766 L218.748,196.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="57" x="238.5" y="202.2402">Command</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161" x2="343" y1="214" y2="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161" x2="343" y1="222" y2="222"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="172" x="166" y="235.2402">OutDTO Execute(InDTO inDTO)</text><!--MD5=[6c5fd3e15363f4b636877cb9b1d6edc2]
+class InDTO--><rect fill="#070707" filter="url(#f8hrodoes0n34)" height="46" id="InDTO" style="stroke: #C7C7C7; stroke-width: 1.5;" width="65" x="160.5" y="302"/><ellipse cx="174.5" cy="317" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M176.334,321.248 Q175.9238,321.459 175.4727,321.5645 Q175.0215,321.6699 174.5234,321.6699 Q172.7539,321.6699 171.8223,320.5039 Q170.8906,319.3379 170.8906,317.1348 Q170.8906,314.9258 171.8223,313.7598 Q172.7539,312.5938 174.5234,312.5938 Q175.0215,312.5938 175.4785,312.6992 Q175.9355,312.8047 176.334,313.0156 L176.334,314.9375 Q175.8887,314.5273 175.4697,314.3369 Q175.0508,314.1465 174.6055,314.1465 Q173.6563,314.1465 173.1729,314.8994 Q172.6895,315.6523 172.6895,317.1348 Q172.6895,318.6113 173.1729,319.3643 Q173.6563,320.1172 174.6055,320.1172 Q175.0508,320.1172 175.4697,319.9268 Q175.8887,319.7363 176.334,319.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="187.5" y="320.2402">InDTO</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161.5" x2="224.5" y1="332" y2="332"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161.5" x2="224.5" y1="340" y2="340"/><!--MD5=[1964abfcddda9cfd33fd68a7b4c9c60d]
+class OutDTO--><rect fill="#070707" filter="url(#f8hrodoes0n34)" height="46" id="OutDTO" style="stroke: #C7C7C7; stroke-width: 1.5;" width="74" x="261" y="302"/><ellipse cx="275" cy="317" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M276.834,321.248 Q276.4238,321.459 275.9727,321.5645 Q275.5215,321.6699 275.0234,321.6699 Q273.2539,321.6699 272.3223,320.5039 Q271.3906,319.3379 271.3906,317.1348 Q271.3906,314.9258 272.3223,313.7598 Q273.2539,312.5938 275.0234,312.5938 Q275.5215,312.5938 275.9785,312.6992 Q276.4355,312.8047 276.834,313.0156 L276.834,314.9375 Q276.3887,314.5273 275.9697,314.3369 Q275.5508,314.1465 275.1055,314.1465 Q274.1563,314.1465 273.6729,314.8994 Q273.1895,315.6523 273.1895,317.1348 Q273.1895,318.6113 273.6729,319.3643 Q274.1563,320.1172 275.1055,320.1172 Q275.5508,320.1172 275.9697,319.9268 Q276.3887,319.7363 276.834,319.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="288" y="320.2402">OutDTO</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="262" x2="334" y1="332" y2="332"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="262" x2="334" y1="340" y2="340"/><!--MD5=[c045e12321b83266d36d22b9096c24ea]
+class View--><rect fill="#070707" filter="url(#f8hrodoes0n34)" height="46" id="View" style="stroke: #C7C7C7; stroke-width: 1.5;" width="57" x="46.5" y="190"/><ellipse cx="60.5" cy="205" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M62.334,209.248 Q61.9238,209.459 61.4727,209.5645 Q61.0215,209.6699 60.5234,209.6699 Q58.7539,209.6699 57.8223,208.5039 Q56.8906,207.3379 56.8906,205.1348 Q56.8906,202.9258 57.8223,201.7598 Q58.7539,200.5938 60.5234,200.5938 Q61.0215,200.5938 61.4785,200.6992 Q61.9355,200.8047 62.334,201.0156 L62.334,202.9375 Q61.8887,202.5273 61.4697,202.3369 Q61.0508,202.1465 60.6055,202.1465 Q59.6563,202.1465 59.1729,202.8994 Q58.6895,203.6523 58.6895,205.1348 Q58.6895,206.6113 59.1729,207.3643 Q59.6563,208.1172 60.6055,208.1172 Q61.0508,208.1172 61.4697,207.9268 Q61.8887,207.7363 62.334,207.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="73.5" y="208.2402">View</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="47.5" x2="102.5" y1="220" y2="220"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="47.5" x2="102.5" y1="228" y2="228"/><!--MD5=[6294d55b33d28c78d1890e78f89ded29]
+link View to InDTO--><path d="M98.88,236.26 C118.07,254.15 145.06,279.31 165.22,298.1 " fill="none" id="View-&gt;InDTO" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="169.16,301.77,165.2921,292.7124,165.4981,298.3656,159.845,298.5715,169.16,301.77" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[d6bfefbb8702b08d56584ca49a9a0628]
+link View to Command--><path d="M103.69,213 C120.67,213 137.64,213 154.62,213 " fill="none" id="View-&gt;Command" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="159.89,213,150.89,209,154.89,213,150.89,217,159.89,213" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[88b1d2dcdb4f68d4f4b940a5c82a618a]
+link CommandHandler to Command--><path d="M252,113.19 C252,128.07 252,146.74 252,163.84 " fill="none" id="CommandHandler-&gt;Command" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="259,163.89,252,183.89,245,163.89,259,163.89" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[9fd349bbfcc140d38c66ad139ee1a4b1]
+link Command to InDTO--><path d="M236.96,242.04 C226.99,260.63 214.09,284.67 204.85,301.9 " fill="none" id="Command-InDTO" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[8f677b274f129ca27861f00949abff03]
+link Command to OutDTO--><path d="M263.73,242.04 C271.5,260.63 281.55,284.67 288.76,301.9 " fill="none" id="Command-OutDTO" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[841eafb70b7a4cc18128eab11f603dbc]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+package "Mock Core" <<Rectangle>> {
+    class "MockCommand" as CommandHandler {
+        {method} OutDTO Execute(InDTO inDTO)
+    }
+}
+
+package "Core Ports (driving)" <<Rectangle>> {
+    interface Command {
+        {method} OutDTO Execute(InDTO inDTO)
+    }
+
+    class InDTO {       
+
+     }
+
+    class OutDTO {       
+
+     }
+
+}
+
+package "User Interface" <<Rectangle>> {
+    class View
+}
+
+View -> InDTO
+View -> Command
+CommandHandler ..|> Command
+Command - - InDTO
+Command - - OutDTO
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.11+9
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

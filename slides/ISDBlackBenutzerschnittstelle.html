@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Software Design UI / UX</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Software Design UI / UX</h1>
+</section>
+
+<section>
+<section id="was-zeichnet-nutzbare-software-aus"
+class="title-slide slide level2">
+<h2>Was zeichnet “nutzbare” Software aus?</h2>
+
+</section>
+<section id="eine-kleine-geschichte" class="slide level3">
+<h3>Eine kleine Geschichte…</h3>
+<p>Basiert auf</p>
+<p>Jesse James Garrett (2010) “The Elements of User Experience:
+User-Centered Design for the Web and Beyond”</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Was ist mit dem Wecker los?</strong></p>
+<p><img data-src="../images/sd/Firefly_1.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><strong>Jetzt erstmal einen Kaffee…</strong></p>
+<p><img data-src="../images/sd/Firefly_2.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><strong>Der Sprit reicht nicht aus…</strong></p>
+<p><img data-src="../images/sd/Firefly_3.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><strong>Barzahlung dauert heute länger…</strong></p>
+<p><img data-src="../images/sd/Firefly_4.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><strong>Umleitung nötig…</strong></p>
+<p><img data-src="../images/sd/Firefly_5.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><strong>Flug verpasst :(</strong></p>
+<p><img data-src="../images/sd/Firefly_6.jpg" /></p>
+</section>
+<section id="und-der-zusammenhang-zu-usability" class="slide level3">
+<h3>…und der Zusammenhang zu Usability</h3>
+</section>
+<section class="slide level3">
+
+<p><strong>Wecker</strong></p>
+<ul>
+<li>Die Katze hat den Alarm deaktiviert</li>
+<li>Ein minimal anderes Design hätte das verhindern können</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Kaffeemaschine</strong></p>
+<ul>
+<li>Die Kaffeemaschine war überhaupt nicht angeschaltet</li>
+<li>Visuelles Feedback nötig</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Zapfsäule</strong></p>
+<ul>
+<li>Falsches Einsetzen der Kreditkarte</li>
+<li>Kann durch Piktogramm verhindert werden</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Barzahlung</strong></p>
+<ul>
+<li>Bedienprobleme der Kasse führten zur erhöhten Wartezeit</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Autounfall</strong></p>
+<ul>
+<li>Autounfall weil ein Fahrer zu lange durch die Radiobedienung
+abgelenkt war</li>
+<li>Ließe sich durch besseres Bedienkonzept vermeiden</li>
+</ul>
+</section></section>
+<section>
+<section id="sketching-exkurs" class="title-slide slide level2">
+<h2>Sketching (Exkurs)</h2>
+
+</section>
+<section id="motivation" class="slide level3">
+<h3>Motivation</h3>
+<ul>
+<li>Die kommenden Teile beschäftigen sich mit der Konzeption der UI</li>
+<li>Dafür werden wir Modellierungsmöglichkeiten und Werkzeuge kennen
+lernen</li>
+<li>Stift und Papier haben aber viele Vorteile!</li>
+</ul>
+</section>
+<section id="gründe-für-das-skizzieren" class="slide level3">
+<h3>Gründe für das Skizzieren</h3>
+<ul>
+<li>Offenere und kreativere Arbeitsweise</li>
+<li>Geschwindigkeit und Menge des Outputs höher</li>
+<li>Diskussions- und Kollaborationsmöglichkeiten besser</li>
+</ul>
+</section>
+<section id="designen-nicht-zeichnen" class="slide level3">
+<h3>Designen, nicht zeichnen!</h3>
+<ul>
+<li>Künstlerisches Talent nicht vorausgesetzt</li>
+<li>Werkzeug um Designideen auszudrücken, mitzuteilen und zu
+kommunizieren</li>
+</ul>
+</section>
+<section id="die-richtige-idee" class="slide level3">
+<h3>Die richtige Idee</h3>
+<p><img
+data-src="../images/sd/black/Why-Should-I-Sketch---a-synopsis-of-Buxton-s-Sk_2012_Sketching-User-Ex1.png" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/sd/black/Why-Should-I-Sketch---a-synopsis-of-Buxton-s-Sk_2012_Sketching-User-Ex2.png" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/sd/black/Why-Should-I-Sketch---a-synopsis-of-Buxton-s-Sk_2012_Sketching-User-Ex3.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/sd/black/Why-Should-I-Sketch---a-synopsis-of-Buxton-s-Sk_2012_Sketching-User-Ex4.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/sd/black/Why-Should-I-Sketch---a-synopsis-of-Buxton-s-Sk_2012_Sketching-User-Ex5.png" /><br />
+</p>
+</section></section>
+<section>
+<section id="plus-10-methode" class="title-slide slide level2">
+<h2>10 plus 10 Methode</h2>
+
+</section>
+<section id="übersicht" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Entwerfe mindestens 10 verschiedene Designs zu einer Idee</li>
+<li>Reduziere die Ideen auf die vielversprechendsten</li>
+<li>Vertiefe 10 Details an den besten Designs</li>
+<li>Präsentiere die Ergebnisse und diskutiere</li>
+</ul>
+</section>
+<section id="beispiel" class="slide level3">
+<h3>Beispiel</h3>
+<p>Zwei Smartphones verbinden</p>
+</section>
+<section id="section" class="slide level3">
+<h3>10</h3>
+</section>
+<section id="section-1" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-1577.jpg" /></p>
+</section>
+<section id="section-2" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-4840.jpg" /></p>
+</section>
+<section id="section-3" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-12457.jpg" /></p>
+</section>
+<section id="section-4" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-12906.jpg" /></p>
+</section>
+<section id="section-5" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-22605.jpg" /></p>
+</section>
+<section id="section-6" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr9662412535046695.jpg" /></p>
+</section>
+<section id="section-7" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr96624125350410261.jpg" /></p>
+</section>
+<section id="section-8" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr96624125350417045.jpg" /></p>
+</section>
+<section id="section-9" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr96624125350420420.jpg" /></p>
+</section>
+<section id="plus-10" class="slide level3">
+<h3>Plus 10</h3>
+</section>
+<section id="section-10" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-30975.jpg" /></p>
+</section>
+<section id="section-11" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-23067.jpg" /></p>
+</section>
+<section id="section-12" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr96624125350431749.jpg" /></p>
+</section>
+<section id="section-13" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-5413.jpg" /></p>
+</section>
+<section id="section-14" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr966241253504-26934.jpg" /></p>
+</section>
+<section id="section-15" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr9662412535045955.jpg" /></p>
+</section>
+<section id="section-16" class="slide level3"
+data-background-color="#ffffff">
+<h3 data-background-color="#ffffff"></h3>
+<p><img data-src="../images/sd/Acr96624125350420125.jpg" /></p>
+</section></section>
+<section>
+<section id="scribble-sketching" class="title-slide slide level2">
+<h2>Scribble Sketching</h2>
+
+</section>
+<section id="prinzip" class="slide level3">
+<h3>Prinzip</h3>
+<ul>
+<li>Schnelles Aufnehmen von Ideen</li>
+<li>Low fidelity</li>
+<li>Konzentration auf das Wesentliche</li>
+</ul>
+</section>
+<section id="übungsmöglichkeit" class="slide level3">
+<h3>Übungsmöglichkeit</h3>
+<ul>
+<li>Existierende UI nehmen</li>
+<li>Scribble Sketch erstellen</li>
+<li>Zeitlimit 30 Sekunden</li>
+</ul>
+</section>
+<section id="beispiel-1" class="slide level3">
+<h3>Beispiel</h3>
+<p><img data-src="../images/sd/Acr495711183364748.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/black/Acr4957111833616657.jpg" /></p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/black/Acr4957111833611025.jpg" /></p>
+</section></section>
+<section>
+<section id="skizzieren-mit-büromaterial"
+class="title-slide slide level2">
+<h2>Skizzieren mit Büromaterial</h2>
+
+</section>
+<section id="idee" class="slide level3">
+<h3>Idee</h3>
+<ul>
+<li>Gewinn von Flexibilität durch z.B. Post Its</li>
+<li>Interaktivität und Kollaboration einfacher</li>
+</ul>
+</section>
+<section id="beispiel-2" class="slide level3">
+<h3>Beispiel</h3>
+<p><img data-src="../images/sd/black/Acr52401650816-9246.jpg" id="id"
+class="class" height="590" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/Acr5240165081611025.png" id="id"
+class="class" height="590" /><br />
+</p>
+</section></section>
+<section>
+<section id="informationsarchitektur" class="title-slide slide level2">
+<h2>Informationsarchitektur</h2>
+
+</section>
+<section id="top-down-struktur" class="slide level3">
+<h3>Top-down Struktur</h3>
+<ul>
+<li>Analyse der strategischen Ziele auf oberster Ebene</li>
+<li>Bildung breiter Kategorien</li>
+<li>Sukzessive Unterteilung in Subkategorien</li>
+</ul>
+</section>
+<section id="bottom-up-struktur" class="slide level3">
+<h3>Bottom-up Struktur</h3>
+<ul>
+<li>Inhaltsanalyse</li>
+<li>Bildung von Clustern oder Gruppen</li>
+<li>Sukzessive Zusammenfassung in Oberkategorien</li>
+</ul>
+</section>
+<section id="hierarchisch" class="slide level3">
+<h3>Hierarchisch</h3>
+<ul>
+<li>Baumstruktur</li>
+<li>Normalerweise unterhalb der Hauptnavigation</li>
+</ul>
+</section>
+<section id="section-17" class="slide level3"
+data-background-video="../videos/sd/navigation_hierarchy.m4v"
+data-background-size="contain">
+<h3 data-background-video="../videos/sd/navigation_hierarchy.m4v"
+data-background-size="contain"></h3>
+</section>
+<section id="flache-architektur" class="slide level3">
+<h3>Flache Architektur</h3>
+<ul>
+<li>Redundante Wege</li>
+<li>Wichtige Informationen über kurze Navigationswege erreichbar</li>
+</ul>
+</section>
+<section id="section-18" class="slide level3"
+data-background-video="../videos/sd/navigation_flat.m4v"
+data-background-size="contain">
+<h3 data-background-video="../videos/sd/navigation_flat.m4v"
+data-background-size="contain"></h3>
+</section>
+<section id="matrix" class="slide level3">
+<h3>Matrix</h3>
+<ul>
+<li>Zwei- oder mehrdimensionale Navigation</li>
+<li>Beispielsweise Produkte
+<ul>
+<li>Farbe</li>
+<li>Größe</li>
+<li>…</li>
+</ul></li>
+</ul>
+</section>
+<section id="organische-architektur" class="slide level3">
+<h3>Organische Architektur</h3>
+<ul>
+<li>Keine regulären Muster</li>
+<li>Nutzer weiß nicht genau, wo er sich gerade in der
+Informationsarchitektur befindet</li>
+<li>Fördert Exploration
+<ul>
+<li>Unterhaltung</li>
+<li>Bildung</li>
+</ul></li>
+</ul>
+</section>
+<section id="section-19" class="slide level3"
+data-background-video="../videos/sd/navigation_contents.m4v"
+data-background-size="contain">
+<h3 data-background-video="../videos/sd/navigation_contents.m4v"
+data-background-size="contain"></h3>
+</section>
+<section id="sequentiell" class="slide level3">
+<h3>Sequentiell</h3>
+<p>Wie klassische Medien</p>
+</section></section>
+<section>
+<section id="interaktionsmodellierung" class="title-slide slide level2">
+<h2>Interaktionsmodellierung</h2>
+
+</section>
+<section id="übersicht-1" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Die UML bietet von Haus kein Modell für Interaktionen</li>
+<li>Garrett hat Visual Vocabulary entwickelt</li>
+<li>Durch die Erfolge mobiler Plattformen sind neue
+Modellierungsmöglichkeiten entstanden, z.B.
+<ul>
+<li>Visual Paradigm Storyboard</li>
+<li>Apple Storyboard</li>
+</ul></li>
+</ul>
+</section>
+<section id="visual-vocabulary" class="slide level3">
+<h3>Visual Vocabulary</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/ILIAfo.png" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/black/02metafilter_ia1.svg"
+alt="Quelle: @VisualVocabulary" /><br />
+</p>
+</section>
+<section id="visual-paradigm-storyboard" class="slide level3">
+<h3>Visual Paradigm Storyboard</h3>
+<p><img data-src="../images/sd/23-03-2017-16-17-24.png" /><br />
+</p>
+</section>
+<section id="apple-storyboard" class="slide level3">
+<h3>Apple Storyboard</h3>
+<p><img data-src="../images/sd/storyboard.jpg"
+alt="Quelle: @AppleStoryboard" /><br />
+</p>
+</section>
+<section id="beobachtung" class="slide level3">
+<h3>Beobachtung</h3>
+<ul>
+<li>Letztlich bieten UML-Zustandsautomaten und Einzelbeschreibungen der
+Seiten ähnliche Möglichkeiten</li>
+<li>Daher werden wir Zustandsautomaten nutzen</li>
+</ul>
+</section>
+<section id="top-level-navigation-tabs" class="slide level3">
+<h3>Top-Level Navigation (Tabs)</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<p><img data-src="../images/sd/iOSTabs.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/AndroidTabs.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section id="top-level-navigation-drawer" class="slide level3">
+<h3>Top-Level Navigation (Drawer)</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<p><img data-src="../images/sd/AndroidNavigationDrawer.png" id="id"
+class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/iOSNavigationDrawer.png" id="id"
+class="class" height="590" /><br />
+</p>
+</div>
+</section>
+<section id="beispiel-android-5-clock-app" class="slide level3">
+<h3>Beispiel: Android 5 Clock App</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<ul>
+<li>Flache Informationsarchitektur</li>
+<li>Typisch bei
+<ul>
+<li>verschiedenen Sichten auf die selben Daten</li>
+<li>verschiedenen Teilfunktionen einer Gesamtfunktion</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/pEx3Aa.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/uml/black/interactionclockandroid1.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<p>Vier Seiten können erreicht werden</p>
+<ul>
+<li>Neuer Alarm (modal)</li>
+<li>Einstellungen</li>
+<li>Hilfe (Link zu einer Webseite)<br />
+</li>
+<li>Alarmton wählen (in neueren Versionen)</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/6Ddrvl.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/uml/black/interactionclockandroid2.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<p>Vier Seiten können erreicht werden</p>
+<ul>
+<li>Neue Zeitzone</li>
+<li>Nachtmodus</li>
+<li>Einstellungen</li>
+<li>Hilfe (Link zu einer Webseite)</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/cGljMd.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img
+data-src="../images/uml/black/interactionclockandroid3.svg" /><br />
+</p>
+</section>
+<section id="beispiel-ios-8-clock-app" class="slide level3">
+<h3>Beispiel: iOS 8 Clock App</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<ul>
+<li>Flache Informationsarchitektur</li>
+<li>Typisch bei
+<ul>
+<li>verschiedenen Sichten auf die selben Daten</li>
+<li>verschiedenen Teilfunktionen einer Gesamtfunktion</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/Qjh83U.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/interactionclockios1.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<p>Eine Seite kann erreicht werden: Neue Zeitzone (modal)</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/Qjh83U.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/interactionclockios2.svg" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<ul>
+<li>Eine Seite kann erreicht werden: Neuer Alarm (modal)</li>
+<li>Von dort sind noch weitere Seiten erreichbar</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/WrzIXW.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/interactionclockios3.svg" /><br />
+</p>
+</section>
+<section id="beispiel-citizen-quartz-multi-alarm-iii"
+class="slide level3">
+<h3>Beispiel: Citizen Quartz Multi-Alarm III</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<ul>
+<li>Sequentielle Informationsarchitektur</li>
+<li>Technische Gründe
+<ul>
+<li>Keine Touchbedienung</li>
+<li>Wenig Bedienlemente (Knöpfe)</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/black/m2kfR0.png" /><br />
+</p>
+</div>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/harel.svg" /><br />
+</p>
+</section>
+<section id="interaktionsdesign-beispiel" class="slide level3">
+<h3>Interaktionsdesign (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Interaktionsdesign">Beispiel</a></p>
+</section></section>
+<section>
+<section id="benutzerschnittstellen-design"
+class="title-slide slide level2">
+<h2>Benutzerschnittstellen-design</h2>
+
+</section>
+<section id="anzeigeelemente" class="slide level3">
+<h3>Anzeigeelemente</h3>
+<p>Für die reine Anzeige können normalerweise vor allem Texte (Labels)
+und Bilder genutzt werden.</p>
+</section>
+<section id="bedienelement-checkbox" class="slide level3">
+<h3>Bedienelement Checkbox</h3>
+<div id="left">
+<ul>
+<li>Optionen auswählen</li>
+<li>Checkboxen sind unabhängig voneinander</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/checkbox.svg" /><br />
+</p>
+</div>
+</section>
+<section id="radio-buttons" class="slide level3">
+<h3>Radio buttons</h3>
+<div id="left">
+<ul>
+<li>Optionen auswählen</li>
+<li>Optionen schließen sich gegenseitig aus</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/radiobuttons.svg" /><br />
+</p>
+</div>
+</section>
+<section id="eingabefelder" class="slide level3">
+<h3>Eingabefelder</h3>
+<div id="left">
+<p>Zur Texteingabe</p>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/entry.svg" /><br />
+</p>
+</div>
+</section>
+<section id="dropdown-listen" class="slide level3">
+<h3>Dropdown Listen</h3>
+<div id="left">
+<ul>
+<li>Ähnlich wie Radio Buttons</li>
+<li>Kompakter</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/droplist.svg" /><br />
+</p>
+</div>
+</section>
+<section id="list-boxen" class="slide level3">
+<h3>List Boxen</h3>
+<div id="left">
+<ul>
+<li>Ähnlich wie Checkboxen</li>
+<li>Kompakter</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/listbox.svg" /><br />
+</p>
+</div>
+</section>
+<section id="buttons" class="slide level3">
+<h3>Buttons</h3>
+<div id="left">
+<ul>
+<li>Für unterschiedliche Aktionen</li>
+<li>Kann das Ende einer Eingabe signalisieren</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/button.svg" /><br />
+</p>
+</div>
+</section></section>
+<section>
+<section id="wireframes" class="title-slide slide level2">
+<h2>Wireframes</h2>
+
+</section>
+<section id="einführung" class="slide level3">
+<h3>Einführung</h3>
+</section>
+<section class="slide level3">
+
+<div id="left">
+<ul>
+<li>Kondensierte Sicht auf Komponenten und Interaktionen einer
+Seite</li>
+<li>Unabhängig vom endgültigen Design</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/uml/black/Beispielwf.svg" id="id"
+class="class" height="590" /><br />
+</p>
+</div>
+</section>
+<section id="paper-prototyping" class="slide level3">
+<h3>Paper Prototyping</h3>
+<div id="left">
+<ul>
+<li>Schnellstes und often auch kreativstes Hilfsmittel sind Stift und
+Papier</li>
+<li>Erleichtern die Zusammenarbeit</li>
+<li>Können auch interaktiv genutzt werden.</li>
+</ul>
+</div>
+<div id="right">
+<p><img src="../images/sd/black/paper_world_clock.png" usemap="#scr1map" height="590">
+<map name="scr1map">
+<area shape="rect" coords="0,540,80,590" href="#/paper-prototyping">
+<area shape="rect" coords="95,540,165,590" href="#/alarm">
+<area shape="rect" coords="185,540,250,590" href="#/stopwatch">
+<area shape="rect" coords="270,540,355,590" href="#/timer"> </map></p>
+</div>
+</section>
+<section id="alarm" class="slide level3">
+<h3>Alarm</h3>
+<div id="left">
+
+</div>
+<div id="right">
+<p><img src="../images/sd/black/paper_alarm.png" usemap="#scr1map" height="590"></p>
+</div>
+</section>
+<section id="stopwatch" class="slide level3">
+<h3>Stopwatch</h3>
+<div id="left">
+
+</div>
+<div id="right">
+<p><img src="../images/sd/black/paper_stopwatch.png" usemap="#scr1map" height="590"></p>
+</div>
+</section>
+<section id="timer" class="slide level3">
+<h3>Timer</h3>
+<div id="left">
+
+</div>
+<div id="right">
+<p><img src="../images/sd/black/paper_timer.png" usemap="#scr1map" height="590"></p>
+</div>
+</section></section>
+<section>
+<section id="seitenspezifikationen" class="title-slide slide level2">
+<h2>Seitenspezifikationen</h2>
+
+</section>
+<section id="übersicht-2" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Seitenspezifikationen ergänzen Wireframes um einige
+Informationen</li>
+<li>Hilfreiche Ergänzung für Umsetzung
+<ul>
+<li>Navigation</li>
+<li>Einzelanmerkungen zu Bedienelementen</li>
+<li>Fehlersituationen</li>
+</ul></li>
+<li>Zusammen mit Interaktionsdesign Beschreibung einer
+Bedienoberfläche</li>
+</ul>
+</section>
+<section id="seitenspezifikation-beispiel" class="slide level3">
+<h3>Seitenspezifikation (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Benutzerschnittstellendesign">Beispiel</a></p>
+</section></section>
+<section>
+<section id="wireframes-als-prototypen"
+class="title-slide slide level2">
+<h2>Wireframes als Prototypen</h2>
+
+</section>
+<section id="wireframes-in-ide" class="slide level3">
+<h3>Wireframes in IDE</h3>
+<div id="left">
+<ul>
+<li>Wireframes können auch mit z.B. SwiftUI oder Jetpack Compose
+erstellt werden</li>
+<li>Bei vorsichtiger Nutzung ist Wiederverwendung möglich</li>
+<li>Mögliche Nachteile:
+<ul>
+<li>Unsauberer Code im fertigen Produkt</li>
+<li>Fehlgeleitete Erwartungen</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/Vb8KmH.png" id="id" class="class"
+height="590" /><br />
+</p>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

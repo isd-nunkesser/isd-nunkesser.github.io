@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="275px" preserveAspectRatio="none" style="width:419px;height:275px;background:#000000;" version="1.1" viewBox="0 0 419 275" width="419px" zoomAndPan="magnify"><defs><filter height="300%" id="fquo7y2u0slnt" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fd5897a013ba4b26a7024f7f2625a1f7]
+cluster Tabs--><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="81" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="393" x="14" y="67"/><rect fill="#000000" height="53" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.0;" width="387" x="17" y="92"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="14" x2="407" y1="89" y2="89"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="197" y="80.2402">Tabs</text><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="82" x="317" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="317" x2="399" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="327" y="104.2402">Stop Watch</text><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="86" x="196" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="196" x2="282" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="206" y="104.2402">World Clock</text><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="51" x="109.5" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="109.5" x2="160.5" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="119.5" y="104.2402">Timer</text><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="52" x="22" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="22" x2="74" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="32" y="104.2402">Alarm</text><rect fill="#070707" filter="url(#fquo7y2u0slnt)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="106" x="186" y="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="186" x2="292" y1="248" y2="248"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="208" y="228.2402">&lt;&lt;modal&gt;&gt;</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="86" x="196" y="240.2402">New Time Zone</text><ellipse cx="239" cy="18" fill="#FFFFFF" filter="url(#fquo7y2u0slnt)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[6eddd5bed8ee1426b8bc3e0d91e0bfcd]
+link *start to WorldClock--><path d="M239,28.0154 C239,41.2004 239,64.9762 239,84.342 " fill="none" id="*start-&gt;WorldClock" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="239,89.6747,243,80.6747,239,84.6747,235,80.6747,239,89.6747" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[4ffe27661fd291bc87144f9af1d1928c]
+link WorldClock to NewTimeZone--><path d="M239,140.0933 C239,159.926 239,187.6804 239,208.7424 " fill="none" id="WorldClock-&gt;NewTimeZone" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="239,213.9441,243,204.9441,239,208.9441,235,204.9441,239,213.9441" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="240" y="180.2402">tap[Add Button]</text><!--MD5=[c6bc489602114abe41b52e5fee478253]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+state "<<modal>>\nNew Time Zone" as NewTimeZone
+
+state Tabs {
+state "Stop Watch" as StopWatch
+state "World Clock" as WorldClock
+state Timer
+state Alarm
+}
+[*] - -> WorldClock
+WorldClock - -> NewTimeZone : tap[Add Button]
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_131-b11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

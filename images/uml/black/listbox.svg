@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="108px" preserveAspectRatio="none" style="width:174px;height:108px;background:#000000;" version="1.1" viewBox="0 0 174 108" width="174px" zoomAndPan="magnify"><defs><filter height="1" id="b1mew98splsjbo0" width="1" x="0" y="0"><feFlood flood-color="#525252" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="58" x="6" y="17.6016">List boxes</text><text fill="#FFFFFF" filter="url(#b1mew98splsjbo0)" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="160" x="6" y="33.7344">funktionieren wir Dropdown</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="6" y="49.8672">Allerdings ist</text><text fill="#FFFFFF" filter="url(#b1mew98splsjbo0)" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="147" x="6" y="66">Mehrfachauswahl möglich</text><text fill="#FFFFFF" filter="url(#b1mew98splsjbo0)" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="80" x="6" y="82.1328">genau wie bei</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="71" x="6" y="98.2656">Checkboxen</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="167" y1="5" y2="5"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="167" y1="101.7969" y2="101.7969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="5" y2="21.1328"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="21.1328" y2="37.2656"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="5" y2="21.1328"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="85.6641" y2="101.7969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="69.5313" y2="85.6641"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="85.6641" y2="101.7969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="53.3984" y2="69.5313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="69.5313" y2="85.6641"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="37.2656" y2="53.3984"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="53.3984" y2="69.5313"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="21.1328" y2="37.2656"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="167" x2="167" y1="37.2656" y2="53.3984"/><!--MD5=[13b8e9494a4852e7490b5fd00adfb8b1]
+@startsalt
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+{+
+  List boxes
+  <back:orange>funktionieren wir Dropdown</back>
+  Allerdings ist
+  <back:orange>Mehrfachauswahl möglich</back>
+  <back:orange>genau wie bei</back>
+  Checkboxen
+}
+@endsalt
+
+PlantUML version 1.2022.2(Sat Mar 05 17:30:19 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Anforderungsmanagement</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Anforderungsmanagement</h1>
+</section>
+
+<section>
+<section id="lernziele" class="title-slide slide level2">
+<h2>Lernziele</h2>
+
+</section>
+<section id="kennen" class="slide level3">
+<h3>Kennen</h3>
+<ul>
+<li>Erhebungsmethoden</li>
+<li>Prüfmethoden</li>
+<li>Inhalte von Anforderungsdokumenten</li>
+</ul>
+</section>
+<section id="wissen-und-anwenden" class="slide level3">
+<h3>Wissen und Anwenden</h3>
+<ul>
+<li>Erheben von Anfoderungen</li>
+<li>Schreiben eines Anforderungsdokuments</li>
+</ul>
+</section></section>
+<section>
+<section id="essence" class="title-slide slide level2">
+<h2>Essence</h2>
+
+</section>
+<section id="stakeholders" class="slide level3">
+<h3>Stakeholders</h3>
+<div id="left">
+<p><img
+data-src="../images/alpha_state_cards_ecards/004%20Stakeholders_Represented_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/alpha_state_cards_ecards/005%20Stakeholders_Involved_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+</section>
+<section id="opportunity" class="slide level3">
+<h3>Opportunity</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/012%20Opportunity_Value%20Established_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="requirements" class="slide level3">
+<h3>Requirements</h3>
+<div id="left">
+<p><img
+data-src="../images/alpha_state_cards_ecards/018%20Requirements_Bounded_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/alpha_state_cards_ecards/019%20Requirements_Coherent_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+</section>
+<section id="system" class="slide level3">
+<h3>System</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/024%20Software%20System_Architecture%20Selected_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="work" class="slide level3">
+<h3>Work</h3>
+<div id="left">
+<p><img
+data-src="../images/alpha_state_cards_ecards/039%20Work_Started_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/alpha_state_cards_ecards/040%20Work_Under%20Control_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+</section>
+<section id="team" class="slide level3">
+<h3>Team</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/032%20Team_Formed_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="way-of-working" class="slide level3">
+<h3>Way of Working</h3>
+<div id="left">
+<p><img
+data-src="../images/alpha_state_cards_ecards/045%20Way%20of%20Working_Foundation%20Established_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/alpha_state_cards_ecards/046%20Way%20of%20Working_In%20Use_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+</section></section>
+<section>
+<section id="einführung" class="title-slide slide level2">
+<h2>Einführung</h2>
+
+</section>
+<section id="section" class="slide level3">
+<h3></h3>
+<p><img data-src="../images/book/black/requirementseng3.png" id="id"
+class="class" height="590" /><br />
+</p>
+</section>
+<section id="warum-ist-das-wichtig" class="slide level3">
+<h3>Warum ist das wichtig?</h3>
+<ul>
+<li>Eine hohe Zahl von Softwarefehlern entsteht bereits bei den
+Anforderungen</li>
+<li>Je höher der Abstand zwischen Fehler machen und Fehler
+finden/beheben, desto teurer</li>
+<li>Man geht von bis zu 100fach höheren Kosten aus</li>
+</ul>
+</section>
+<section id="gründe-für-anforderungsfehler" class="slide level3">
+<h3>Gründe für Anforderungsfehler</h3>
+<ul>
+<li>Fehlende Anforderungen</li>
+<li>Unklare Formulierung</li>
+<li>Unterschiedliches Domänenwissen
+<ul>
+<li>Implizites Vorwissen</li>
+<li>Auslassen von „Selbstverständlichem“</li>
+</ul></li>
+</ul>
+</section>
+<section id="was-ist-eine-anforderung" class="slide level3">
+<h3>Was ist eine Anforderung?</h3>
+<ul>
+<li>Bedingung oder Fähigkeit, die von Benutzer (Person oder System) zur
+Problemlösung oder Zielerreichung benötigt wird</li>
+<li>Bedingung oder Fähigkeit, die System erfüllen oder besitzen muss, um
+Vertrag, Norm, Spezifikation oder andere Formalia zu erfüllen</li>
+</ul>
+</section>
+<section id="was-ist-ein-stakeholder" class="slide level3">
+<h3>Was ist ein Stakeholder?</h3>
+<p>Ein Stakeholder eines Systems ist eine Person oder Organisation, die
+(direkt oder indirekt) Einfluss auf die Anforderungen des betrachteten
+Systems hat.</p>
+</section>
+<section id="stakeholdermanegement" class="slide level3">
+<h3>Stakeholdermanegement</h3>
+<ul>
+<li>Wünsche und Bedürfnisse verstehen</li>
+<li>Dokumentieren</li>
+<li>Risiko minimieren, dass das System nicht den Bedürfnissen und
+Wünschen entspricht</li>
+</ul>
+</section>
+<section id="anforderungsmanagement" class="slide level3">
+<h3>Anforderungsmanagement</h3>
+<ul>
+<li>Kennen der relevanten Anforderungen</li>
+<li>Konsens unter Stakeholdern über Anforderungen herstellen</li>
+<li>Anforderungen dokumentieren</li>
+</ul>
+<p><strong>Teilaufgaben</strong></p>
+<ul>
+<li>Ermitteln</li>
+<li>Dokumentieren</li>
+<li>Prüfen und abstimmen</li>
+<li>Verwalten</li>
+</ul>
+</section>
+<section id="formale-hilfsmittel" class="slide level3">
+<h3>Formale Hilfsmittel</h3>
+<ul>
+<li>Technische, schriftliche Kommunikation</li>
+<li>Glossar</li>
+<li>Beschreibungssprachen wie UML</li>
+<li>Referenzierbarkeit (REQ-1, REQ-2, SH-1, SH-2, …)</li>
+</ul>
+</section>
+<section id="arten-von-anforderungen" class="slide level3">
+<h3>Arten von Anforderungen</h3>
+<ul>
+<li>Funktionale Anforderung</li>
+<li>Qualitätsanforderung</li>
+<li>Randbedingung</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Funktionale Anforderung</strong></p>
+<p>Eine funktionale Anforderung ist eine Anforderung bezüglich des
+Ergebnisses eines Verhaltens, das von einer Funktion des Systems
+bereitgestellt werden soll.</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Qualitätsanforderung</strong></p>
+<p>Eine Qualitätsanforderung ist eine Anforderung, die sich auf ein
+Qualitätsmerkmal bezieht, das nicht durch funktionale Anforderungen
+abgedeckt wird.</p>
+<p>→ Qualität der Funktionalität, Zuverlässigkeit, Benutzbarkeit,
+Effizienz, Änderbarkeit, Übertragbarkeit</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Randbedingung</strong></p>
+<p>Eine Randbedingung ist eine Anforderung, die den Lösungsraum jenseits
+dessen einschränkt, was notwendig ist, um die funktionalen Anforderungen
+und die Qualitätsanforderungen zu erfüllen.</p>
+</section></section>
+<section>
+<section id="anforderungen-ermitteln" class="title-slide slide level2">
+<h2>Anforderungen ermitteln</h2>
+
+</section>
+<section id="section-1" class="slide level3">
+<h3></h3>
+<p><img data-src="../images/sd/black/BalzertAbb21.0.1.svg" id="id"
+class="class" height="590" alt="Quelle: @Balzert2010" /><br />
+</p>
+</section>
+<section id="anforderungsquellen" class="slide level3">
+<h3>Anforderungsquellen</h3>
+<p><strong>Stakeholder</strong></p>
+<ul>
+<li>Müssen identifiziert werden</li>
+<li>Management nötig</li>
+</ul>
+<p><strong>Dokumente</strong></p>
+<ul>
+<li>Normen/Standards/Gesetze</li>
+<li>Dokumente des Altsystems</li>
+</ul>
+<p><strong>Bestehende Systeme</strong></p>
+<ul>
+<li>Möglichkeit zum Ausprobieren</li>
+</ul>
+</section>
+<section id="anforderungsquellen-beispiel" class="slide level3">
+<h3>Anforderungsquellen (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Anforderungsquellen">Beispiel</a></p>
+</section>
+<section id="kano-modell" class="slide level3">
+<h3>Kano-Modell</h3>
+<p><strong>Basismerkmale</strong></p>
+<p>Selbstverständlich vorausgesetzte Systemmerkmale (unbewusst)</p>
+<p><strong>Leistungsmerkmale</strong></p>
+<p>Explizit geforderte Systemmerkmale (bewusst)</p>
+<p><strong>Begeisterungsmerkmale</strong></p>
+<p>Vorher unbekannte Merkmale, die überraschen und begeistern
+(unbewusst)</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/black/Kano_Modell_allgemein.png"
+alt="Quelle: @KanoModell" /><br />
+</p>
+</section></section>
+<section>
+<section id="anforderungen-dokumentieren"
+class="title-slide slide level2">
+<h2>Anforderungen dokumentieren</h2>
+
+</section>
+<section id="anforderungsspezifikation" class="slide level3">
+<h3>Anforderungsspezifikation</h3>
+<ul>
+<li>Basis für die Systementwicklung</li>
+<li>Rechtliche Verbindlichkeit</li>
+<li>Beherrschung von Komplexität</li>
+<li>Zugänglichkeit</li>
+</ul>
+</section>
+<section id="text-vs.-modell" class="slide level3">
+<h3>Text vs. Modell</h3>
+<p><strong>Req-1</strong> Das System muss die Eingabemasken
+anzeigen.<br />
+<strong>Req-2</strong> Nachdem die Aktion „Eingabemaske anzeigen”
+beendet wurde, oder nachdem die Aktion „Fehler anzeigen” beendet wurde,
+muss das System dem Benutzer die Möglichkeit bieten, Daten
+einzugeben.<br />
+<strong>Req-3</strong> Nachdem die Aktion „Daten eingeben” beendet wurde
+und falls die Daten ok sind, muss das System die Daten speichern.<br />
+<strong>Req-4</strong> Nachdem die Aktion „Daten eingeben” beendet wurde
+und falls die Daten nicht ok sind, muss das System die Fehler
+ausgeben.<br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/ireb.svg" id="id" class="class"
+height="590" /><br />
+</p>
+</section>
+<section id="sichten-auf-anforderungen" class="slide level3">
+<h3>Sichten auf Anforderungen</h3>
+<p><strong>Strukturperspektive</strong></p>
+<ul>
+<li>Beziehungen im Systemkontext</li>
+<li>Struktur von Daten</li>
+</ul>
+<p><strong>Funktionsperspektive</strong></p>
+<ul>
+<li>Datenfluss und –verarbeitung</li>
+<li>Systematik</li>
+</ul>
+<p><strong>Verhaltensperspektive</strong></p>
+<ul>
+<li>Systemzustände</li>
+<li>Verhalten</li>
+</ul>
+</section></section>
+<section>
+<section id="randbedingungen" class="title-slide slide level2">
+<h2>Randbedingungen</h2>
+
+</section>
+<section id="übersicht" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Rahmenbedingungen die Einfluss auf Anforderungen oder
+Lösungsmöglichkeiten haben</li>
+</ul>
+</section>
+<section id="randbedingungen-beispiel" class="slide level3">
+<h3>Randbedingungen (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Randbedingungen">Beispiel</a></p>
+</section></section>
+<section>
+<section id="kontext" class="title-slide slide level2">
+<h2>Kontext</h2>
+
+</section>
+<section id="übersicht-1" class="slide level3">
+<h3>Übersicht</h3>
+<p>Zum Kontext des geplanten Systems gehören</p>
+<ul>
+<li>Andere Systeme mit operationellem Zusammenhang</li>
+<li>Rollen bzw. Personen die im Betrieb mit dem System interagieren</li>
+<li>Notwendige Schnittstellen</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p>Darstellung sollte beinhalten</p>
+<ul>
+<li>Systemgrenze des betrachteten Systems</li>
+<li>Interagierende Nachbarsysteme und Akteure</li>
+<li>Schnittstellen zwischen System und Nachbarsystem</li>
+</ul>
+<p>Modellierung z.B. mit UML-Komponentendiagramm oder bei eingebetteten
+Systemen alternativ mit SysML-Blockdiagramm</p>
+</section>
+<section id="kontext-beispiel" class="slide level3">
+<h3>Kontext (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Kontext">Beispiel</a></p>
+</section></section>
+<section>
+<section id="domäne" class="title-slide slide level2">
+<h2>Domäne</h2>
+
+</section>
+<section id="übersicht-2" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Spezifikation von fachlichen Begriffen und fachlichen Daten</li>
+<li>Modellierung der Domänendaten</li>
+<li>ER-Diagramm oder UML-Klassendiagramm</li>
+</ul>
+</section>
+<section id="domäne-beispiel" class="slide level3">
+<h3>Domäne (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Domaene">Beispiel</a></p>
+</section>
+<section id="glossar-beispiel" class="slide level3">
+<h3>Glossar (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Glossar">Beispiel</a></p>
+</section></section>
+<section>
+<section id="dynamik" class="title-slide slide level2">
+<h2>Dynamik</h2>
+
+</section>
+<section id="übersicht-3" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Modellierung von Anwendungsfällen
+<ul>
+<li>Tabellarisch</li>
+<li>UML Use Case</li>
+</ul></li>
+<li>Qualitätsanforderungen</li>
+<li>Ablaufdynamik
+<ul>
+<li>Kontrollfluss</li>
+<li>Datenfluss</li>
+<li>Zustandsmodellierung</li>
+</ul></li>
+</ul>
+</section>
+<section id="use-cases-beispiel" class="slide level3">
+<h3>Use Cases (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Anwendungsfaelle">Beispiel</a></p>
+</section>
+<section id="qualitätsanforderungen" class="slide level3">
+<h3>Qualitätsanforderungen</h3>
+<ul>
+<li>Typischerweise textuell
+<ul>
+<li>Klassisches Mittel</li>
+</ul></li>
+<li>Text kann Modelle ergänzen</li>
+<li>Manches lässt sich nicht mit Modellen ausdrücken</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<figure>
+<img data-src="../images/sd/black/BalzertAbb19.0.1.svg"
+alt="Quelle: @Balzert2010" />
+<figcaption aria-hidden="true">Quelle: <span class="citation"
+data-cites="Balzert2010">@Balzert2010</span></figcaption>
+</figure>
+</section>
+<section class="slide level3">
+
+<figure>
+<img data-src="../images/sd/black/BalzertAbb19.0.2.svg"
+alt="Quelle: @Balzert2010" />
+<figcaption aria-hidden="true">Quelle: <span class="citation"
+data-cites="Balzert2010">@Balzert2010</span></figcaption>
+</figure>
+</section>
+<section class="slide level3">
+
+<p><strong>Beispiele</strong></p>
+<p>Das System muss dem Kunden die Möglichkeit bieten, sich über Seminare
+und Veranstaltungen zu informieren.</p>
+<p>Das System muss die Kundendaten permanent speichern.</p>
+<p>Das System muss fähig sein, dem Buchhaltungssystem Rechnungsdaten
+mindestens einmal pro Tag zur Verfügung zu stellen.</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Qualitätsanforderungen (Beispiel)</strong></p>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Qualitaetsanforderungen">Beispiel</a></p>
+</section>
+<section id="ablaufdynamik-beispiel" class="slide level3">
+<h3>Ablaufdynamik (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Ablaeufe">Beispiel</a></p>
+</section></section>
+<section>
+<section id="prüfen-und-abstimmen" class="title-slide slide level2">
+<h2>Prüfen und Abstimmen</h2>
+
+</section>
+<section id="prüfkriterien" class="slide level3">
+<h3>Prüfkriterien</h3>
+<p><strong>Inhalt</strong></p>
+<p>Wurden alle relevanten Anforderungen in erforderlicher Detaillierung
+erfasst?</p>
+<p><strong>Dokumentation</strong></p>
+<p>Wurden Dokumentations- und Spezifikationsvorschriften
+eingehalten?</p>
+<p><strong>Abgestimmtheit</strong></p>
+<p>Stimmen die Stakeholder überein?</p>
+<p>Sind Konflikte aufgelöst?</p>
+</section>
+<section id="prüftechniken" class="slide level3">
+<h3>Prüftechniken</h3>
+<ul>
+<li>Reviews
+<ul>
+<li>Stellungnahme</li>
+<li>Inspektion</li>
+<li>Walkthrough</li>
+</ul></li>
+<li>Perspektivenbasiertes Lesen</li>
+<li>Prüfung durch Prototypen</li>
+<li>Einsatz von Checklisten</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Stellungnahme</strong></p>
+<ul>
+<li>Ein Dritter liest die Anforderungen gegen</li>
+<li>Suche nach Qualitätsmängeln</li>
+<li>Markierung und Erläuterung</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Inspektion</strong></p>
+<p><em>Planung</em></p>
+<ul>
+<li>Inspektionsziel</li>
+<li>Artefaktauswahl</li>
+</ul>
+<p><em>Fehlersuche</em></p>
+<ul>
+<li>Einzeln oder im Team</li>
+</ul>
+<p><em>Fehlersammlung</em></p>
+<ul>
+<li>Sammeln</li>
+<li>Konsolidieren</li>
+<li>Dokumentieren</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Walkthrough</strong></p>
+<ul>
+<li>Autor stellt Reviewern Anforderungen gemäß seiner Priorisierung und
+Sortierung vor</li>
+<li>Qualitätsmängel werden in Sitzung identifiziert und
+protokolliert</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Perspektivenbasiertes Lesen</strong></p>
+<ul>
+<li>Mehrmaliges Lesen</li>
+<li>Jeweils Fokus auf eine Perspektive
+<ul>
+<li>Kunde/Nutzer</li>
+<li>Softwarearchitekt</li>
+<li>Tester</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Prototypen</strong></p>
+<ul>
+<li>Erlebbare Anforderungen</li>
+<li>Zwei Typen</li>
+<li>Wegwerfprotoypen</li>
+<li>Evolutionäre Prototypen</li>
+<li>Prototyp deckt Teil der Anforderungen ab</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Checklisten</strong></p>
+<ul>
+<li>Fragen und Aussagen</li>
+<li>Leitfaden</li>
+</ul>
+</section></section>
+<section>
+<section id="verwaltung" class="title-slide slide level2">
+<h2>Verwaltung</h2>
+
+</section>
+<section id="grundlagen" class="slide level3">
+<h3>Grundlagen</h3>
+<ul>
+<li>Anforderungen werden in einem Textdokument oder einem
+Anforderungsmanagementtool verwaltet</li>
+<li>Neben Name und Beschreibung können verschiedene Attribute
+aufgenommen werden</li>
+</ul>
+</section>
+<section id="attribute" class="slide level3">
+<h3>Attribute</h3>
+<p>Wir nutzen folgende Attribute:</p>
+<ul>
+<li>Identifikator</li>
+<li>Name</li>
+<li>Beschreibung</li>
+<li>Quelle</li>
+<li>Priorität
+<ul>
+<li>Mandatory</li>
+<li>Nice-to-have</li>
+<li>Optional</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level3">
+
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attributtyp</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Version</td>
+<td>Aktueller Versionsstand</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td>Autor(in) der Anforderung</td>
+</tr>
+<tr class="odd">
+<td>Begründung</td>
+<td>Beschreibt, weshalb die Anforderung für das System von Bedeutung
+ist</td>
+</tr>
+<tr class="even">
+<td>Stabilität</td>
+<td>Werden noch Änderungen erwartet? Z.B. fest, gefestigt oder
+volatil</td>
+</tr>
+<tr class="odd">
+<td>Kritikalität</td>
+<td>Risiken (Schadenhöhe / Eintrittswahrscheinlichkeit)</td>
+</tr>
+</tbody>
+</table>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

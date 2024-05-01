@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="140px" preserveAspectRatio="none" style="width:357px;height:140px;background:#000000;" version="1.1" viewBox="0 0 357 140" width="357px" zoomAndPan="magnify"><defs><filter height="300%" id="f1650aach6m445" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3fc59b17a2df0e8aa43d25b99d46893c]
+cluster User Interface--><rect fill="#000000" filter="url(#f1650aach6m445)" height="93" style="stroke: #FFFFFF; stroke-width: 1.5;" width="98" x="22" y="30"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="82" x="30" y="41.2402">User Interface</text><!--MD5=[64ded33063b381d0c076867f0602b0cd]
+cluster Core Ports (driving)--><rect fill="#000000" filter="url(#f1650aach6m445)" height="105" style="stroke: #FFFFFF; stroke-width: 1.5;" width="202" x="144" y="24"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="112" x="189" y="35.2402">Core Ports (driving)</text><!--MD5=[c045e12321b83266d36d22b9096c24ea]
+class View--><rect fill="#070707" filter="url(#f1650aach6m445)" height="46" id="View" style="stroke: #C7C7C7; stroke-width: 1.5;" width="57" x="46.5" y="61"/><ellipse cx="60.5" cy="76" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M62.334,80.248 Q61.9238,80.459 61.4727,80.5645 Q61.0215,80.6699 60.5234,80.6699 Q58.7539,80.6699 57.8223,79.5039 Q56.8906,78.3379 56.8906,76.1348 Q56.8906,73.9258 57.8223,72.7598 Q58.7539,71.5938 60.5234,71.5938 Q61.0215,71.5938 61.4785,71.6992 Q61.9355,71.8047 62.334,72.0156 L62.334,73.9375 Q61.8887,73.5273 61.4697,73.3369 Q61.0508,73.1465 60.6055,73.1465 Q59.6563,73.1465 59.1729,73.8994 Q58.6895,74.6523 58.6895,76.1348 Q58.6895,77.6113 59.1729,78.3643 Q59.6563,79.1172 60.6055,79.1172 Q61.0508,79.1172 61.4697,78.9268 Q61.8887,78.7363 62.334,78.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="73.5" y="79.2402">View</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="47.5" x2="102.5" y1="91" y2="91"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="47.5" x2="102.5" y1="99" y2="99"/><!--MD5=[06e48cd7e9da3e1a2b98125e6afa94c0]
+class GetAnswerCommand--><rect fill="#070707" filter="url(#f1650aach6m445)" height="58" id="GetAnswerCommand" style="stroke: #C7C7C7; stroke-width: 1.5;" width="169" x="160.5" y="55"/><ellipse cx="184.4" cy="70" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M181.9078,67.2754 L181.9078,65.752 L187.1168,65.752 L187.1168,67.2754 L185.3766,67.2754 L185.3766,72.9766 L187.1168,72.9766 L187.1168,74.5 L181.9078,74.5 L181.9078,72.9766 L183.648,72.9766 L183.648,67.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="117" x="199.6" y="73.2402">GetAnswerCommand</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161.5" x2="328.5" y1="85" y2="85"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="161.5" x2="328.5" y1="93" y2="93"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="157" x="166.5" y="106.2402">String Execute(String inDTO)</text><!--MD5=[81a0f90ba04c15b77da761fb521b6b96]
+link View to GetAnswerCommand--><path d="M103.55,84 C120.75,84 137.94,84 155.13,84 " fill="none" id="View-&gt;GetAnswerCommand" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="160.46,84,151.46,80,155.46,84,151.46,88,160.46,84" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[72754a8ff826da7c0d5c348352ac9c7d]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+package "User Interface" <<Rectangle>> {
+    class View
+}
+
+package "Core Ports (driving)" <<Rectangle>> {
+    interface GetAnswerCommand {
+            {method} String Execute(String inDTO)
+    }
+
+}
+
+View -> GetAnswerCommand
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.11+9
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

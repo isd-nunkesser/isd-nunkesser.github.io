@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="459px" preserveAspectRatio="none" style="width:268px;height:459px;background:#000000;" version="1.1" viewBox="0 0 268 459" width="268px" zoomAndPan="magnify"><defs/><g><rect fill="#000000" height="10" style="stroke:#00000000;stroke-width:1.0;" width="76" x="184" y="5"/><text fill="#777777" font-family="Helvetica" font-size="10" lengthAdjust="spacing" textLength="76" x="184" y="12.7002">SCR01 Example</text><rect fill="#000000" height="26.2969" style="stroke:#00000000;stroke-width:1.0;" width="190.6667" x="37.1667" y="21"/><path d="M47.8333,29.4635 L43.1667,34.1302 L47.8333,38.7969 L49.5833,37.0469 L46.6667,34.1302 L49.5833,31.2135 L47.8333,29.4635 " fill="#FFFFFF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="4" x="53.5" y="39.0771"> </text><text fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="57.5" y="38.9951">      </text><text fill="#FFFFFF" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="30" x="109.5" y="39.0771">Title</text><text fill="#FFFFFF" font-family="monospace" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="64" x="143.5" y="38.9951">        </text><text fill="#FFFFFF" font-family="Helvetica" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="4" x="207.5" y="39.0771"> </text><path d="M216,29.4635 C215.3583,29.4635 214.8333,29.9885 214.8333,30.6302 C214.8333,31.2719 215.3583,31.7969 216,31.7969 C216.6417,31.7969 217.1667,31.2719 217.1667,30.6302 C217.1667,29.9885 216.6417,29.4635 216,29.4635 M214.25,32.3802 C213.2817,32.3802 212.5,33.1619 212.5,34.1302 L213.6667,34.1302 C213.6667,33.8035 213.9233,33.5469 214.25,33.5469 C214.5767,33.5469 214.8333,33.8035 214.8333,34.1302 C214.8333,34.4569 213.6667,36.0435 213.6667,37.0469 C213.6667,38.0502 214.4483,38.7969 215.4167,38.7969 C216.385,38.7969 217.1667,38.0152 217.1667,37.0469 L216,37.0469 C216,37.3735 215.7433,37.6302 215.4167,37.6302 C215.09,37.6302 214.8333,37.3735 214.8333,37.0469 C214.8333,36.6269 216,34.9002 216,34.1302 C216,33.1852 215.2183,32.3802 214.25,32.3802 " fill="#FFFFFF" style="stroke:;stroke-width:0.0;stroke-dasharray:;"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="30" x="7" y="212.0938">Login</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="50" x="67" y="212.0938">MyName</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="65" x2="140" y1="214.625" y2="214.625"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="65" x2="65" y1="211.625" y2="213.625"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="140" x2="140" y1="211.625" y2="213.625"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="55" x="7" y="230.2266">Password</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="24" x="67" y="230.2266">****</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="65" x2="140" y1="232.7578" y2="232.7578"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="65" x2="65" y1="229.7578" y2="231.7578"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="140" x2="140" y1="229.7578" y2="231.7578"/><rect fill="#111111" height="18.1328" rx="5" ry="5" style="stroke:#FFFFFF;stroke-width:2.5;" width="36" x="9.5" y="239.2578"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="28" x="13.5" y="252.8594">Send</text><text fill="#FFFFFF" font-family="sans-serif" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="35" x="12" y="437.8203">Tab 1</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="6" x2="6" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="6" x2="50" y1="426.2188" y2="426.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="50" x2="50" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="50" x2="60" y1="440.3516" y2="440.3516"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="62" y="437.8203">Tab 2</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="60" x2="60" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="60" x2="100" y1="426.2188" y2="426.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="100" x2="100" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="100" x2="110" y1="440.3516" y2="440.3516"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="112" y="437.8203">Tab 3</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="110" x2="110" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="110" x2="150" y1="426.2188" y2="426.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="150" x2="150" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="150" x2="160" y1="440.3516" y2="440.3516"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="162" y="437.8203">Tab 4</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="160" x2="160" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="160" x2="200" y1="426.2188" y2="426.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="200" x2="200" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="200" x2="210" y1="440.3516" y2="440.3516"/><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="35" x="212" y="437.8203">Tab 5</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="210" x2="210" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="210" x2="250" y1="426.2188" y2="426.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="250" x2="250" y1="426.2188" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="250" x2="260" y1="440.3516" y2="440.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="261" y1="53.2969" y2="53.2969"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="261" y1="441.3516" y2="441.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="53.2969" y2="423.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="261" x2="261" y1="423.2188" y2="425.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="261" x2="261" y1="53.2969" y2="423.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="425.2188" y2="441.3516"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="5" x2="5" y1="423.2188" y2="425.2188"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="261" x2="261" y1="425.2188" y2="441.3516"/><rect fill="#000000" height="10" style="stroke:#00000000;stroke-width:1.0;" width="127" x="69" y="441.3516"/><text fill="#777777" font-family="Helvetica" font-size="10" lengthAdjust="spacing" textLength="127" x="69" y="449.0518">Low-fi prototype (wireframe)</text><!--MD5=[767e5f31d3996b74d0305b6665191a69]
+@startsalt
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+title <&chevron-left> ""      "" Title ""        "" <&info>
+header SCR01 Example
+footer Low-fi prototype (wireframe)
+{+
+{
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+  Login    | "MyName   "
+  Password | "****     "
+  [Send]   | .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .
+    .    
+}
+{
+
+}
+{/ <b> Tab 1 | Tab 2 | Tab 3 | Tab 4  | Tab 5 }
+}
+
+@endsalt
+
+PlantUML version 1.2022.2(Sat Mar 05 17:30:19 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

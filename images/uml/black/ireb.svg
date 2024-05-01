@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="397px" preserveAspectRatio="none" style="width:280px;height:397px;background:#000000;" version="1.1" viewBox="0 0 280 397" width="280px" zoomAndPan="magnify"><defs><filter height="300%" id="f1bsb592i64ppf" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><ellipse cx="185" cy="18" fill="#FFFFFF" filter="url(#f1bsb592i64ppf)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#070707" filter="url(#f1bsb592i64ppf)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="156" x="107" y="69"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="136" x="117" y="88.2402">Eingabemaske anzeigen</text><rect fill="#070707" filter="url(#f1bsb592i64ppf)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="108" x="131" y="142"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="88" x="141" y="161.2402">Daten eingeben</text><polygon fill="#070707" filter="url(#f1bsb592i64ppf)" points="137,215,149,227,137,239,125,227,137,215" style="stroke: #C7C7C7; stroke-width: 1.5;"/><rect fill="#070707" filter="url(#f1bsb592i64ppf)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="110" x="6" y="293"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="16" y="312.2402">Daten speichern</text><ellipse cx="61" cy="376" fill="none" filter="url(#f1bsb592i64ppf)" rx="10" ry="10" style="stroke: #FFFFFF; stroke-width: 1.0;"/><ellipse cx="61.5" cy="376.5" fill="#FFFFFF" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><rect fill="#070707" filter="url(#f1bsb592i64ppf)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="113" x="156.5" y="293"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="93" x="166.5" y="312.2402">Fehler ausgeben</text><!--MD5=[f6d6c8d31d56cb099beb23ae33e28f70]
+link start to Eingabemaske anzeigen--><path d="M185,28.1759 C185,37.5725 185,51.8298 185,63.7121 " fill="none" id="start-&gt;Eingabemaske anzeigen" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="185,68.9784,189,59.9784,185,63.9784,181,59.9784,185,68.9784" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[d0f6ad0bc0f984cc7ec89adfc4854f55]
+link Eingabemaske anzeigen to Daten eingeben--><path d="M185,101.2011 C185,111.6917 185,125.4627 185,136.8176 " fill="none" id="Eingabemaske anzeigen-&gt;Daten eingeben" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="185,141.8442,189,132.8442,185,136.8442,181,132.8442,185,141.8442" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[31e8d9adfd375a83913b8ef8d77777df]
+link Daten eingeben to #7--><path d="M173.8672,174.0034 C164.9677,186.7965 152.7168,204.4071 144.827,215.7487 " fill="none" id="Daten eingeben-&gt;#7" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="141.9336,219.9079,150.3567,214.8039,144.7889,215.8033,143.7895,210.2355,141.9336,219.9079" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="156.8435" y="212.3204">Daten prüfen</text><!--MD5=[82637680990ee97290a4e76754df558a]
+link #7 to Daten speichern--><path d="M125.8042,227.9622 C108.4579,230.1246 75.571,237.0549 61,259 C55.4901,267.2983 54.9198,278.2034 55.9678,287.7109 " fill="none" id="#7-&gt;Daten speichern" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="56.6954,292.8237,59.3873,283.3498,55.9908,287.8736,51.4671,284.4772,56.6954,292.8237" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="49" x="62" y="269.2402">Daten ok</text><!--MD5=[e0d05ff1061fe4984a016b1472c75c02]
+link Daten speichern to end--><path d="M61,325.2188 C61,336.0361 61,350.1638 61,360.7707 " fill="none" id="Daten speichern-&gt;end" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="61,365.9604,65,356.9604,61,360.9604,57,356.9604,61,365.9604" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[cd3375fe399e007493338738eea30cfc]
+link #7 to Fehler ausgeben--><path d="M134.2017,236.6296 C131.9194,246.5508 130.0817,262.0677 137,273 C141.3965,279.9473 147.5362,285.5801 154.4394,290.1406 " fill="none" id="#7-&gt;Fehler ausgeben" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="158.8276,292.8438,153.2629,284.7176,154.5706,290.2213,149.0669,291.5289,158.8276,292.8438" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="78" x="138" y="269.2402">Daten nicht ok</text><!--MD5=[fa78a7f338e1fbfc5ee8fe68b36a3bb1]
+link Fehler ausgeben to Daten eingeben--><path d="M216.7374,292.7254 C218.4661,282.9186 219.7833,270.1999 218,259 C213.4541,230.4498 202.1067,199.004 193.989,178.9075 " fill="none" id="Fehler ausgeben-&gt;Daten eingeben" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="192.0009,174.0514,191.7093,183.8959,193.8954,178.6786,199.1128,180.8647,192.0009,174.0514" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[aa9a55055ba150669a450bc06c9087b6]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+(*) - -> "Eingabemaske anzeigen"
+- -> "Daten eingeben"
+if "Daten prüfen" then
+  - ->[Daten ok] "Daten speichern"
+  - -> (*)
+else
+  - ->[Daten nicht ok] "Fehler ausgeben"
+  - ->"Daten eingeben"
+endif
+
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_131-b11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

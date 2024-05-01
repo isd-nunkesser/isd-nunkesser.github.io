@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="27px" preserveAspectRatio="none" style="width:345px;height:27px;background:#000000;" version="1.1" viewBox="0 0 345 27" width="345px" zoomAndPan="magnify"><defs/><g><text fill="#FFFFFF" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="254" x="9" y="17.6016">Einfabefelder dienen dazu Text einzugeben</text><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="7" x2="338" y1="20.1328" y2="20.1328"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="7" x2="7" y1="17.1328" y2="19.1328"/><line style="stroke:#FFFFFF;stroke-width:1.0;" x1="338" x2="338" y1="17.1328" y2="19.1328"/><!--MD5=[d64d6068b300792058d3765d15e683bc]
+@startsalt
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+{
+    "Einfabefelder dienen dazu Text einzugeben"
+}
+@endsalt
+
+PlantUML version 1.2022.2(Sat Mar 05 17:30:19 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

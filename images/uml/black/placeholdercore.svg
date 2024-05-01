@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="516px" preserveAspectRatio="none" style="width:535px;height:516px;background:#000000;" version="1.1" viewBox="0 0 535 516" width="535px" zoomAndPan="magnify"><defs><filter height="300%" id="fpp75rk5rb4dc" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ea52431d0583b5fee2e33fda93c23c35]
+cluster Core Ports--><rect fill="#000000" filter="url(#fpp75rk5rb4dc)" height="352" style="stroke: #FFFFFF; stroke-width: 1.5;" width="502" x="22" y="153"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="62" x="242" y="164.2402">Core Ports</text><!--MD5=[706e293e40b9975d54157de39c026966]
+cluster driving--><rect fill="#000000" filter="url(#fpp75rk5rb4dc)" height="265" style="stroke: #FFFFFF; stroke-width: 1.5;" width="230" x="270" y="216"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="39" x="365.5" y="227.2402">driving</text><!--MD5=[3b07e60f83c52c509f9a621f74a135ae]
+cluster driven--><rect fill="#000000" filter="url(#fpp75rk5rb4dc)" height="153" style="stroke: #FFFFFF; stroke-width: 1.5;" width="200" x="46" y="192"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="36" x="128" y="203.2402">driven</text><!--MD5=[2c2e2644034c00788261e03c85b06837]
+cluster Core--><rect fill="#000000" filter="url(#fpp75rk5rb4dc)" height="105" style="stroke: #FFFFFF; stroke-width: 1.5;" width="212" x="159" y="24"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="28" x="251" y="35.2402">Core</text><!--MD5=[9bb0bdd047fba1a3c8d48282c35b4537]
+class Post--><rect fill="#070707" filter="url(#fpp75rk5rb4dc)" height="94" id="Post" style="stroke: #C7C7C7; stroke-width: 1.5;" width="72" x="146" y="389"/><ellipse cx="168.1" cy="404" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M165.6078,401.2754 L165.6078,399.752 L170.8168,399.752 L170.8168,401.2754 L169.0766,401.2754 L169.0766,406.9766 L170.8168,406.9766 L170.8168,408.5 L165.6078,408.5 L165.6078,406.9766 L167.348,406.9766 L167.348,401.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="24" x="182.9" y="407.2402">Post</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="147" x2="217" y1="419" y2="419"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="50" x="152" y="432.2402">int userId</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="152" y="444.2402">int id</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="52" x="152" y="456.2402">string title</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="152" y="468.2402">string body</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="147" x2="217" y1="475" y2="475"/><!--MD5=[9b64f1979d1dc2875c36a5e2319f42c6]
+class GetPostDTO--><rect fill="#070707" filter="url(#fpp75rk5rb4dc)" height="58" id="GetPostDTO" style="stroke: #C7C7C7; stroke-width: 1.5;" width="98" x="336" y="407"/><ellipse cx="350" cy="422" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M347.5078,419.2754 L347.5078,417.752 L352.7168,417.752 L352.7168,419.2754 L350.9766,419.2754 L350.9766,424.9766 L352.7168,424.9766 L352.7168,426.5 L347.5078,426.5 L347.5078,424.9766 L349.248,424.9766 L349.248,419.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="68" x="363" y="425.2402">GetPostDTO</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="337" x2="433" y1="437" y2="437"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="342" y="450.2402">int id</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="337" x2="433" y1="457" y2="457"/><!--MD5=[675bd7f72210747324e62440ce48d103]
+class GetPostCommand--><rect fill="#070707" filter="url(#fpp75rk5rb4dc)" height="58" id="GetPostCommand" style="stroke: #C7C7C7; stroke-width: 1.5;" width="197" x="286.5" y="247"/><ellipse cx="331" cy="262" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M328.5078,259.2754 L328.5078,257.752 L333.7168,257.752 L333.7168,259.2754 L331.9766,259.2754 L331.9766,264.9766 L333.7168,264.9766 L333.7168,266.5 L328.5078,266.5 L328.5078,264.9766 L330.248,264.9766 L330.248,259.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="100" x="350" y="265.2402">GetPostCommand</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="287.5" x2="482.5" y1="277" y2="277"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="287.5" x2="482.5" y1="285" y2="285"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="185" x="292.5" y="298.2402">Post Execute(GetPostDTO inDTO)</text><!--MD5=[0f497c5fd98558ce34baece1687c05d0]
+class PostCrudRepository--><rect fill="#070707" filter="url(#fpp75rk5rb4dc)" height="106" id="PostCrudRepository" style="stroke: #C7C7C7; stroke-width: 1.5;" width="167" x="62.5" y="223"/><ellipse cx="88.65" cy="238" fill="#4E4E4E" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M86.1578,235.2754 L86.1578,233.752 L91.3668,233.752 L91.3668,235.2754 L89.6266,235.2754 L89.6266,240.9766 L91.3668,240.9766 L91.3668,242.5 L86.1578,242.5 L86.1578,240.9766 L87.898,240.9766 L87.898,235.2754 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="110" x="104.35" y="241.2402">PostCrudRepository</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="63.5" x2="228.5" y1="253" y2="253"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="63.5" x2="228.5" y1="261" y2="261"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="108" x="68.5" y="274.2402">int create(Post post)</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="102" x="68.5" y="286.2402">Post retrieve(int id)</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="68.5" y="298.2402">Post[] retrieveAll()</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="155" x="68.5" y="310.2402">bool update(int id, Post post)</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95" x="68.5" y="322.2402">bool delete(int id)</text><!--MD5=[a3624a2a5a43b8ade92fe710669ccfb9]
+class CommandHandler--><rect fill="#070707" filter="url(#fpp75rk5rb4dc)" height="58" id="CommandHandler" style="stroke: #C7C7C7; stroke-width: 1.5;" width="179" x="175.5" y="55"/><ellipse cx="211.55" cy="70" fill="#3D3D3D" rx="10" ry="10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><path d="M213.384,74.248 Q212.9738,74.459 212.5227,74.5645 Q212.0715,74.6699 211.5734,74.6699 Q209.8039,74.6699 208.8723,73.5039 Q207.9406,72.3379 207.9406,70.1348 Q207.9406,67.9258 208.8723,66.7598 Q209.8039,65.5938 211.5734,65.5938 Q212.0715,65.5938 212.5285,65.6992 Q212.9855,65.8047 213.384,66.0156 L213.384,67.9375 Q212.9387,67.5273 212.5197,67.3369 Q212.1008,67.1465 211.6555,67.1465 Q210.7063,67.1465 210.2229,67.8994 Q209.7395,68.6523 209.7395,70.1348 Q209.7395,71.6113 210.2229,72.3643 Q210.7063,73.1172 211.6555,73.1172 Q212.1008,73.1172 212.5197,72.9268 Q212.9387,72.7363 213.384,72.3262 Z "/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="229.45" y="73.2402">GetPostCommand</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="176.5" x2="353.5" y1="85" y2="85"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="167" x="181.5" y="98.2402">PostCrudRepository repository</text><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="176.5" x2="353.5" y1="105" y2="105"/><!--MD5=[e8e7f61612d04e36490d057e16c8c8d3]
+link CommandHandler to GetPostCommand--><path d="M282.71,113.04 C302.12,143.77 333.54,193.52 356.44,229.78 " fill="none" id="CommandHandler-&gt;GetPostCommand" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="none" points="362.46,226.2,367.22,246.85,350.62,233.68,362.46,226.2" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[91a5ece5ede60c5c5194ce892de6026b]
+link CommandHandler to PostCrudRepository--><path d="M247.44,113.04 C230.18,140.6 203.33,183.46 181.59,218.17 " fill="none" id="CommandHandler-&gt;PostCrudRepository" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="178.7,222.79,186.8753,217.2978,181.3603,218.5564,180.1016,213.0414,178.7,222.79" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[a35c842d697776e3fbe01265e4d4dd05]
+link GetPostCommand to GetPostDTO--><path d="M385,305.25 C385,334.01 385,378.33 385,407 " fill="none" id="GetPostCommand-GetPostDTO" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[f1456337d8d36264b091e6c95c407ce7]
+link PostCrudRepository to Post--><path d="M157.89,329.17 C162.29,348.5 167.25,370.25 171.52,388.99 " fill="none" id="PostCrudRepository-Post" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[f17f0b4b6650044d4ddff34ffe1e7572]
+link GetPostCommand to Post--><path d="M348.71,305.25 C311.87,333.92 255.17,378.05 218.32,406.73 " fill="none" id="GetPostCommand-Post" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[70f36780d3c380c6c45eabe0a4113a0c]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+package "Core Ports" <<Rectangle>> {
+
+interface Post {
+            int userId
+            int id
+            string title
+            string body
+        }
+
+package "driving" <<Rectangle>> {
+    interface GetPostDTO {
+        int id
+    }
+
+    interface GetPostCommand {
+            {method} Post Execute(GetPostDTO inDTO)
+    }
+
+}
+
+package "driven" <<Rectangle>> {
+        interface PostCrudRepository {
+            int create(Post post)
+            Post retrieve(int id)
+            Post[] retrieveAll()
+            bool update(int id, Post post)
+            bool delete(int id)
+        }
+
+        
+
+}
+
+}
+
+package "Core" <<Rectangle>> {
+    class "GetPostCommand" as CommandHandler {
+        PostCrudRepository repository
+    }
+}
+
+
+CommandHandler ..|> GetPostCommand
+CommandHandler -> PostCrudRepository
+GetPostCommand - - GetPostDTO
+PostCrudRepository - - Post
+GetPostCommand - - Post
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.11+9
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

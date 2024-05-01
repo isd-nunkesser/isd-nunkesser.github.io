@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="253px" preserveAspectRatio="none" style="width:973px;height:253px;background:#000000;" version="1.1" viewBox="0 0 973 253" width="973px" zoomAndPan="magnify"><defs><filter height="300%" id="f1fq35nqitxz76" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[06d07874b31b21c282b1021122bda260]
+cluster Drivers--><polygon fill="#000000" filter="url(#f1fq35nqitxz76)" points="46,48,95,48,102,66,412,66,412,149,46,149,46,48" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="46" x2="102" y1="66" y2="66"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="43" x="50" y="59.2402">Drivers</text><!--MD5=[600c2d25b6889bd4e9f6b335204b22ae]
+cluster Repositories--><polygon fill="#000000" filter="url(#f1fq35nqitxz76)" points="484,48,563,48,570,66,779,66,779,149,484,149,484,48" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="484" x2="570" y1="66" y2="66"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73" x="488" y="59.2402">Repositories</text><!--MD5=[53ba0ddcec6794c4f9d74cb44eabf6fa]
+cluster Recipients--><polygon fill="#000000" filter="url(#f1fq35nqitxz76)" points="803,54,870,54,877,72,951,72,951,143,803,143,803,54" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="803" x2="877" y1="72" y2="72"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="61" x="807" y="65.2402">Recipients</text><!--MD5=[bb43fed0355d2978b15bda6e6cce9ebb]
+entity Driving--><ellipse cx="247" cy="214" fill="#070707" filter="url(#f1fq35nqitxz76)" rx="8" ry="8" style="stroke: #C7C7C7; stroke-width: 2.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="73" x="210.5" y="240.2402">user-side API</text><!--MD5=[6e8f311b0aa23032184ffba0ef926f91]
+entity App--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="120" x="300" y="193"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="400" y="198"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="398" y="200"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="398" y="204"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="315" y="222.2402">Application (⬡)</text><!--MD5=[b0e030f3e256b43c4b7dd026d36d7879]
+entity Driving1--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="54" style="stroke: #C7C7C7; stroke-width: 1.5;" width="82" x="314" y="79"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="376" y="84"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="374" y="86"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="374" y="90"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="19" x="329" y="108.2402">test</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="329" y="120.2402">adapter</text><!--MD5=[3ed75d6845a22af3be63ef3e56177bb6]
+entity Driving2--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="54" style="stroke: #C7C7C7; stroke-width: 1.5;" width="82" x="197" y="79"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="259" y="84"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="257" y="86"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="257" y="90"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="21" x="212" y="108.2402">GUI</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="212" y="120.2402">adapter</text><!--MD5=[0bc1052a1e4bebdac1099d1026b82c35]
+entity Driving4--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="54" style="stroke: #C7C7C7; stroke-width: 1.5;" width="100" x="62" y="79"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="142" y="84"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="140" y="86"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="140" y="90"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="77" y="108.2402">app-to-app</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="42" x="77" y="120.2402">adapter</text><!--MD5=[b8eecc5505328a1a95b701fe59b60f16]
+entity Driven1--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="54" style="stroke: #C7C7C7; stroke-width: 1.5;" width="98" x="665" y="79"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="743" y="84"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="741" y="86"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="741" y="90"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="58" x="680" y="108.2402">DB access</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="680" y="120.2402">service</text><!--MD5=[743d106cb66e2d8dd364355c67af4ddb]
+entity Driven2--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="54" style="stroke: #C7C7C7; stroke-width: 1.5;" width="130" x="500" y="79"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="610" y="84"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="608" y="86"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="608" y="90"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="515" y="108.2402">mock in-memory</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="51" x="515" y="120.2402">database</text><!--MD5=[4a7d72b5eeedec09c9886ee04cf8647c]
+entity Driven3--><rect fill="#070707" filter="url(#f1fq35nqitxz76)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="115" x="819.5" y="85"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="914.5" y="90"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="912.5" y="92"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="912.5" y="96"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="75" x="834.5" y="114.2402">email adapter</text><!--MD5=[db05737de18a9815a6f24b3043bc4640]
+entity Driven--><ellipse cx="565" cy="214" fill="#070707" filter="url(#f1fq35nqitxz76)" rx="8" ry="8" style="stroke: #C7C7C7; stroke-width: 2.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="523.5" y="240.2402">data-side API 1</text><!--MD5=[88c220d709daf9900230763333aa5e23]
+entity DrivenAPI--><ellipse cx="747" cy="214" fill="#070707" filter="url(#f1fq35nqitxz76)" rx="8" ry="8" style="stroke: #C7C7C7; stroke-width: 2.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="705.5" y="240.2402">data-side API 2</text><!--MD5=[6b52e4b98c300f7cce481d25e6e8cff6]
+link Driving to App--><path d="M256.27,214 C270.72,214 285.17,214 299.63,214 " fill="none" id="Driving-App" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[9b2abd11eb941d941ef42215a20448c5]
+link Driven to App--><path d="M555.94,214 C510.65,214 465.35,214 420.06,214 " fill="none" id="Driven-App" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[72e1e6c18e87633534725fc509b779bb]
+link DrivenAPI to App--><path d="M737.71,212.02 C711.95,206.66 637.36,191.89 574.5,187 C522.3,182.94 463.29,191.32 420.4,199.79 " fill="none" id="DrivenAPI-App" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[cbe7e1318fcf278d7ededeb2d8ecf657]
+link Driving1 to Driving--><path d="M337.85,133.11 C327.19,148.16 312.58,166.84 297,181 C285.89,191.1 271.23,200.07 260.66,205.92 " fill="none" id="Driving1-&gt;Driving" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="256.12,208.38,265.9384,207.6065,260.5155,205.9967,262.1252,200.5738,256.12,208.38" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[b9aedeeeef21ac9ed156df53edee5d35]
+link Driving2 to Driving--><path d="M240.22,133.2 C242.02,154.35 244.47,183.23 245.88,199.82 " fill="none" id="Driving2-&gt;Driving" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="246.32,204.95,249.561,195.6497,245.906,199.9672,241.5885,196.3121,246.32,204.95" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[1c127ffe492432a2bafec8fb79700e37]
+link Driving4 to Driving--><path d="M131.95,133.33 C144.51,148.64 161.76,167.52 180,181 C196.62,193.28 218.7,202.73 232.88,208.08 " fill="none" id="Driving4-&gt;Driving" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="237.72,209.86,230.6539,202.9993,233.0273,208.1341,227.8925,210.5076,237.72,209.86" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[82167ebbc0adc8fc0b92047fe398bf12]
+link Driven1 to Driven--><path d="M695.7,133.17 C683.65,148.8 666.69,168.07 648,181 C626.25,196.05 596.45,205.29 579.11,209.75 " fill="none" id="Driven1-&gt;Driven" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="574.15,210.98,583.8467,212.7046,579.0041,209.7808,581.9279,204.9381,574.15,210.98" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[e20c6956e8355f265b80be456d069225]
+link Driven2 to Driven--><path d="M565,133.2 C565,154.35 565,183.23 565,199.82 " fill="none" id="Driven2-&gt;Driven" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="565,204.95,569,195.95,565,199.95,561,195.95,565,204.95" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[1138bba1ab0db7dd9ff6681298fb72f6]
+link Driven3 to DrivenAPI--><path d="M852.24,127.19 C824.89,149.49 781.87,184.57 760.29,202.17 " fill="none" id="Driven3-&gt;DrivenAPI" style="stroke: #C7C7C7; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#C7C7C7" points="756.27,205.44,765.7727,202.852,760.1449,202.28,760.7168,196.6522,756.27,205.44" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[de80eb8b99049d42b96f998ecb3f43ff]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+together {
+package "Drivers" {
+component Driving1 [
+test 
+adapter
+] 
+component Driving2 [
+GUI
+adapter
+] 
+component Driving4 [
+app-to-app 
+adapter
+] 
+}
+() "user-side API" as Driving
+
+component App [
+Application (⬡)
+]
+}
+
+() "data-side API 1" as Driven
+() "data-side API 2" as DrivenAPI
+
+together {
+package "Repositories" {
+component Driven1 [
+DB access
+service
+] 
+
+component Driven2 [
+mock in-memory
+database
+] 
+}
+
+package "Recipients" {
+    component Driven3 [
+        email adapter
+    ]
+}
+}
+Driving - App
+Driven - App
+DrivenAPI - App
+Driving1 ..> Driving 
+Driving2 ..> Driving 
+Driving4 ..> Driving 
+Driven1 ..> Driven
+Driven2 ..> Driven
+Driven3 ..> DrivenAPI
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.11+9
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="275px" preserveAspectRatio="none" style="width:603px;height:275px;background:#000000;" version="1.1" viewBox="0 0 603 275" width="603px" zoomAndPan="magnify"><defs><filter height="300%" id="ffxk5su0wu28f" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[fd5897a013ba4b26a7024f7f2625a1f7]
+cluster Tabs--><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="81" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="393" x="198" y="67"/><rect fill="#000000" height="53" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.0;" width="387" x="201" y="92"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="198" x2="591" y1="89" y2="89"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="27" x="381" y="80.2402">Tabs</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="82" x="501" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="501" x2="583" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="511" y="104.2402">Stop Watch</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="86" x="380" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="380" x2="466" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="66" x="390" y="104.2402">World Clock</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="51" x="293.5" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="293.5" x2="344.5" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="303.5" y="104.2402">Timer</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="52" x="206" y="90"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="206" x2="258" y1="112" y2="112"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="32" x="216" y="104.2402">Alarm</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="82" x="6" y="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="6" x2="88" y1="248" y2="248"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="16" y="228.2402">&lt;&lt;modal&gt;&gt;</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="60" x="17" y="240.2402">New Alarm</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="96" x="123" y="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="123" x2="219" y1="248" y2="248"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="76" x="133" y="228.2402">&lt;&lt;webview&gt;&gt;</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="26" x="158" y="240.2402">Help</text><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="102" x="254" y="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="254" x2="356" y1="248" y2="248"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="62" x="274" y="228.2402">&lt;&lt;modal&gt;&gt;</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="264" y="240.2402">Choose Sound</text><ellipse cx="423" cy="18" fill="#FFFFFF" filter="url(#ffxk5su0wu28f)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#070707" filter="url(#ffxk5su0wu28f)" height="50" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="64" x="403" y="214"/><line style="stroke: #C7C7C7; stroke-width: 1.5;" x1="403" x2="467" y1="236" y2="236"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="44" x="413" y="228.2402">Settings</text><!--MD5=[6eddd5bed8ee1426b8bc3e0d91e0bfcd]
+link *start to WorldClock--><path d="M423,28.0154 C423,41.2004 423,64.9762 423,84.342 " fill="none" id="*start-&gt;WorldClock" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="423,89.6747,427,80.6747,423,84.6747,419,80.6747,423,89.6747" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[d904c2471e624dc483eed73a9dbb3da3]
+link Alarm to NewAlarm--><path d="M205.7582,119.2533 C174.1902,125.5351 121.0734,139.9564 86,170 C73.9004,180.3644 64.768,195.4677 58.3938,208.9032 " fill="none" id="Alarm-&gt;NewAlarm" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="56.1698,213.7658,63.5507,207.2448,58.2494,209.2188,56.2754,203.9175,56.1698,213.7658" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="83" x="87" y="180.2402">tap[Add Button]</text><!--MD5=[695a57ddcc3505855df12ea9534216b5]
+link Alarm to Help--><path d="M205.7856,138.5512 C197.2559,147.5732 188.5623,158.4846 183,170 C177.262,181.8793 174.2322,196.0835 172.6458,208.508 " fill="none" id="Alarm-&gt;Help" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="172.0506,213.7119,177.0476,205.2248,172.6189,208.7443,169.0994,204.3156,172.0506,213.7119" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="184" y="180.2402">select[Help]</text><!--MD5=[3c21fcb6746f716f4fa6c6eefe3e0390]
+link Alarm to Settings--><path d="M258.282,137.5917 C263.8578,141.5361 269.908,145.2497 276,148 C319.8531,167.7981 341.2399,144.4329 382,170 C397.4234,179.6744 410.0722,195.5346 419.1401,209.6111 " fill="none" id="Alarm-&gt;Settings" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="421.8384,213.9136,420.4453,204.1638,419.1818,209.6777,413.6679,208.4143,421.8384,213.9136" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="400" y="180.2402">select[Settings]</text><!--MD5=[1ceaea411eda308dafc35a4cb1e09401]
+link Alarm to ChooseSound--><path d="M246.7726,140.0933 C258.5968,160.1781 275.2038,188.3873 287.658,209.5423 " fill="none" id="Alarm-&gt;ChooseSound" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="290.2493,213.9441,289.1302,204.159,287.7126,209.6354,282.2362,208.2178,290.2493,213.9441" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="101" x="272" y="180.2402">tap[Current sound]</text><!--MD5=[077ab6ed8c2c51f0456671c515cd5164]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+state "<<modal>>\nNew Alarm" as NewAlarm
+state "<<webview>>\nHelp" as Help
+state "<<modal>>\nChoose Sound" as ChooseSound
+
+state Tabs {
+state "Stop Watch" as StopWatch
+state "World Clock" as WorldClock
+state Timer
+state Alarm
+}
+[*] - -> WorldClock
+Alarm - -> NewAlarm : tap[Add Button]
+Alarm - -> Help : select[Help]
+Alarm - -> Settings : select[Settings]
+Alarm - -> ChooseSound : tap[Current sound]
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_131-b11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

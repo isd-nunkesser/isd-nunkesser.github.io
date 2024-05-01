@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Technik und Architektur</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Technik und Architektur</h1>
+</section>
+
+<section>
+<section id="essence" class="title-slide slide level2">
+<h2>Essence</h2>
+
+</section>
+<section id="stakeholders" class="slide level3">
+<h3>Stakeholders</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/006%20Stakeholders_In%20Agreement_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="opportunity" class="slide level3">
+<h3>Opportunity</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/013%20Opportunity_Viable_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="requirements" class="slide level3">
+<h3>Requirements</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/020%20Requirements_Acceptable_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="system" class="slide level3">
+<h3>System</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/025%20Software%20System_Demonstrable_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="work" class="slide level3">
+<h3>Work</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/040%20Work_Under%20Control_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="team" class="slide level3">
+<h3>Team</h3>
+<p><img
+data-src="../images/alpha_state_cards_ecards/033%20Team_Collaborating_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</section>
+<section id="way-of-working" class="slide level3">
+<h3>Way of Working</h3>
+<div id="left">
+<p><img
+data-src="../images/alpha_state_cards_ecards/045%20Way%20of%20Working_Foundation%20Established_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+<div id="right">
+<p><img
+data-src="../images/alpha_state_cards_ecards/047%20Way%20of%20Working_In%20Place_1.png"
+id="id" class="class" height="590" /><br />
+</p>
+</div>
+</section></section>
+<section>
+<section id="betriebssysteme" class="title-slide slide level2">
+<h2>Betriebssysteme</h2>
+
+</section>
+<section id="anteile-an-webseitenaufrufen" class="slide level3">
+<h3>Anteile an Webseitenaufrufen</h3>
+<figure>
+<img data-src="../images/book/black/oshistory.svg"
+alt="Quelle: StatCounter Global Stats - OS Market Share" />
+<figcaption aria-hidden="true">Quelle: StatCounter Global Stats - OS
+Market Share</figcaption>
+</figure>
+</section>
+<section id="stammbaum-der-führenden-os" class="slide level3">
+<h3>Stammbaum der führenden OS</h3>
+<p><img data-src="../images/mobile/black/OShistoryMobile.png" id="id"
+class="class" height="570" /><br />
+</p>
+</section></section>
+<section>
+<section id="entwicklungsmöglichkeiten"
+class="title-slide slide level2">
+<h2>Entwicklungsmöglichkeiten</h2>
+
+</section>
+<section id="klassische-unterteilung" class="slide level3">
+<h3>Klassische Unterteilung</h3>
+<ul>
+<li>Web Apps</li>
+<li>Native Apps</li>
+<li>Hybrid Apps</li>
+</ul>
+</section>
+<section id="web-apps" class="slide level3">
+<h3>Web Apps</h3>
+<blockquote>
+<p>The full Safari engine is inside of iPhone. And so, you can write
+amazing Web 2.0 and Ajax apps that look exactly and behave exactly like
+apps on the iPhone. And these apps can integrate perfectly with iPhone
+services. […] And guess what? There’s no SDK that you need!</p>
+</blockquote>
+<p><a href="../videos/mobile/WWDC2007WebApps.mp4">Steve Jobs</a></p>
+</section>
+<section id="native-apps" class="slide level3">
+<h3>Native Apps</h3>
+<blockquote>
+<p>With the SDK in iPhone 2.0 we’re opening the same native APIs and
+tools we use internally.</p>
+</blockquote>
+<p><a href="../videos/mobile/WWDC2008NativeApps.m4v">Scott
+Forstall</a></p>
+</section>
+<section id="hybrid-apps" class="slide level3">
+<h3>Hybrid Apps</h3>
+<p><img data-src="../images/mobile/0321604164.jpg" id="id" class="class"
+height="570" /><br />
+</p>
+</section>
+<section id="alternative-taxonomie-hauptkategorien"
+class="slide level3">
+<h3>Alternative Taxonomie Hauptkategorien</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/mobile/Taxonomy2.svg" id="id" class="class"
+height="590" /><br />
+</p>
+</section>
+<section id="alternative-taxonomie-komplett" class="slide level3">
+<h3>Alternative Taxonomie Komplett</h3>
+<p><img
+data-src="../images/mobile/black/NunkesserTaxonomyBook.png" /><br />
+</p>
+</section>
+<section id="progressive-web-apps" class="slide level3">
+<h3>(Progressive) Web Apps</h3>
+<p><img data-src="../images/mobile/black/ArchWeb.svg" /><br />
+</p>
+</section>
+<section id="endemic-apps" class="slide level3">
+<h3>Endemic Apps</h3>
+<p><img data-src="../images/mobile/black/ArchEndemic.svg" /><br />
+</p>
+</section>
+<section id="hybrid-web-apps" class="slide level3">
+<h3>Hybrid Web Apps</h3>
+<p><img data-src="../images/mobile/black/ArchHybridWeb.svg" /><br />
+</p>
+</section>
+<section id="hybrid-bridged-apps" class="slide level3">
+<h3>Hybrid Bridged Apps</h3>
+<p><img
+data-src="../images/mobile/black/ArchHybridBridgedWeb.svg" /><br />
+</p>
+</section>
+<section id="system-language-apps" class="slide level3">
+<h3>System Language Apps</h3>
+<p><img
+data-src="../images/mobile/black/ArchSystemLanguage.svg" /><br />
+</p>
+</section>
+<section id="foreign-language-apps-maui" class="slide level3">
+<h3>Foreign Language Apps (MAUI)</h3>
+<p><img data-src="../images/mobile/black/ArchXamarin.svg" /><br />
+</p>
+</section>
+<section id="foreign-language-apps-flutter" class="slide level3">
+<h3>Foreign Language Apps (Flutter)</h3>
+<p><img data-src="../images/mobile/black/ArchFlutter.svg" /><br />
+</p>
+</section></section>
+<section>
+<section id="systembeschreibung" class="title-slide slide level2">
+<h2>Systembeschreibung</h2>
+
+</section>
+<section id="überblick" class="slide level3">
+<h3>Überblick</h3>
+<p>Festlegung von Rahmendaten auf Basis der Anforderungen</p>
+<ul>
+<li>Endgeräte</li>
+<li>Betriebssystemversionen</li>
+<li>Bibliotheken und Software</li>
+</ul>
+</section>
+<section id="systembeschreibung-beispiel" class="slide level3">
+<h3>Systembeschreibung (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Systembeschreibung">Beispiel</a></p>
+</section></section>
+<section>
+<section id="interne-und-externe-schnittstellen"
+class="title-slide slide level2">
+<h2>Interne und externe Schnittstellen</h2>
+
+</section>
+<section id="überblick-1" class="slide level3">
+<h3>Überblick</h3>
+<ul>
+<li>Beschreibung von existierenden und geplanten Schnittstellen</li>
+<li>Datenaustauschformat (z.B. XML, JSON, Plaintext, Binärformat)</li>
+<li>Übertragungsweg (z.B. TCP/UDP, Bluetooth, ZigBee, OneWire, TwoWire,
+…)</li>
+<li>Beschreibung der API</li>
+</ul>
+</section>
+<section id="interne-und-externe-schnittstellen-beispiel"
+class="slide level3">
+<h3>Interne und externe Schnittstellen (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Schnittstellen">Beispiel</a></p>
+</section></section>
+<section>
+<section id="bausteinsicht" class="title-slide slide level2">
+<h2>Bausteinsicht</h2>
+
+</section>
+<section id="übersicht" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Modellierung der Daten</li>
+<li>UML-Klassendiagramm</li>
+</ul>
+</section>
+<section id="bausteinsicht-beispiel" class="slide level3">
+<h3>Bausteinsicht (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/Bausteinsicht">Beispiel</a></p>
+</section></section>
+<section>
+<section id="ablaufdynamik" class="title-slide slide level2">
+<h2>Ablaufdynamik</h2>
+
+</section>
+<section id="übersicht-1" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Detailliertere Modelle</li>
+<li>Näher an Umsetzung</li>
+</ul>
+</section>
+<section id="ablaufdynamik-beispiel" class="slide level3">
+<h3>Ablaufdynamik (Beispiel)</h3>
+<p><a
+href="https://github.com/RobinNunkesser/csharp-maui-study-companion/wiki/DetaillierteAblaeufe">Beispiel</a></p>
+</section></section>
+<section>
+<section id="auswahl-von-softwarearchitekturen"
+class="title-slide slide level2">
+<h2>Auswahl von Softwarearchitekturen</h2>
+
+</section>
+<section id="wichtige-ziele" class="slide level3">
+<h3>Wichtige Ziele</h3>
+<ul>
+<li>Testbarkeit</li>
+<li>Trennung von applikationsunabhängiger und -spezifischer Logik</li>
+<li>Lose gekoppeltes UI</li>
+<li>Unabhängigkeit von externen Frameworks</li>
+<li>Unabhängigkeit von externen Datenquellen und -senken</li>
+</ul>
+</section>
+<section id="chronologischer-überblick" class="slide level3">
+<h3>Chronologischer Überblick</h3>
+<ul>
+<li><strong>BCE (Boundary-Control-Entity)</strong> Boundary-Konzept
+ermöglicht Unabhängigkeit</li>
+<li><strong>DDD (Domain Driven Design)</strong> Schichtung in UI,
+Application, Domain und Infrastructure</li>
+<li><strong>Hexagonal Architecture (aka Ports and Adapters)</strong>
+Zentraler Applikationskern, UI und Infrastructure extern</li>
+<li><strong>Onion Architecture</strong> Verbindet DDD und Hexagonal
+Architecture</li>
+<li><strong>Clean Architecture</strong> Verbindet BCE und Onion
+Architecture</li>
+</ul>
+</section>
+<section id="bewertung" class="slide level3">
+<h3>Bewertung</h3>
+<ul>
+<li>Hexagonal Architecture ist der erste Ansatz, der alle Ziele
+leichtgewichtig und verständlich erreicht</li>
+<li>Folgende Vorschläge wie Onion, Clean, Explicit, … Architecture
+lassen sich als Erweiterungen von Hexagonal Architecture sehen</li>
+<li>Hexagonal Architecture damit stabiles Fundament</li>
+</ul>
+</section></section>
+<section>
+<section id="aufbau" class="title-slide slide level2">
+<h2>Aufbau</h2>
+
+</section>
+<section id="übersicht-2" class="slide level3">
+<h3>Übersicht</h3>
+<blockquote>
+<p>Allow an application to equally be driven by users, programs,
+automated test or batch scripts, and to be developed and tested in
+isolation from its eventual run-time devices and databases.</p>
+</blockquote>
+<p>Alistair Cockburn</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/portsnadapterscomp2.svg" /></p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/sd/black/portsandadapters.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</section>
+<section id="vergleich-mit-onion-architecture" class="slide level3">
+<h3>Vergleich mit Onion Architecture</h3>
+<div id="left">
+<p><img data-src="../images/sd/black/portsandadapters.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/black/OnionArch.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+</section>
+<section id="vergleich-mit-clean-architecture" class="slide level3">
+<h3>Vergleich mit Clean Architecture</h3>
+<div id="left">
+<p><img data-src="../images/sd/black/portsandadapters.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/black/CleanArch.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+</section>
+<section id="vergleich-mit-explicit-architecture" class="slide level3">
+<h3>Vergleich mit Explicit Architecture</h3>
+<div id="left">
+<p><img data-src="../images/sd/black/portsandadapters.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+<div id="right">
+<p><img data-src="../images/sd/black/ExplicitArch.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+</section></section>
+<section>
+<section id="minimalbeispiel" class="title-slide slide level2">
+<h2>Minimalbeispiel</h2>
+
+</section>
+<section id="hintergrund" class="slide level3">
+<h3>Hintergrund</h3>
+<p><img data-src="../images/book/black/42.png" id="id" class="class"
+height="570" /><br />
+</p>
+</section>
+<section id="core" class="slide level3">
+<h3>Core</h3>
+<p><img data-src="../images/uml/black/42core.svg" /><br />
+</p>
+</section>
+<section id="infrastructure" class="slide level3">
+<h3>Infrastructure</h3>
+<p><img data-src="../images/uml/black/42infra.svg" /><br />
+</p>
+</section>
+<section id="user-interface" class="slide level3">
+<h3>User Interface</h3>
+<p><img data-src="../images/uml/black/42ui.svg" /><br />
+</p>
+</section></section>
+<section>
+<section id="social-media-posts" class="title-slide slide level2">
+<h2>Social Media Posts</h2>
+
+</section>
+<section id="core-1" class="slide level3">
+<h3>Core</h3>
+<p><img data-src="../images/uml/black/placeholdercore.svg" /><br />
+</p>
+</section>
+<section id="infrastructure-1" class="slide level3">
+<h3>Infrastructure</h3>
+<p><img data-src="../images/uml/black/placeholderinfra.svg" /><br />
+</p>
+</section>
+<section id="user-interface-1" class="slide level3">
+<h3>User Interface</h3>
+<p><img data-src="../images/uml/black/placeholderui.svg" /><br />
+</p>
+</section></section>
+<section>
+<section id="inkrementelle-entwicklung"
+class="title-slide slide level2">
+<h2>Inkrementelle Entwicklung</h2>
+
+</section>
+<section id="horizontale-inkremente" class="slide level3">
+<h3>Horizontale Inkremente</h3>
+<p><img data-src="../images/uml/black/explicitarchhoriz.svg" /> </p>
+</section>
+<section id="vertikale-inkremente" class="slide level3">
+<h3>Vertikale Inkremente</h3>
+<ul>
+<li>Entwicklung Anwendungsfall für Anwendungsfall</li>
+<li>Gute Testbarkeit</li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
