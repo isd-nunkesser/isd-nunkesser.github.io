@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 516 461" style="enable-background:new 0 0 516 461;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:1,4;}
+	.st1{clip-path:url(#SVGID_2_);fill:#333333;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#FFFFFF;}
+	.st4{font-family:'HelveticaNeue';}
+	.st5{font-size:16px;}
+	.st6{font-family:'Helvetica';}
+	.st7{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{clip-path:url(#SVGID_2_);fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st9{clip-path:url(#SVGID_2_);fill:#FFFFFF;}
+	.st10{clip-path:url(#SVGID_2_);fill:none;stroke:#7F7F7F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st11{letter-spacing:-1;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="516" height="461"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<line class="st0" x1="268.2" y1="1" x2="268.7" y2="459.9"/>
+	<polygon class="st1" points="168.8,231 218.8,131 318.8,131 368.8,231 318.8,331 218.8,331 	"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 228.5977 236.7761)" class="st3 st4 st5">Application</text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 65.8789 33)" class="st3 st6 st5">Driving adapters </text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 356.8984 33)" class="st3 st6 st5">Driven adapters </text>
+	</g>
+	<line class="st7" x1="342.8" y1="179.1" x2="361.8" y2="165.9"/>
+	<path class="st8" d="M363.3,157.5c-5.7,4,1.1,13.8,6.9,9.8"/>
+	<line class="st7" x1="174.1" y1="166.4" x2="194.2" y2="180.1"/>
+	<path class="st9" d="M174.6,164.1c0.3,1.6-0.8,3.2-2.4,3.5c-1.6,0.3-3.2-0.8-3.5-2.4c-0.3-1.6,0.8-3.2,2.4-3.5
+		C172.7,161.5,174.3,162.5,174.6,164.1"/>
+	<path class="st8" d="M174.6,164.1c0.3,1.6-0.8,3.2-2.4,3.5c-1.6,0.3-3.2-0.8-3.5-2.4c-0.3-1.6,0.8-3.2,2.4-3.5
+		C172.7,161.5,174.3,162.5,174.6,164.1"/>
+	<line class="st7" x1="344.9" y1="278.7" x2="361.5" y2="289.1"/>
+	<path class="st8" d="M369.8,287.2c-5.9-3.7-12.3,6.5-6.4,10.2"/>
+	<rect x="98" y="61.5" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 121.5801 92.2756)" class="st3 st4 st5">GUI</text>
+	</g>
+	<line class="st7" x1="146.4" y1="111.5" x2="165.4" y2="154.9"/>
+	<path class="st8" d="M173.3,158c-2.8-6.4-13.8-1.6-11,4.8"/>
+	<rect x="0.5" y="140" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 8.8242 161.5522)"><tspan x="0" y="0" class="st3 st4 st5">Exte</tspan><tspan x="31.7" y="0" class="st3 st4 st5">r</tspan><tspan x="37.3" y="0" class="st3 st4 st5">nal </tspan></text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 23.3281 180)" class="st3 st4 st5">App</text>
+	</g>
+	<rect x="44.5" y="210" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 67.48 231.5522)"><tspan x="0" y="0" class="st3 st4 st5 st11">T</tspan><tspan x="7.4" y="0" class="st3 st4 st5">est </tspan></text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 54.4399 250)" class="st3 st4 st5">adapter</text>
+	</g>
+	<rect x="108" y="384" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 130.98 405.5522)"><tspan x="0" y="0" class="st3 st4 st5 st11">T</tspan><tspan x="7.4" y="0" class="st3 st4 st5">est </tspan></text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 117.9399 424)" class="st3 st4 st5">adapter</text>
+	</g>
+	<rect x="44.5" y="309" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 64.0718 339.7761)" class="st3 st4 st5">Feed</text>
+	</g>
+	<rect x="402.1" y="342" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 419.5586 363.5522)" class="st3 st4 st5">Mock </text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 428.4541 382)" class="st3 st4 st5">DB</text>
+	</g>
+	<rect x="440" y="241" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 466.3877 271.7761)" class="st3 st4 st5">DB</text>
+	</g>
+	<rect x="408" y="61.5" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 430.6836 83.0522)" class="st3 st4 st5">Mail </text>
+	</g>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 417.9404 101.5)" class="st3 st4 st5">adapter</text>
+	</g>
+	<rect x="433" y="154" class="st10" width="75" height="50"/>
+	<g class="st2">
+		<text transform="matrix(1 0 0 1 450.4922 184.7761)" class="st3 st4 st5">Mock</text>
+	</g>
+	<line class="st7" x1="75.5" y1="164.3" x2="160.3" y2="162.9"/>
+	<path class="st8" d="M166.1,156.8c-7,0.1-6.8,12.1,0.2,12"/>
+	<line class="st7" x1="115.5" y1="210" x2="167.2" y2="171.4"/>
+	<path class="st8" d="M168.4,163c-5.6,4.2,1.6,13.8,7.2,9.6"/>
+	<line class="st7" x1="119.5" y1="318.8" x2="160.9" y2="302.1"/>
+	<path class="st8" d="M164.2,294.3c-6.5,2.6-2,13.7,4.5,11.1"/>
+	<line class="st7" x1="150.8" y1="384" x2="167" y2="307.3"/>
+	<path class="st8" d="M162.4,300.2c-1.4,6.8,10.3,9.3,11.7,2.5"/>
+	<line class="st7" x1="174.1" y1="295.3" x2="194.1" y2="281.7"/>
+	<path class="st9" d="M172.2,294c1.6,0.3,2.7,1.9,2.4,3.5c-0.3,1.6-1.9,2.7-3.5,2.4c-1.6-0.3-2.7-1.9-2.4-3.5
+		C169,294.8,170.6,293.7,172.2,294"/>
+	<path class="st8" d="M172.2,294c1.6,0.3,2.7,1.9,2.4,3.5c-0.3,1.6-1.9,2.7-3.5,2.4c-1.6-0.3-2.7-1.9-2.4-3.5
+		C169,294.8,170.6,293.7,172.2,294"/>
+	<line class="st7" x1="373.4" y1="156.5" x2="419.7" y2="111.5"/>
+	<path class="st9" d="M371.3,155.6c1.7,0,3,1.4,3,3c0,1.7-1.4,3-3,3c-1.7,0-3-1.4-3-3C368.3,156.9,369.6,155.5,371.3,155.6"/>
+	<path class="st8" d="M371.3,155.6c1.7,0,3,1.4,3,3c0,1.7-1.4,3-3,3c-1.7,0-3-1.4-3-3C368.3,156.9,369.6,155.5,371.3,155.6"/>
+	<line class="st7" x1="375.2" y1="162.1" x2="433" y2="172.4"/>
+	<path class="st9" d="M374.7,159.9c0.9,1.4,0.6,3.2-0.7,4.2c-1.4,0.9-3.2,0.6-4.2-0.7c-0.9-1.4-0.6-3.2,0.7-4.2
+		C371.8,158.2,373.7,158.5,374.7,159.9"/>
+	<path class="st8" d="M374.7,159.9c0.9,1.4,0.6,3.2-0.7,4.2c-1.4,0.9-3.2,0.6-4.2-0.7c-0.9-1.4-0.6-3.2,0.7-4.2
+		C371.8,158.2,373.7,158.5,374.7,159.9"/>
+	<line class="st7" x1="375" y1="292" x2="440" y2="275.5"/>
+	<path class="st9" d="M373.7,290.2c1.4,0.8,1.9,2.7,1,4.1c-0.8,1.4-2.7,1.9-4.1,1c-1.4-0.8-1.9-2.7-1-4.1
+		C370.4,289.8,372.3,289.3,373.7,290.2"/>
+	<path class="st8" d="M373.7,290.2c1.4,0.8,1.9,2.7,1,4.1c-0.8,1.4-2.7,1.9-4.1,1c-1.4-0.8-1.9-2.7-1-4.1
+		C370.4,289.8,372.3,289.3,373.7,290.2"/>
+	<line class="st7" x1="372.1" y1="297.5" x2="415.3" y2="342"/>
+	<path class="st9" d="M373,295.4c0,1.7-1.4,3-3,3c-1.7,0-3-1.4-3-3c0-1.7,1.4-3,3-3C371.7,292.4,373,293.8,373,295.4"/>
+	<path class="st8" d="M373,295.4c0,1.7-1.4,3-3,3c-1.7,0-3-1.4-3-3c0-1.7,1.4-3,3-3C371.7,292.4,373,293.8,373,295.4"/>
+</g>
+</svg>

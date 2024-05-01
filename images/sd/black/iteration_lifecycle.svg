@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1366 768" style="enable-background:new 0 0 1366 768;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st2{fill:#666666;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st3{fill:#999999;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.9964,1.9964;}
+	.st5{font-family:'SourceSansPro-Regular';}
+	.st6{font-size:12px;}
+	.st7{font-family:'SourceSansPro-It';}
+	.st8{font-size:10px;}
+	.st9{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.9496,1.9496;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.9996,1.9996;}
+	.st11{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:2.0551,2.0551;}
+	.st12{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:2.009,2.009;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:2.0336,2.0336;}
+	.st14{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.9436,1.9436;}
+	.st15{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.989,1.989;}
+	.st16{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:2.0201,2.0201;}
+	.st17{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;stroke-dasharray:1.993,1.993;}
+</style>
+<g>
+	<line class="st0" x1="451.7" y1="378.5" x2="894.2" y2="378.5"/>
+	<g>
+		<line class="st1" x1="451.7" y1="378.5" x2="890.5" y2="378.5"/>
+		<g>
+			<polygon class="st0" points="889.7,381 894.2,378.5 889.7,375.9 			"/>
+		</g>
+	</g>
+</g>
+<rect x="458.4" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="468.7" y="372.1" class="st2" width="40.8" height="12.7"/>
+<rect x="513.7" y="372.1" class="st3" width="40.8" height="12.7"/>
+<rect x="557.2" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="661.9" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="769.8" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="867.8" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="878" y="374.5" class="st2" width="7.8" height="7.8"/>
+<rect x="567" y="372.1" class="st3" width="91.8" height="12.7"/>
+<rect x="673.4" y="372.1" class="st3" width="91.8" height="12.7"/>
+<rect x="781" y="372.1" class="st3" width="84.2" height="12.7"/>
+<g>
+	<g>
+		<line class="st1" x1="462.3" y1="374.5" x2="462.8" y2="373.7"/>
+		<line class="st4" x1="463.9" y1="372" x2="505.1" y2="304.8"/>
+		<line class="st1" x1="505.6" y1="303.9" x2="506.1" y2="303.1"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 470.1505 292.7733)" class="st0 st5 st6">Iteration planning</text>
+<text transform="matrix(1 0 0 1 504.1023 323.9847)"><tspan x="0" y="0" class="st0 st7 st8">A few</tspan><tspan x="0" y="12" class="st0 st7 st8">hours</tspan></text>
+<g>
+	<g>
+		<line class="st1" x1="492.6" y1="439.5" x2="492.6" y2="438.5"/>
+		<line class="st9" x1="492.6" y1="436.5" x2="492.6" y2="386.8"/>
+		<line class="st1" x1="492.6" y1="385.8" x2="492.6" y2="384.8"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 472.1682 451.4017)"><tspan x="0" y="0" class="st0 st5 st6">Upfront planning</tspan><tspan x="1.5" y="14.4" class="st0 st5 st6">and architecture</tspan></text>
+<text transform="matrix(1 0 0 1 497.652 416.9916)"><tspan x="0" y="0" class="st0 st7 st8">A few</tspan><tspan x="0" y="12" class="st0 st7 st8">days</tspan></text>
+<text transform="matrix(1 0 0 1 611.5728 292.773)" class="st0 st5 st6">Stable weekly build</text>
+<text transform="matrix(1 0 0 1 733.1507 292.7733)"><tspan x="0" y="0" class="st0 st5 st6">Stable iteration</tspan><tspan x="26" y="14.4" class="st0 st5 st6">build</tspan></text>
+<text transform="matrix(1 0 0 1 821.5527 292.7731)"><tspan x="0" y="0" class="st0 st5 st6">Iteration review</tspan><tspan x="-4.5" y="14.4" class="st0 st5 st6">and retrospective</tspan></text>
+<text transform="matrix(1 0 0 1 855.6468 323.9845)"><tspan x="0" y="0" class="st0 st7 st8">A few</tspan><tspan x="0" y="12" class="st0 st7 st8">hours</tspan></text>
+<text transform="matrix(1 0 0 1 632.8322 451.402)"><tspan x="0" y="0" class="st0 st5 st6">Continuous</tspan><tspan x="-17.2" y="14.4" class="st0 st5 st6">micro-increments,</tspan><tspan x="-23.6" y="28.8" class="st0 st5 st6">bug-fixing and builds</tspan></text>
+<text transform="matrix(1 0 0 1 794.0388 451.4019)"><tspan x="0" y="0" class="st0 st5 st6">Continuous</tspan><tspan x="2.4" y="14.4" class="st0 st5 st6">bug-fixing,</tspan><tspan x="-43.2" y="28.8" class="st0 st5 st6">micro-increments and builds</tspan></text>
+<g>
+	<g>
+		<line class="st1" x1="561.1" y1="374.5" x2="561.8" y2="373.9"/>
+		<line class="st10" x1="563.3" y1="372.5" x2="639.5" y2="303.2"/>
+		<line class="st1" x1="640.2" y1="302.5" x2="640.9" y2="301.9"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="665.8" y1="374.5" x2="665.8" y2="373.5"/>
+		<line class="st11" x1="665.8" y1="371.5" x2="665.8" y2="302.6"/>
+		<line class="st1" x1="665.8" y1="301.6" x2="665.8" y2="300.6"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="773.7" y1="374.5" x2="773" y2="373.9"/>
+		<line class="st12" x1="771.4" y1="372.7" x2="684.4" y2="302.9"/>
+		<line class="st1" x1="683.7" y1="302.2" x2="682.9" y2="301.6"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="871.7" y1="374.5" x2="871" y2="373.9"/>
+		<line class="st13" x1="869.5" y1="372.5" x2="793.9" y2="306"/>
+		<line class="st1" x1="793.2" y1="305.3" x2="792.4" y2="304.7"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="881.9" y1="374.5" x2="881.9" y2="373.5"/>
+		<line class="st14" x1="881.9" y1="371.6" x2="881.9" y2="314.3"/>
+		<line class="st1" x1="881.9" y1="313.3" x2="881.9" y2="312.3"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="646.3" y1="439.5" x2="645.4" y2="439"/>
+		<line class="st15" x1="643.6" y1="438.1" x2="537.5" y2="385.7"/>
+		<line class="st1" x1="536.7" y1="385.3" x2="535.8" y2="384.8"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="658.7" y1="440.2" x2="658.1" y2="439.4"/>
+		<line class="st16" x1="656.8" y1="437.9" x2="612.9" y2="386.4"/>
+		<line class="st1" x1="612.2" y1="385.6" x2="611.6" y2="384.8"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="673" y1="439.7" x2="673.6" y2="438.9"/>
+		<line class="st17" x1="674.9" y1="437.4" x2="718" y2="386.4"/>
+		<line class="st1" x1="718.6" y1="385.6" x2="719.3" y2="384.8"/>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st1" x1="823.1" y1="439.5" x2="823.1" y2="438.5"/>
+		<line class="st9" x1="823.1" y1="436.5" x2="823.1" y2="386.8"/>
+		<line class="st1" x1="823.1" y1="385.8" x2="823.1" y2="384.8"/>
+	</g>
+</g>
+</svg>
