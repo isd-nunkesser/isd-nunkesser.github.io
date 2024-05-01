@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="682px" preserveAspectRatio="none" style="width:902px;height:682px;background:#000000;" version="1.1" viewBox="0 0 902 682" width="902px" zoomAndPan="magnify"><defs><filter height="300%" id="f1bt3k6g9yeedd" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2b538f494da4c8de404480a716419413]
+cluster Konzeptions-/Umsetzungsunterstützung--><polygon fill="#000000" filter="url(#f1bt3k6g9yeedd)" points="294,87,529,87,536,105,539,105,539,364,294,364,294,87" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="294" x2="536" y1="105" y2="105"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="229" x="298" y="98.2402">Konzeptions-/Umsetzungsunterstützung</text><!--MD5=[84c213d30465150050a4a54c9eab56e2]
+cluster App Stores--><polygon fill="#000000" filter="url(#f1bt3k6g9yeedd)" points="560,597,630,597,637,615,880,615,880,670,560,670,560,597" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="560" x2="637" y1="615" y2="615"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="64" x="564" y="608.2402">App Stores</text><!--MD5=[a261bf4f4549f6797bfe2f78a5224f31]
+entity SYS02--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="156" x="338" y="110"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="474" y="115"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="472" y="117"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="472" y="121"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="116" x="353" y="139.2402">Atlassian Confluence</text><!--MD5=[604ac28eb62b9cec15ab88a733caa912]
+entity SYS03--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="119" x="341.5" y="212"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="440.5" y="217"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="438.5" y="219"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="438.5" y="223"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79" x="356.5" y="241.2402">Atlassian JIRA</text><!--MD5=[19bf7700686490d446566c559a47fb39]
+entity SYS04--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="143" x="323.5" y="314"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="446.5" y="319"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="444.5" y="321"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="444.5" y="325"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="338.5" y="343.2402">Atlassian Bitbucket</text><!--MD5=[3065567de8524aa60b24e8d5ab722501]
+entity SYS09--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="129" x="742.5" y="620"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="851.5" y="625"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="849.5" y="627"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="849.5" y="631"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="89" x="757.5" y="649.2402">Apple App Store</text><!--MD5=[4ee0174b073083c2033a968c2c29efab]
+entity SYS10--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="139" x="568.5" y="620"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="687.5" y="625"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="685.5" y="627"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="685.5" y="631"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="99" x="583.5" y="649.2402">Google Play Store</text><!--MD5=[f70f8a8366c9ac33e8b41a38ee37ebbf]
+entity SYS01--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="136" x="348" y="8"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="464" y="13"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="462" y="15"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="462" y="19"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="363" y="37.2402">inflectra spiraTest</text><!--MD5=[81b21c1e5343c72791ca5c80ab142c2c]
+entity SYS05--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="103" x="448.5" y="416"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="531.5" y="421"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="529.5" y="423"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="529.5" y="427"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="63" x="463.5" y="445.2402">SonarQube</text><!--MD5=[d59e51f5bc45ee7789214eac951a1f1a]
+entity SYS06--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="146" x="374" y="518"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="500" y="523"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="498" y="525"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="498" y="529"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="106" x="389" y="547.2402">JetBrains TeamCity</text><!--MD5=[63dd5f522ed012b8e1e1bb7cb169cdfe]
+entity SYS07--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="130" x="6" y="620"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="116" y="625"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="114" y="627"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="114" y="631"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="90" x="21" y="649.2402">Sonatype Nexus</text><!--MD5=[b46da3d910f359db558fb81dee4fe3d6]
+entity SYS08--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="154" x="171" y="620"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="305" y="625"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="303" y="627"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="303" y="631"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="114" x="186" y="649.2402">Microsoft App Center</text><!--MD5=[0de028af574c96fb02ed0255a89519de]
+entity SYS11--><rect fill="#070707" filter="url(#f1bt3k6g9yeedd)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="173" x="360.5" y="620"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="513.5" y="625"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="511.5" y="627"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="511.5" y="631"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="133" x="375.5" y="649.2402">install.adesso-mobile.de</text><!--MD5=[9b28d7cc439fe308e03055df4e2504fc]
+link SYS01 to SYS02--><path d="M416,50.1345 C416,67.6402 416,92.3944 416,109.8926 " fill="none" id="SYS01-SYS02" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[05a8b1b63d86a71425478f40d485c829]
+link SYS02 to SYS03--><path d="M412.892,152.1345 C410.3176,169.6402 406.6773,194.3944 404.104,211.8926 " fill="none" id="SYS02-SYS03" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[26830a9bd7248a462ca85ecf2e2dd875]
+link SYS02 to SYS05--><path d="M437.6636,152.2713 C451.7235,167.5017 469.04,189.2631 478,212 C505.8444,282.6579 504.165,375.0487 501.6853,415.9499 " fill="none" id="SYS02-SYS05" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[2bee8eedabaafc89f672de6aec5abb6f]
+link SYS03 to SYS04--><path d="M399.7568,254.1345 C398.727,271.6402 397.2709,296.3944 396.2416,313.8926 " fill="none" id="SYS03-SYS04" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[dc62a46cb9ddc5d63506027ee00da95d]
+link SYS04 to SYS05--><path d="M416.7561,356.1345 C434.7767,373.6402 460.2589,398.3944 478.2718,415.8926 " fill="none" id="SYS04-SYS05" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[496303d56631dcb1f5c6ef683b7c71a7]
+link SYS04 to SYS06--><path d="M400.3691,356.0632 C410.3335,395.1545 431.5812,478.5108 441.5822,517.7457 " fill="none" id="SYS04-SYS06" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[3ccdf02af3ecbb088043f7ccdbcf63d1]
+link SYS05 to SYS06--><path d="M489.0184,458.1345 C479.9223,475.6402 467.0598,500.3944 457.9676,517.8926 " fill="none" id="SYS05-SYS06" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[d040da260e03a9916a39ed40a6d4c5d2]
+link SYS06 to SYS07--><path d="M373.7777,547.4526 C313.5305,555.8285 226.5596,571.2154 154,597 C137.4028,602.8979 120.0372,611.6506 105.5056,619.7995 " fill="none" id="SYS06-SYS07" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[94d2e95d4a2ef8fdb5323d7b5e242c08]
+link SYS06 to SYS08--><path d="M405.7671,560.1345 C371.6138,577.6402 323.3188,602.3944 289.1801,619.8926 " fill="none" id="SYS06-SYS08" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[751a8764f12070832b3940ae78667d57]
+link SYS06 to SYS09--><path d="M520.288,548.4203 C577.2807,557.1352 657.7065,572.5058 725,597 C741.3962,602.9681 758.5523,611.7316 772.9091,619.8698 " fill="none" id="SYS06-SYS09" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[60e9d4413e124d1ded36a7a2d7c0b99a]
+link SYS06 to SYS10--><path d="M486.5753,560.1345 C519.3556,577.6402 565.7091,602.3944 598.4754,619.8926 " fill="none" id="SYS06-SYS10" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[89126049103c0bc534211256797c5394]
+link SYS06 to SYS11--><path d="M447,560.1345 C447,577.6402 447,602.3944 447,619.8926 " fill="none" id="SYS06-SYS11" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[e4057c4a7e1743f24177562315b3c65d]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+component [inflectra spiraTest] as SYS01
+package "Konzeptions-/Umsetzungsunterstützung" { 
+component [Atlassian Confluence] as SYS02
+component [Atlassian JIRA] as SYS03
+component [Atlassian Bitbucket] as SYS04
+}
+component [SonarQube] as SYS05
+component [JetBrains TeamCity] as SYS06
+component [Sonatype Nexus] as SYS07
+component [Microsoft App Center] as SYS08
+package "App Stores" { 
+component [Apple App Store] as SYS09
+component [Google Play Store] as SYS10
+}
+component [install.adesso-mobile.de] as SYS11
+
+SYS01 - - SYS02
+SYS02 - - SYS03
+SYS02 - - SYS05
+SYS03 - - SYS04
+SYS04 - - SYS05
+SYS04 - - SYS06
+SYS05 - - SYS06
+SYS06 - - SYS07
+SYS06 - - SYS08
+SYS06 - - SYS09
+SYS06 - - SYS10
+SYS06 - - SYS11
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_131-b11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

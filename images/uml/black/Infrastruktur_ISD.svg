@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="520px" preserveAspectRatio="none" style="width:429px;height:520px;background:#000000;" version="1.1" viewBox="0 0 429 520" width="429px" zoomAndPan="magnify"><defs><filter height="300%" id="fnlb65v7y9h1j" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[2b538f494da4c8de404480a716419413]
+cluster Konzeptions-/Umsetzungsunterstützung--><polygon fill="#000000" filter="url(#fnlb65v7y9h1j)" points="162,24,397,24,404,42,407,42,407,508,162,508,162,24" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="162" x2="404" y1="42" y2="42"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="229" x="166" y="35.2402">Konzeptions-/Umsetzungsunterstützung</text><!--MD5=[7df23c69b942486d614e0093e41cd283]
+cluster PAC01--><polygon fill="#000000" filter="url(#fnlb65v7y9h1j)" points="223,71,268,71,275,89,346,89,346,349,223,349,223,71" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="223" x2="275" y1="89" y2="89"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="39" x="227" y="82.2402">GitHub</text><!--MD5=[81b21c1e5343c72791ca5c80ab142c2c]
+entity SYS05--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="94" x="237.5" y="373"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="311.5" y="378"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="309.5" y="380"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="309.5" y="384"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="54" x="252.5" y="402.2402">PlantUML</text><!--MD5=[b46da3d910f359db558fb81dee4fe3d6]
+entity SYS08--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="74" x="247.5" y="450"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="301.5" y="455"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="299.5" y="457"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="299.5" y="461"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="34" x="262.5" y="479.2402">Figma</text><!--MD5=[a261bf4f4549f6797bfe2f78a5224f31]
+entity SYS02--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="63" x="253" y="129"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="296" y="134"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="294" y="136"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="294" y="140"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="23" x="268" y="158.2402">Wiki</text><!--MD5=[604ac28eb62b9cec15ab88a733caa912]
+entity SYS03--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="75" x="247" y="206"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="302" y="211"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="300" y="213"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="300" y="217"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="35" x="262" y="235.2402">Issues</text><!--MD5=[19bf7700686490d446566c559a47fb39]
+entity SYS04--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="70" x="249.5" y="283"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="299.5" y="288"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="297.5" y="290"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="297.5" y="294"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="264.5" y="312.2402">Code</text><!--MD5=[f70f8a8366c9ac33e8b41a38ee37ebbf]
+entity SYS01--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="140" x="6" y="73"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="126" y="78"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="124" y="80"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="124" y="84"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="100" x="21" y="102.2402">GitHub Classroom</text><!--MD5=[63dd5f522ed012b8e1e1bb7cb169cdfe]
+entity SYS07--><rect fill="#070707" filter="url(#fnlb65v7y9h1j)" height="42" style="stroke: #C7C7C7; stroke-width: 1.5;" width="70" x="41" y="283"/><rect fill="#070707" height="10" style="stroke: #C7C7C7; stroke-width: 1.5;" width="15" x="91" y="288"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="89" y="290"/><rect fill="#070707" height="2" style="stroke: #C7C7C7; stroke-width: 1.5;" width="4" x="89" y="294"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="30" x="56" y="312.2402">Slack</text><!--MD5=[766778a347f06cce386e1134f930edb6]
+link SYS01 to PAC01--><path d="M146.05,94 C160.8225,94 176.6481,94 192.1139,94 C199.8468,94 207.4897,94 214.8661,94 C216.7102,94 218.5376,94 220.3456,94 C220.7976,94 221.2484,94 221.6979,94 C221.9227,94 222.1471,94 222.3713,94 " fill="none" id="SYS01-PAC01" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[e8f2a78c38ebb4094225c6561b028072]
+link SYS07 to SYS04--><path d="M111.1,304 C149.36,304 211.07,304 249.35,304 " fill="none" id="SYS07-SYS04" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[0fa8d937ce94667967020fd45defc694]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+left to right direction
+
+package "Konzeptions-/Umsetzungsunterstützung" { 
+package "GitHub" as PAC01 { 
+component [Wiki] as SYS02
+component [Issues] as SYS03
+component [Code] as SYS04
+}
+component [PlantUML] as SYS05
+component [Figma] as SYS08
+}
+component [GitHub Classroom] as SYS01
+component [Slack] as SYS07
+
+SYS01 - - PAC01
+SYS07 - - SYS04
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 11.0.11+9
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>
