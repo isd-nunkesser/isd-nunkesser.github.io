@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="551px" preserveAspectRatio="none" style="width:517px;height:551px;background:#000000;" version="1.1" viewBox="0 0 517 551" width="517px" zoomAndPan="magnify"><defs><filter height="300%" id="fcbqrty2caef" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[38432366bfe819e98b676fd15dc38953]
+cluster Launching--><polygon fill="#000000" filter="url(#fcbqrty2caef)" points="379,16,444,16,451,34,495,34,495,352,379,352,379,16" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="379" x2="451" y1="34" y2="34"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="59" x="383" y="27.2402">Launching</text><!--MD5=[04aee1d8cadfe8db85d02551925bd584]
+cluster Running--><polygon fill="#000000" filter="url(#fcbqrty2caef)" points="302,373,355,373,362,391,420,391,420,436,302,436,302,373" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="302" x2="362" y1="391" y2="391"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="47" x="306" y="384.2402">Running</text><!--MD5=[dfcf3491fa28dd7bdf73ed84eccda2c2]
+cluster Leaving--><polygon fill="#000000" filter="url(#fcbqrty2caef)" points="14,203,65,203,72,221,220,221,220,539,14,539,14,203" style="stroke: #FFFFFF; stroke-width: 1.5;"/><line style="stroke: #FFFFFF; stroke-width: 1.5;" x1="14" x2="72" y1="221" y2="221"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="45" x="18" y="214.2402">Leaving</text><ellipse cx="437" cy="49" fill="#FFFFFF" filter="url(#fcbqrty2caef)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#070707" filter="url(#fcbqrty2caef)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="91" x="391.5" y="142"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="71" x="401.5" y="161.2402">Constructor()</text><rect fill="#070707" filter="url(#fcbqrty2caef)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="99" x="387.5" y="312"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="79" x="397.5" y="331.2402">onAppearing()</text><rect fill="#070707" filter="url(#fcbqrty2caef)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="102" x="310" y="396"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="82" x="320" y="415.2402">Custom Events</text><rect fill="#070707" filter="url(#fcbqrty2caef)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="116" x="96" y="226"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="96" x="106" y="245.2402">onDisappearing()</text><rect fill="#070707" filter="url(#fcbqrty2caef)" height="32" rx="12.5" ry="12.5" style="stroke: #C7C7C7; stroke-width: 1.5;" width="84" x="22" y="396"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="64" x="32" y="415.2402">Destructor()</text><ellipse cx="64" cy="521" fill="none" filter="url(#fcbqrty2caef)" rx="10" ry="10" style="stroke: #FFFFFF; stroke-width: 1.0;"/><ellipse cx="64.5" cy="521.5" fill="#FFFFFF" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><!--MD5=[a3a247f86770109bf3c37bc98a47ab61]
+link start to Constructor()--><path d="M437,59.0591 C437,76.6001 437,113.1455 437,136.5751 " fill="none" id="start-&gt;Constructor()" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="437,141.6521,441,132.6521,437,136.6521,433,132.6521,437,141.6521" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[2a1902df5c2e72a3c7b39f00028fa893]
+link Constructor() to onAppearing()--><path d="M437,174.3003 C437,205.2231 437,272.3778 437,306.7695 " fill="none" id="Constructor()-&gt;onAppearing()" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="437,311.9973,441,302.9973,437,306.9973,433,302.9973,437,311.9973" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[ac2fa930f6a34765321454f38d0604c3]
+link onAppearing() to Custom Events--><path d="M422.3464,344.196 C410.0451,357.7923 392.4145,377.2787 379.208,391.8753 " fill="none" id="onAppearing()-&gt;Custom Events" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="375.6086,395.8537,384.6129,391.8635,378.9632,392.146,378.6806,386.4962,375.6086,395.8537" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[97af21a89feebbcea1a513a6e77cebeb]
+link Custom Events to onDisappearing()--><path d="M326.2447,395.771 C305.4412,385.0737 279.2054,369.779 259,352 C242.1144,337.1422 243.1033,328.6663 228,312 C211.6882,294.0002 191.5766,275.1635 176.4389,261.5702 " fill="none" id="Custom Events-&gt;onDisappearing()" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="172.7029,258.2309,176.7475,267.2109,176.4308,261.563,182.0788,261.2463,172.7029,258.2309" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="113" x="260" y="325.2402">Another page comes</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="103" x="266.5" y="337.2402">into the foreground</text><!--MD5=[fea39314da47efae8c0b580916eb9d27]
+link onDisappearing() to onAppearing()--><path d="M209.8807,258.0486 C228.544,263.8304 249.3358,270.7339 268,278 C281.7113,283.3379 284.1534,287.0235 298,292 C306.1891,294.9432 346.7982,305.3859 382.0245,314.2714 " fill="none" id="onDisappearing()-&gt;onAppearing()" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="387.1783,315.57,379.4284,309.4922,382.3298,314.3483,377.4737,317.2497,387.1783,315.57" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="131" x="299" y="288.2402">User returns to the page</text><!--MD5=[8a7a69db2dbab370fedd6bd4be14abf3]
+link onDisappearing() to Destructor()--><path d="M116.5599,258.1822 C94.8836,269.7467 69.4844,287.5949 57,312 C44.3058,336.8152 50.2351,369.7211 56.4538,390.8813 " fill="none" id="onDisappearing()-&gt;Destructor()" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="57.9456,395.7338,59.1243,385.9557,56.4763,390.9545,51.4775,388.3066,57.9456,395.7338" style="stroke: #C7C7C7; stroke-width: 1.0;"/><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="127" x="78.5" y="325.2402">The page is finishing or</text><text fill="#FFFFFF" font-family="Helvetica" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="165" x="61" y="337.2402">being destroyed by the system</text><!--MD5=[c1529786fd5f8af68f141881b271be4a]
+link Destructor() to end--><path d="M64,428.0833 C64,448.9581 64,485.1318 64,505.6439 " fill="none" id="Destructor()-&gt;end" style="stroke: #C7C7C7; stroke-width: 1.0;"/><polygon fill="#C7C7C7" points="64,510.7455,68,501.7455,64,505.7455,60,501.7455,64,510.7455" style="stroke: #C7C7C7; stroke-width: 1.0;"/><!--MD5=[2bec7c5e44a0d21902c8502ea93c27e0]
+@startuml
+skinparam monochrome reverse
+skinparam componentStyle uml2
+skinparam defaultFont {
+    Size 12
+    Name Helvetica
+}
+skinparam backgroundColor white
+
+partition Launching {
+(*) - -> "Constructor()"
+- -> "onAppearing()"
+}
+partition Running {
+"onAppearing()" - -> "Custom Events"
+}
+partition Leaving {
+"Custom Events" - ->[Another page comes\n into the foreground] "onDisappearing()"
+"onDisappearing()" - ->[User returns to the page] "onAppearing()"
+"onDisappearing()" - ->[The page is finishing or\n being destroyed by the system] "Destructor()"
+"Destructor()" - -> (*)
+}
+
+@enduml
+
+PlantUML version 1.2020.06(Sun Apr 05 14:38:32 CEST 2020)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_131-b11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: de
+Country: DE
+--></g></svg>

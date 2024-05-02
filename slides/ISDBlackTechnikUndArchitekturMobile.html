@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Technik und Architektur</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Technik und Architektur</h1>
+</section>
+
+<section>
+<section id="ein-paar-zahlen" class="title-slide slide level2">
+<h2>Ein paar Zahlen…</h2>
+
+</section>
+<section id="section" class="slide level3"
+data-background-image="../images/mobile/figure.001.png">
+<h3 data-background-image="../images/mobile/figure.001.png"></h3>
+</section>
+<section id="section-1" class="slide level3"
+data-background-image="../images/mobile/figure.002.png">
+<h3 data-background-image="../images/mobile/figure.002.png"></h3>
+</section>
+<section id="section-2" class="slide level3"
+data-background-image="../images/mobile/figure.003.png">
+<h3 data-background-image="../images/mobile/figure.003.png"></h3>
+</section></section>
+<section>
+<section id="ein-blick-in-die-glaskugel"
+class="title-slide slide level2">
+<h2>Ein Blick in die Glaskugel…</h2>
+
+</section>
+<section id="section-3" class="slide level3">
+<h3></h3>
+<div id="left">
+<blockquote>
+<p>Software is eating the world</p>
+</blockquote>
+<p>Mark Andreessen</p>
+</div>
+<div id="right">
+<p><img data-src="../images/isd/22677.jpg" id="id" class="class"
+height="600" /><br />
+</p>
+</div>
+</section>
+<section id="gemeinsame-strategie" class="slide level3">
+<h3>Gemeinsame Strategie</h3>
+<p>Viele der bedeutensten Unternehmen setzen (zukünftig) auf
+Programmiersprachen und Frameworks für Backend und alle Frontends
+(Desktop, Web und Mobile)</p>
+<ul>
+<li>Apple: Swift und SwiftUI</li>
+<li>Microsoft: C# und MAUI</li>
+<li>Alphabet: Kotlin und Jetpack Compose bzw. Dart und Flutter</li>
+<li>Facebook: JavaScript und React Native</li>
+</ul>
+<blockquote>
+<p>Mobile is eating Software…</p>
+</blockquote>
+</section></section>
+<section>
+<section id="historie-mobiler-endgeräte"
+class="title-slide slide level2">
+<h2>Historie mobiler Endgeräte</h2>
+
+</section>
+<section id="section-4" class="slide level3">
+<h3></h3>
+<p><img data-src="../images/book/black/mobilehistory3.png" /> </p>
+</section>
+<section id="sharp-qt-8b-micro-compet-1970" class="slide level3">
+<h3>Sharp QT-8B micro Compet (1970)</h3>
+<div id="left">
+<p>Erster Rechner mit Batterieversorgung</p>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/SharpQT8b.png" /><br />
+</p>
+</div>
+</section>
+<section id="busicom-handy-le-1971" class="slide level3">
+<h3>Busicom Handy LE (1971)</h3>
+<div id="left">
+<ul>
+<li>Früher Taschenrechner kleiner Bauart<br />
+</li>
+<li>Arithmetische Operationen berechnet durch einzelnen Chip: Mostek
+MK610</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/BusicomHandyLE.png" /><br />
+</p>
+</div>
+</section>
+<section id="osborne-1-1981" class="slide level3">
+<h3>Osborne 1 (1981)</h3>
+<div id="left">
+<ul>
+<li>Erster „tragbarer“ Computer</li>
+<li>Gewicht fast 12 Kilogramm</li>
+<li>5‘‘ Bildschirm</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/Osborne1.png" /><br />
+</p>
+</div>
+</section>
+<section id="ubiquitäre-systeme-1991" class="slide level3">
+<h3>Ubiquitäre Systeme (1991)</h3>
+<div id="left">
+<ul>
+<li>Formfaktoren: Tabs, Pads, Boards</li>
+<li>Eingebettete Systeme die selbstständig auf Umwelt reagieren
+<ul>
+<li>Ortung</li>
+<li>Sensorik</li>
+<li>Drahtlose Vernetzung</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/XeroxPARCPAd.png" /><br />
+</p>
+</div>
+</section>
+<section id="nokia-series-40-1999" class="slide level3">
+<h3>Nokia Series 40 (1999)</h3>
+<div id="left">
+<ul>
+<li>Über 1,5 Milliarden verkaufte Geräte mit Series 40</li>
+<li>Nach Microsofts Übernahme von Nokias Handysparte eingestellt</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/Nokia7110.png" /><br />
+</p>
+</div>
+</section>
+<section id="rim-blackberry-5810-2002" class="slide level3">
+<h3>RIM BlackBerry 5810 (2002)</h3>
+<div id="left">
+<ul>
+<li>Erste Kombination von Telefonie und PDA (Smartphone)</li>
+<li>BlackBerry hat inzwischen extrem an Bedeutung verloren</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/BlackBerry5810.png" /> </p>
+</div>
+</section>
+<section id="ios-2007" class="slide level3">
+<h3>iOS (2007)</h3>
+<div id="left">
+<ul>
+<li>Gemeinsame Basis mit macOS (Darwin)</li>
+<li>Betriebssystem für
+<ul>
+<li>iPhone</li>
+<li>iPad</li>
+<li>iPod Touch</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/iPhone.png" id="id"
+class="class" height="570" /><br />
+</p>
+</div>
+</section>
+<section id="android-2008" class="slide level3">
+<h3>Android (2008)</h3>
+<div id="left">
+<ul>
+<li>Angepasster Linux Kernel</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mobile/black/htcDream.png" /> </p>
+</div>
+</section>
+<section id="was-bedeutet-mobile-heute" class="slide level3">
+<h3>Was bedeutet “Mobile” heute?</h3>
+<ul>
+<li>Mobil</li>
+<li>Vernetzt</li>
+<li>Kontextuell</li>
+<li>Einfach</li>
+</ul>
+</section>
+<section id="weitere-eigenschaften" class="slide level3">
+<h3>Weitere Eigenschaften</h3>
+<ul>
+<li>Gute User Experience</li>
+<li>Hohe Innovationsgeschwindigkeit</li>
+<li>Viele integrierte Fähigkeiten</li>
+<li>Soziale Interaktion</li>
+<li>Lange Akkulaufzeit</li>
+<li>Sofortige Verfügbarkeit</li>
+<li>Ständige Konnektivität</li>
+<li>Sensoren und Kontextinformationen</li>
+<li>Apps</li>
+</ul>
+</section>
+<section id="abgrenzung" class="slide level3">
+<h3>Abgrenzung</h3>
+<p><img data-src="../images/mobile/mobilevsstationary.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</section></section>
+<section>
+<section id="besonderheiten-bei-mobilen-endgeräten"
+class="title-slide slide level2">
+<h2>Besonderheiten bei mobilen Endgeräten</h2>
+
+</section>
+<section id="oberflächengetriebene-konzeption-und-entwicklung"
+class="slide level3">
+<h3>Oberflächengetriebene Konzeption und Entwicklung</h3>
+<ul>
+<li>Entwicklung mobiler Apps ist stark oberflächengetrieben</li>
+<li>Usability steht im Vordergrund</li>
+<li>Möglichst nahtloses und passgenaues Einfügen in die Erlebniswelt des
+Benutzers (User Experience (UX))</li>
+</ul>
+</section>
+<section id="nutzungsgewohnheiten" class="slide level3">
+<h3>Nutzungsgewohnheiten</h3>
+<ul>
+<li>Nutzung überall</li>
+<li>Dringende Aufgaben</li>
+<li>Wiederholte Aufgaben</li>
+<li>Echtzeitaufgaben</li>
+<li>Kurze und wiederholte Nutzung</li>
+</ul>
+</section>
+<section id="multi-touch-displays" class="slide level3">
+<h3>Multi-Touch-Displays</h3>
+<ul>
+<li>Im Vergleich zu Notebooks und stationären Computern kleine
+Displays</li>
+<li>Andere Interaktionsmöglichkeiten (Touch)</li>
+<li>Verfügbarkeit von Gesten</li>
+</ul>
+</section>
+<section id="hardware--und-software-seitige-fragmentierung"
+class="slide level3">
+<h3>Hardware- und Software-seitige Fragmentierung</h3>
+<ul>
+<li>Variierende Hardware-Komponenten</li>
+<li>Unterschiedlichen Konfigurationen und Displayygrößen</li>
+<li>Verschiedene mobile Betriebssysteme und Betriebssystemversionen</li>
+</ul>
+</section>
+<section id="ressourcen" class="slide level3">
+<h3>Ressourcen</h3>
+<ul>
+<li>Je nach Markt eingeschränkte Hardwareressourcen</li>
+<li>Schwankende Netzverfügbarkeit</li>
+<li>Plötzliche Verbindungsabbrüche</li>
+<li>Unterbrechungsmöglichkeiten (z.B. eingehender Anruf)</li>
+</ul>
+</section>
+<section id="sensoren-und-aktoren" class="slide level3">
+<h3>Sensoren und Aktoren</h3>
+<ul>
+<li>Beschleunigungssensor</li>
+<li>Gyroskop</li>
+<li>GPS-Sensor</li>
+<li>Magnetfeldsensor</li>
+<li>Kamera</li>
+<li>Mikrofon</li>
+<li>Helligkeitssensor</li>
+<li>Annäherungssensor</li>
+<li>Voltmeter</li>
+<li>Vibrationsaktor</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Auswahl weiterer Sensoren</strong></p>
+<ul>
+<li>Barometer</li>
+<li>Hygrometer</li>
+<li>Pulsmesser</li>
+<li>Thermometer</li>
+<li>Eye-Tracker</li>
+<li>Fingerabdrucksensor</li>
+</ul>
+</section></section>
+<section>
+<section id="moderne-programmiersprachen"
+class="title-slide slide level2">
+<h2>Moderne Programmiersprachen</h2>
+
+</section>
+<section id="programmierparadigmen" class="slide level3">
+<h3>Programmierparadigmen</h3>
+</section>
+<section class="slide level3">
+
+<blockquote>
+<p>Programmers who program “in” a language limit their thoughts to
+constructs that the language directly supports. If [they] are primitive,
+the programmer’s thoughts will also be primitive.  Programmers who
+program “into” a language first decide what thoughts they want to
+express, and then they determine how to express those [with] their
+specific language.</p>
+</blockquote>
+<p>Steve McConnell</p>
+</section>
+<section class="slide level3">
+
+<p><strong>Objektorientierung</strong></p>
+<ul>
+<li>Abstraktion von Daten und darauf arbeitenden Funktionen und Methoden
+in einer Struktur (Klassen und Objekte)
+<ul>
+<li>Swift erlaubt dies auch außerhalb von Klassen!</li>
+</ul></li>
+<li>Modellierung von Spezialisierungshierarchien (Vererbung)</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Funktionale Programmierung</strong></p>
+<ul>
+<li>Im Zentrum stehen Funktionen, die Eingaben in Ausgaben
+transformieren</li>
+<li>Funktionen können Eingabeparameter und Rückgabewerte sein
+(Funktionen höherer Ordnung)</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p><strong>Scripting</strong></p>
+<ul>
+<li>Verzicht auf Overhead</li>
+<li>Typinferenz</li>
+<li>REPL Umgebungen</li>
+</ul>
+</section>
+<section id="null-safety" class="slide level3">
+<h3>Null Safety</h3>
+<blockquote>
+<p>„I call it my billion-dollar mistake. It was the invention of the
+null reference in 1965. […] This has led to innumerable errors,
+vulnerabilities, and system crashes, which have probably caused a
+billion dollars of pain and damage in the last forty years.”</p>
+</blockquote>
+<p>Tony Hoare</p>
+</section></section>
+<section>
+<section id="ereignisgesteuerte-programmierung"
+class="title-slide slide level2">
+<h2>Ereignisgesteuerte Programmierung</h2>
+
+</section>
+<section id="ios" class="slide level3">
+<h3>iOS</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/lifecycleiosswiftui.svg" /><br />
+</p>
+</section>
+<section id="android" class="slide level3">
+<h3>Android</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/lifecycledroid.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</section>
+<section id="maui" class="slide level3">
+<h3>MAUI</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/uml/black/lifecyclexamarin.svg" /><br />
+</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
