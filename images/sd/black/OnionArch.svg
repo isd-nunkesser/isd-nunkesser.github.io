@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 501 501"
+	 style="enable-background:new 0 0 501 501;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:4,4;}
+	.st2{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+	.st4{fill:#FFFFFF;}
+	.st5{font-family:'HelveticaNeue';}
+	.st6{font-size:16px;}
+	.st7{font-family:'ArialMT';}
+	.st8{font-size:12px;}
+	.st9{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<defs>
+	
+		<font-face  ascent="951.9958" cap-height="714" descent="-212.99744" font-family="Helvetica Neue" font-size="16" font-weight="400" panose-1="2 0 5 3 0 0 0 2 0 4" slope="0" underline-position="-100" underline-thickness="50" units-per-em="1000" x-height="517">
+		<font-face-src>
+			<font-face-name  name="HelveticaNeue"></font-face-name>
+		</font-face-src>
+	</font-face>
+</defs>
+<g id="Canvas_1">
+	<title>Canvas 1</title>
+	<rect y="0" width="501" height="501"/>
+	<g id="Canvas_1_Layer_1">
+		<title>Layer 1</title>
+		<g id="Graphic_26">
+			<path class="st0" d="M427.3,426.8c97.6-97.6,97.6-255.9,0-353.6c-97.6-97.6-255.9-97.6-353.6,0c-97.6,97.6-97.6,255.9,0,353.6
+				C171.4,524.4,329.6,524.4,427.3,426.8"/>
+		</g>
+		<g id="Line_35">
+			<line class="st1" x1="72.5" y1="75.5" x2="383" y2="386"/>
+		</g>
+		<g id="Line_34">
+			<line class="st1" x1="250.5" y1="452.5" x2="250.5" y2="500"/>
+		</g>
+		<g id="Line_31">
+			<line class="st1" x1="449.5" y1="253.5" x2="500.5" y2="253.5"/>
+		</g>
+		<g id="Line_23">
+			<line class="st2" x1="395.7" y1="103" x2="94.7" y2="404"/>
+		</g>
+		<g id="Line_22">
+			<line class="st2" x1="99" y1="103" x2="400" y2="404"/>
+		</g>
+		<g id="Graphic_9">
+			<path d="M391.9,394.9c78.1-78.1,78.1-204.7,0-282.8c-78.1-78.1-204.7-78.1-282.8,0c-78.1,78.1-78.1,204.7,0,282.8
+				C187.2,473,313.8,473,391.9,394.9"/>
+			<path class="st3" d="M391.9,394.9c78.1-78.1,78.1-204.7,0-282.8c-78.1-78.1-204.7-78.1-282.8,0c-78.1,78.1-78.1,204.7,0,282.8
+				C187.2,473,313.8,473,391.9,394.9"/>
+			<g>
+				<defs>
+					<path id="SVGID_1_" d="M391.9,394.9c78.1-78.1,78.1-204.7,0-282.8c-78.1-78.1-204.7-78.1-282.8,0
+						c-78.1,78.1-78.1,204.7,0,282.8C187.2,473,313.8,473,391.9,394.9"/>
+				</defs>
+				<clipPath id="SVGID_2_">
+					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+				</clipPath>
+				<text transform="matrix(1 0 0 1 233.2867 73.5)" class="st4 st5 st6">Core </text>
+				<text transform="matrix(1 0 0 1 219.9507 91.948)" class="st4 st5 st6">Layering</text>
+			</g>
+		</g>
+		<g id="Graphic_8">
+			<path class="st1" d="M356.6,356.1c58.6-58.6,58.6-153.6,0-212.1c-58.6-58.6-153.6-58.6-212.1,0c-58.6,58.6-58.6,153.6,0,212.1
+				C203,414.6,298,414.6,356.6,356.1"/>
+			<g>
+				<defs>
+					<circle id="SVGID_3_" cx="250.5" cy="250" r="150"/>
+				</defs>
+				<clipPath id="SVGID_4_">
+					<use xlink:href="#SVGID_3_"  style="overflow:visible;"/>
+				</clipPath>
+				<text transform="matrix(1 0 0 1 233.2773 120)" class="st4 st5 st6">Core</text>
+				<text transform="matrix(1 0 0 1 267.6447 120)" class="st4 st7 st8"> </text>
+				<text transform="matrix(1 0 0 1 219.9413 138.448)" class="st4 st5 st6">Layering</text>
+			</g>
+		</g>
+		<g id="Graphic_7">
+			<circle class="st9" cx="250.5" cy="250" r="100"/>
+			<g>
+				<defs>
+					<circle id="SVGID_5_" cx="250.5" cy="250" r="100"/>
+				</defs>
+				<clipPath id="SVGID_6_">
+					<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+				</clipPath>
+				<text transform="matrix(1 0 0 1 170.628 255)" class="st4 st5 st6">Entities, Value Objects</text>
+			</g>
+		</g>
+		<g id="Graphic_32">
+			<text transform="matrix(0.866 0.5 -0.5 0.866 299.193 30.8206)" class="st4 st5 st6">User Interface</text>
+		</g>
+		<g id="Graphic_33">
+			<text transform="matrix(0.6157 -0.788 0.788 0.6157 382.203 444.3588)" class="st4 st5 st6">Infrastructure</text>
+		</g>
+		<g id="Graphic_36">
+			<text transform="matrix(0.3907 0.9205 -0.9205 0.3907 32.5035 318.2874)" class="st4 st5 st6">Tests</text>
+		</g>
+	</g>
+</g>
+</svg>
