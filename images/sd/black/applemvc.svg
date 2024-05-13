@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 526.7 275.1" style="enable-background:new 0 0 526.7 275.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#CCCBCB;stroke-width:1.0996;stroke-miterlimit:10;}
+	.st1{fill:#CCCBCB;}
+	.st2{font-family:'OpenSans-Bold';}
+	.st3{font-size:17.0046px;}
+	.st4{font-size:14.1705px;}
+	.st5{fill:none;stroke:#CCCBCB;stroke-width:2.8341;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#F9F8F8;}
+</style>
+<g>
+	<path d="M129.3,191.2v78.3c0,2.8-2.3,5-5,5H5.6c-2.8,0-5-2.3-5-5v-78.3c0-2.8,2.3-5,5-5h118.6C127,186.2,129.3,188.4,129.3,191.2"
+		/>
+	<path class="st0" d="M129.3,191.2v78.3c0,2.8-2.3,5-5,5H5.6c-2.8,0-5-2.3-5-5v-78.3c0-2.8,2.3-5,5-5h118.6
+		C127,186.2,129.3,188.4,129.3,191.2z"/>
+	<path class="st1" d="M129.3,191.2v15.4H0.5v-15.4c0-2.8,2.3-5,5-5h118.6C127,186.2,129.3,188.4,129.3,191.2"/>
+</g>
+<text transform="matrix(1 0 0 1 22.8346 230.9272)"><tspan x="0" y="0" class="st1 st2 st3">Command</tspan><tspan x="-1.7" y="17" class="st1 st2 st3">Composite</tspan></text>
+<g>
+	<text transform="matrix(1 0 0 1 49.2999 197.7871)" class="st2 st4">View</text>
+</g>
+<path d="M526.2,191v78.3c0,2.8-2.3,5-5,5H402.5c-2.8,0-5-2.3-5-5V191c0-2.8,2.3-5,5-5h118.6C523.9,186,526.2,188.2,526.2,191"/>
+<path class="st0" d="M526.2,191v78.3c0,2.8-2.3,5-5,5H402.5c-2.8,0-5-2.3-5-5V191c0-2.8,2.3-5,5-5h118.6
+	C523.9,186,526.2,188.2,526.2,191z"/>
+<path class="st1" d="M526.2,191.2v15.4H397.5v-15.4c0-2.8,2.3-5,5-5h118.6C523.9,186.2,526.2,188.4,526.2,191.2"/>
+<text transform="matrix(1 0 0 1 424.2482 239.8335)" class="st1 st2 st3">Observer</text>
+<text transform="matrix(1 0 0 1 376.6584 27.916)" class="st1 st2 st4">Update</text>
+<text transform="matrix(1 0 0 1 94.6354 27.916)" class="st1 st2 st4">User Action</text>
+<g>
+	<text transform="matrix(1 0 0 1 441.3278 197.7871)" class="st2 st4">Model</text>
+</g>
+<g>
+	<line class="st5" x1="64.9" y1="9.4" x2="198.7" y2="9.4"/>
+	<line class="st5" x1="64.9" y1="9.4" x2="64.9" y2="175"/>
+	<line class="st5" x1="64.9" y1="176" x2="59.6" y2="168.7"/>
+	<line class="st5" x1="64.9" y1="176" x2="70.2" y2="168.7"/>
+</g>
+<g>
+	<line class="st5" x1="461.8" y1="9.4" x2="328" y2="9.4"/>
+	<line class="st5" x1="461.8" y1="9.4" x2="461.8" y2="175"/>
+	<line class="st5" x1="461.8" y1="176" x2="467.1" y2="168.7"/>
+	<line class="st5" x1="461.8" y1="176" x2="456.5" y2="168.7"/>
+</g>
+<g>
+	<g>
+		<path d="M327.7,5.6v78.3c0,2.8-2.3,5-5,5H204c-2.8,0-5-2.3-5-5V5.6c0-2.8,2.3-5,5-5h118.6C325.4,0.5,327.7,2.8,327.7,5.6"/>
+		<path class="st0" d="M327.7,5.6v78.3c0,2.8-2.3,5-5,5H204c-2.8,0-5-2.3-5-5V5.6c0-2.8,2.3-5,5-5h118.6
+			C325.4,0.5,327.7,2.8,327.7,5.6z"/>
+		<path class="st6" d="M327.7,5.6V21H199V5.6c0-2.8,2.3-5,5-5h118.6C325.4,0.5,327.7,2.8,327.7,5.6"/>
+	</g>
+	<text transform="matrix(1 0 0 1 225.7858 45.2924)"><tspan x="0" y="0" class="st1 st2 st3">Mediator</tspan><tspan x="3.2" y="17" class="st1 st2 st3">Strategy</tspan></text>
+	<g>
+		<text transform="matrix(1 0 0 1 228.7858 12.1528)" class="st2 st4">Controller</text>
+	</g>
+</g>
+<g>
+	<line class="st5" x1="247.1" y1="227" x2="247.1" y2="90.4"/>
+	<line class="st5" x1="247.1" y1="227" x2="146.8" y2="227"/>
+	<line class="st5" x1="145.7" y1="227" x2="153" y2="232.3"/>
+	<line class="st5" x1="145.7" y1="227" x2="153" y2="221.8"/>
+</g>
+<g>
+	<line class="st5" x1="279.6" y1="227" x2="279.6" y2="90.4"/>
+	<line class="st5" x1="279.6" y1="227" x2="380" y2="227"/>
+	<line class="st5" x1="381" y1="227" x2="373.7" y2="232.3"/>
+	<line class="st5" x1="381" y1="227" x2="373.7" y2="221.8"/>
+</g>
+<text transform="matrix(1 0 0 1 309.4435 207.2866)" class="st1 st2 st4">Notify</text>
+<text transform="matrix(1 0 0 1 172.0783 207.2866)" class="st1 st2 st4">Update</text>
+</svg>
