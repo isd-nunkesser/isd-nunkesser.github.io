@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 278.5 288.1">
+  <!-- Generator: Adobe Illustrator 29.1.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 142)  -->
+  <defs>
+    <style>
+      .st0 {
+        font-family: Times-Roman, Times;
+        font-size: 14px;
+      }
+
+      .st0, .st1 {
+        fill: #fff;
+      }
+
+      .st2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 1px;
+      }
+    </style>
+  </defs>
+  <path class="st2" d="M130.2,36.4c0,19.8-29,35.9-64.8,35.9S.5,56.2.5,36.4,29.5.5,65.3.5s64.8,16.1,64.8,35.9Z"/>
+  <text class="st0" transform="translate(34.6 28.3)"><tspan x="0" y="0">(SNP6!=1)</tspan></text>
+  <text class="st0" transform="translate(37.9 42.5)"><tspan x="0" y="0">(255,142)</tspan></text>
+  <text class="st0" transform="translate(26.9 56.8)"><tspan x="0" y="0">399 (45.54%)</tspan></text>
+  <path class="st2" d="M278,36.4c0,19.8-29,35.9-64.8,35.9s-64.8-16.1-64.8-35.9S177.4.5,213.2.5s64.8,16.1,64.8,35.9Z"/>
+  <text class="st0" transform="translate(180.8 28.3)"><tspan x="0" y="0">(SNP9==1)</tspan></text>
+  <text class="st0" transform="translate(185.8 42.5)"><tspan x="0" y="0">(336,227)</tspan></text>
+  <text class="st0" transform="translate(174.7 56.8)"><tspan x="0" y="0">231 (26.36%)</tspan></text>
+  <path class="st2" d="M130.2,144c0,19.8-29,35.9-64.8,35.9S.5,163.8.5,144s29-35.9,64.8-35.9,64.8,16.1,64.8,35.9Z"/>
+  <text class="st0" transform="translate(33 136)"><tspan x="0" y="0">(SNP7==1)</tspan></text>
+  <text class="st0" transform="translate(41.4 150.2)"><tspan x="0" y="0">(177,56)</tspan></text>
+  <text class="st0" transform="translate(26.9 164.5)"><tspan x="0" y="0">387 (96.99%)</tspan></text>
+  <path class="st2" d="M65.3,72.6v24.2"/>
+  <polygon class="st1" points="68.8 96.5 65.3 106.5 61.8 96.5 68.8 96.5"/>
+  <polygon class="st2" points="68.8 96.5 65.3 106.5 61.8 96.5 68.8 96.5"/>
+  <path class="st2" d="M274.3,144c0,19.8-27.4,35.9-61.1,35.9s-61.1-16.1-61.1-35.9,27.4-35.9,61.1-35.9,61.1,16.1,61.1,35.9Z"/>
+  <text class="st0" transform="translate(177.3 136)"><tspan x="0" y="0">(SNP10==1)</tspan></text>
+  <text class="st0" transform="translate(185.8 150.2)"><tspan x="0" y="0">(214,104)</tspan></text>
+  <text class="st0" transform="translate(178.2 164.5)"><tspan x="0" y="0">228 (98.7%)</tspan></text>
+  <path class="st2" d="M213.2,72.6v24.2"/>
+  <polygon class="st1" points="216.7 96.5 213.2 106.5 209.7 96.5 216.7 96.5"/>
+  <polygon class="st2" points="216.7 96.5 213.2 106.5 209.7 96.5 216.7 96.5"/>
+  <path class="st2" d="M278,251.7c0,19.8-29,35.9-64.8,35.9s-64.8-16.1-64.8-35.9,29-35.9,64.8-35.9,64.8,16.1,64.8,35.9Z"/>
+  <text class="st0" transform="translate(180.8 243.7)"><tspan x="0" y="0">(SNP3==1)</tspan></text>
+  <text class="st0" transform="translate(189.3 257.9)"><tspan x="0" y="0">(144,41)</tspan></text>
+  <text class="st0" transform="translate(174.7 272.1)"><tspan x="0" y="0">222 (97.36%)</tspan></text>
+  <path class="st2" d="M213.2,180.2v24.2"/>
+  <polygon class="st1" points="216.7 204.2 213.2 214.2 209.7 204.2 216.7 204.2"/>
+  <polygon class="st2" points="216.7 204.2 213.2 214.2 209.7 204.2 216.7 204.2"/>
+</svg>
