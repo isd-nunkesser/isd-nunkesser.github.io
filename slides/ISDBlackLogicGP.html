@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>logicGP</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        background-color: #2a211c;
+        color: #bdae9d;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+    div.sourceCode
+      { color: #bdae9d; background-color: #2a211c; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ffff00; } /* Alert */
+    code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { } /* Attribute */
+    code span.bn { color: #44aa43; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #049b0a; } /* Char */
+    code span.cn { } /* Constant */
+    code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+    code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+    code span.dt { text-decoration: underline; } /* DataType */
+    code span.dv { color: #44aa43; } /* DecVal */
+    code span.er { color: #ffff00; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #44aa43; } /* Float */
+    code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+    code span.op { } /* Operator */
+    code span.pp { font-weight: bold; } /* Preprocessor */
+    code span.sc { color: #049b0a; } /* SpecialChar */
+    code span.ss { color: #049b0a; } /* SpecialString */
+    code span.st { color: #049b0a; } /* String */
+    code span.va { } /* Variable */
+    code span.vs { color: #049b0a; } /* VerbatimString */
+    code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/isdblack.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">logicGP</h1>
+</section>
+
+<section>
+<section id="what-is-logicgp" class="title-slide slide level2">
+<h2>What is logicGP?</h2>
+
+</section>
+<section id="introduction" class="slide level3">
+<h3>Introduction</h3>
+<blockquote>
+<p>A Framework for Literal Based Classification</p>
+</blockquote>
+</section>
+<section id="classification" class="slide level3">
+<h3>Classification</h3>
+<p><img data-src="../images/talks/black/Flower-parts.svg" id="id"
+class="class" height="180" /><br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th><span
+class="math inline"><em>s</em><em>e</em><em>p</em><em>a</em><em>l</em><sub><em>l</em></sub></span></th>
+<th><span
+class="math inline"><em>s</em><em>e</em><em>p</em><em>a</em><em>l</em><sub><em>w</em></sub></span></th>
+<th><span
+class="math inline"><em>p</em><em>e</em><em>t</em><em>a</em><em>l</em><sub><em>l</em></sub></span></th>
+<th><span
+class="math inline"><em>p</em><em>e</em><em>t</em><em>a</em><em>l</em><sub><em>w</em></sub></span></th>
+<th>Class</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">5.1</span></td>
+<td><span class="math inline">3.5</span></td>
+<td><span class="math inline">1.4</span></td>
+<td><span class="math inline">0.2</span></td>
+<td>Setosa</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">7.0</span></td>
+<td><span class="math inline">3.2</span></td>
+<td><span class="math inline">4.7</span></td>
+<td><span class="math inline">1.4</span></td>
+<td>Versicolor</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">6.3</span></td>
+<td><span class="math inline">3.3</span></td>
+<td><span class="math inline">6.0</span></td>
+<td><span class="math inline">2.5</span></td>
+<td>Virginica</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">…</span></td>
+<td><span class="math inline">…</span></td>
+<td><span class="math inline">…</span></td>
+<td><span class="math inline">…</span></td>
+<td><span class="math inline">…</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="literals" class="slide level3">
+<h3>Literals</h3>
+<ul>
+<li>Term is commonly used in Boolean algebra</li>
+<li>Atomic formulas or their negations</li>
+<li>Evaluating to <code>true</code> or <code>false</code></li>
+<li>Examples for classification:
+<ul>
+<li>sepal length<span class="math inline"> &gt; 6.0</span></li>
+<li>sepal length<span class="math inline"> ≤ 6.0</span></li>
+<li>petal width ∈ <span class="math inline">[1.9; 2.5]</span></li>
+</ul></li>
+</ul>
+</section>
+<section id="logicgp-classification-model" class="slide level3">
+<h3>logicGP Classification Model</h3>
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 8%" />
+<col style="width: 74%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th><span
+class="math inline"><em>w</em><sub><em>s</em><em>e</em><em>t</em><em>o</em></sub></span></th>
+<th><span
+class="math inline"><em>w</em><sub><em>v</em><em>e</em><em>r</em><em>s</em></sub></span></th>
+<th><span
+class="math inline"><em>w</em><sub><em>v</em><em>i</em><em>r</em><em>g</em></sub></span></th>
+<th>Condition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1.00</td>
+<td>0.00</td>
+<td>0.00</td>
+<td>None below fulfilled</td>
+</tr>
+<tr class="even">
+<td>0.00</td>
+<td>2.31</td>
+<td>1.39</td>
+<td>petal width ∈ [1.4;1.6]</td>
+</tr>
+<tr class="odd">
+<td>0.00</td>
+<td>5.56</td>
+<td>0.00</td>
+<td>sepal width ∈ [2.0;3.0] <span class="math inline">∧</span> petal
+width ∈ [0.4;1.3]</td>
+</tr>
+<tr class="even">
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>petal length ∈ [5.2;6.9]</td>
+</tr>
+<tr class="odd">
+<td>0.00</td>
+<td>0.00</td>
+<td>7.00</td>
+<td>petal width ∈ [1.9;2.5]</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="genetic-programming" class="slide level3">
+<h3>Genetic Programming</h3>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/talks/black/MutationsCrossoverOverview2.svg"
+id="id" class="class" height="690" /><br />
+</p>
+</section></section>
+<section>
+<section id="implementation" class="title-slide slide level2">
+<h2>Implementation</h2>
+
+</section>
+<section id="why-c" class="slide level3">
+<h3>Why C#?</h3>
+<ul>
+<li>Common choice for enterprise software</li>
+<li>Superior performance in comparison to Python</li>
+<li>More modern than Java</li>
+</ul>
+</section>
+<section id="existing-projects" class="slide level3">
+<h3>Existing Projects</h3>
+<ul>
+<li><a href="https://github.com/dotnet/machinelearning">ML.NET</a> is
+Microsoft’s open-source machine learning (ML) framework for .NET
+<ul>
+<li>Necessary and helpful but difficult to expand</li>
+</ul></li>
+<li><a href="https://github.com/aimacode/aima-csharp">aima-csharp</a>
+provides C# implementations for algorithms discussed in Artificial
+Intelligence - A Modern Approach
+<ul>
+<li>Incomplete and outdated</li>
+</ul></li>
+<li><a
+href="https://github.com/giacomelli/GeneticSharp">GeneticSharp</a> is a
+Genetic Algorithm library
+<ul>
+<li>Focussed on Genetic Algorithms and not Genetic Programming</li>
+</ul></li>
+<li><a href="https://github.com/pedrodbs/Genetica">Genetica</a> is a
+Genetic Programming library
+<ul>
+<li>Outdated</li>
+</ul></li>
+</ul>
+</section>
+<section id="new-open-source-projects" class="slide level3">
+<h3>New Open Source Projects</h3>
+<ul>
+<li><a href="https://github.com/Italbytz/nuget-ml">Italbytz.ML</a>
+provides extensions for ML.NET necessary for the implementation of
+custom algorithms</li>
+<li><a
+href="https://github.com/Italbytz/nuget-ports-algorithms-ai">Italbytz.Ports.Algorithms.AI</a>
+and <a
+href="https://github.com/Italbytz/nuget-adapters-algorithms-ai">Italbytz.Adapters.Algorithms.AI</a>
+<ul>
+<li>Provide C# interfaces and implementations for algorithms discussed
+in Artificial Intelligence - A Modern Approach</li>
+<li>Offers Genetic Programming library for the implementation of
+logicGP</li>
+<li>Genetic and Evolutionary Computation library inspired by <a
+href="https://sourceforge.net/projects/freak427/">FrEAK</a> planned</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="genetic-and-evolutionary-computation-library"
+class="title-slide slide level2">
+<h2>Genetic and Evolutionary Computation Library</h2>
+
+</section>
+<section id="freak" class="slide level3">
+<h3>FrEAK</h3>
+<p><img data-src="../images/talks/freak.png" id="id" class="class"
+height="590" /><br />
+</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/talks/freak3.png" id="id" class="class"
+height="590" /><br />
+</p>
+</section>
+<section id="current-situation" class="slide level3">
+<h3>Current Situation</h3>
+<ul>
+<li>Very pragmatic approach with focus on logicGP</li>
+<li>No focus on UI</li>
+<li>Generalizability and expandability was maintained</li>
+<li>Greater use of the library in teaching planned</li>
+<li>Further development in cooperation with external Open Source
+developers would be great</li>
+</ul>
+</section>
+<section id="ea" class="slide level3">
+<h3>(1+1) EA</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode csharp"><code class="sourceCode cs"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">var</span> onePlusOneEA <span class="op">=</span> <span class="kw">new</span> EvolutionaryAlgorithm</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    FitnessFunction <span class="op">=</span> <span class="kw">new</span> <span class="fu">OneMax</span><span class="op">(),</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    SearchSpace <span class="op">=</span> <span class="kw">new</span> <span class="fu">BitString</span><span class="op">(),</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    AlgorithmGraph <span class="op">=</span> <span class="kw">new</span> <span class="fu">OnePlusOneEAGraph</span><span class="op">()</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="op">};</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>onePlusOneEA<span class="op">.</span><span class="fu">Initialization</span> <span class="op">=</span> <span class="kw">new</span> <span class="fu">RandomInitialization</span><span class="op">(</span>onePlusOneEA<span class="op">);</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>onePlusOneEA<span class="op">.</span><span class="fu">StoppingCriteria</span> <span class="op">=</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="op">[</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">new</span> <span class="fu">GenerationStoppingCriterion</span><span class="op">(</span>onePlusOneEA<span class="op">)</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="op">];</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>await onePlusOneEA<span class="op">.</span><span class="fu">Run</span><span class="op">();</span></span></code></pre></div>
+</section>
+<section class="slide level3">
+
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode csharp"><code class="sourceCode cs"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> OnePlusOneEAGraph <span class="op">:</span> OperatorGraph</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">OnePlusOneEAGraph</span><span class="op">()</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">{</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        Start <span class="op">=</span> <span class="kw">new</span> <span class="fu">Start</span><span class="op">();</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        Finish <span class="op">=</span> <span class="kw">new</span> <span class="fu">Finish</span><span class="op">();</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">var</span> mutation <span class="op">=</span> <span class="kw">new</span> <span class="fu">StandardMutation</span><span class="op">();</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="dt">var</span> selection <span class="op">=</span> <span class="kw">new</span> <span class="fu">CutSelection</span><span class="op">();</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        Start<span class="op">.</span><span class="fu">AddChildren</span><span class="op">(</span>mutation<span class="op">,</span> selection<span class="op">);</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>        mutation<span class="op">.</span><span class="fu">AddChildren</span><span class="op">(</span>selection<span class="op">);</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        selection<span class="op">.</span><span class="fu">AddChildren</span><span class="op">(</span>Finish<span class="op">);</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
