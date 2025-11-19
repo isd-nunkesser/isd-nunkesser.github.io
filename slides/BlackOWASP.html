@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>OWASP</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">OWASP</h1>
+</section>
+
+<section>
+<section id="motivation" class="title-slide slide level2">
+<h2>Motivation</h2>
+
+</section>
+<section id="security" class="slide level3">
+<h3>Security</h3>
+<div id="left">
+<ul>
+<li>Schutz sensibler Daten</li>
+<li>Vermeidung von Schäden</li>
+<li>Gesetzliche Anforderungen</li>
+<li>Vertrauen der Nutzer</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/jason-dent-3wPJxh-piRw-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@jdent?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jason
+Dent</a> auf
+<a href="https://unsplash.com/de/fotos/schwarz-silberner-turknauf-3wPJxh-piRw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="intrinsische-motivation" class="slide level3">
+<h3>Intrinsische Motivation</h3>
+<div id="left">
+<ul>
+<li>Verantwortung</li>
+<li>Image</li>
+<li>Proaktiver Schutz</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/mahmoud-azmy-hLM702Wwj8I-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@mahmoud_azmy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">mahmoud
+azmy</a> auf
+<a href="https://unsplash.com/de/fotos/ein-buro-mit-schreibtisch-stuhlen-und-einer-topfpflanze-hLM702Wwj8I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="extrinsische-motivation" class="slide level3">
+<h3>Extrinsische Motivation</h3>
+<div id="left">
+<ul>
+<li>Externe Zertifizierung gewünscht</li>
+<li>Penetrationstest kundenseitig vorgesehen</li>
+<li>Gesetzliche Vorgaben</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/joel-filipe-jU9VAZDGMzs-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@joelfilip?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel
+Filipe</a> auf
+<a href="https://unsplash.com/de/fotos/glasgebaude-unter-strahlend-blauem-himmel-jU9VAZDGMzs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="bekannte-beispiele" class="slide level3">
+<h3>Bekannte Beispiele</h3>
+<div id="left">
+<ul>
+<li>ISO/IEC 27000-Reihe</li>
+<li>DSGVO</li>
+<li>BSI TR-03174<br />
+</li>
+<li>“Trusted App” von TÜV TRUST IT</li>
+<li>Pentests von T-Systems, TÜV TRUST IT, TÜV Rheinland, etc.</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/samir-satam-iZLRg7JKiD8-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@humminglens?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Samir
+Satam</a> auf
+<a href="https://unsplash.com/de/fotos/nahaufnahme-alter-buchseiten-mit-text-auf-dem-rucken-iZLRg7JKiD8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="beispiel-tüv-trust-it" class="slide level3">
+<h3>Beispiel TÜV TRUST IT</h3>
+<blockquote>
+<p>Basierend auf dem renommierten Open Web Application Security Project
+(OWASP) Testing Guide analysieren unsere IT-Security-Experten gezielt
+Schwachstellen in Ihrer App</p>
+</blockquote>
+</section></section>
+<section>
+<section id="owasp" class="title-slide slide level2">
+<h2>OWASP</h2>
+
+</section>
+<section id="was-ist-owasp" class="slide level3">
+<h3>Was ist OWASP?</h3>
+<div id="left">
+<ul>
+<li>Open Worldwide Application Security Project (OWASP)</li>
+<li>Gemeinnützige Stiftung</li>
+<li>Ziel: Verbesserung der Softwaresicherheit</li>
+<li>Aufteilung in “Projekte”</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/owasp_logo_blue.svg" /></p>
+</div>
+</section>
+<section id="mobile-application-security" class="slide level3">
+<h3>Mobile Application Security</h3>
+<div id="left">
+<ul>
+<li>Ein Projekt von OWASP</li>
+<li>Eigene Website: <a
+href="https://mas.owasp.org">https://mas.owasp.org</a></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/logo_circle.png" /></p>
+</div>
+</section></section>
+<section>
+<section id="mobile-application-security-1"
+class="title-slide slide level2">
+<h2>Mobile Application Security</h2>
+
+</section>
+<section id="hauptbestandteile" class="slide level3">
+<h3>Hauptbestandteile</h3>
+<ul>
+<li><a href="https://mas.owasp.org/MASVS/">OWASP MASVS</a> (Mobile
+Application Security Verification Standard)</li>
+<li><a href="https://mas.owasp.org/MASWE/">OWASP MASWE</a> (Mobile
+Application Security Weakness Enumeration)</li>
+<li><a href="https://mas.owasp.org/MASTG/">OWASP MASTG</a> (Mobile
+Application Security Testing Guide)</li>
+</ul>
+</section>
+<section id="masvs---beispiel" class="slide level3">
+<h3>MASVS - Beispiel</h3>
+<blockquote>
+<p>The app securely stores sensitive data</p>
+</blockquote>
+<div id="left">
+<ul>
+<li>Enthält <em>Controls</em></li>
+<li>Regeln, die eingehalten werden sollen</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/Firefly408783.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section>
+<section id="maswe---beispiel" class="slide level3">
+<h3>MASWE - Beispiel</h3>
+<blockquote>
+<p><em>Sensitive Data Stored Unencrypted in Private Storage
+Locations</em></p>
+</blockquote>
+<div id="left">
+<ul>
+<li>Enthält <em>Weeknesses</em></li>
+<li>Schwachstellen, die ausgenutzt werden könnten</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/Firefly2.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section>
+<section id="mastg---beispiel" class="slide level3">
+<h3>MASTG - Beispiel</h3>
+<blockquote>
+<p>Data Stored in the App Sandbox at Runtime</p>
+</blockquote>
+<div id="left">
+<ul>
+<li>Enthält <em>Tests</em></li>
+<li>Testen, ob Schwachstellen vorhanden sind</li>
+<li>Enthält <em>Demos</em> für iOS und Android mit Schwachstellen</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/ildefonso-polo-DX9X0g0Cg88-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@i_m_polo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ildefonso
+Polo</a> auf
+<a href="https://unsplash.com/de/fotos/blaues-und-graues-schnurgebundenes-elektronisches-gerat-auf-schwarzem-gerat-DX9X0g0Cg88?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="anmerkungen" class="slide level3">
+<h3>Anmerkungen</h3>
+<ul>
+<li>Größere Änderungen zwischen v1 und v2</li>
+<li>Diese sind noch nicht abgeschlossen</li>
+<li>MASVS stabil</li>
+<li>MASWE und MASTG im Portierungsprozess</li>
+</ul>
+</section>
+<section id="kategorien" class="slide level3">
+<h3>Kategorien</h3>
+<ul>
+<li>Storage</li>
+<li>Cryptography</li>
+<li>Authentication and Authorization</li>
+<li>Network Communication</li>
+<li>Platform Interaction</li>
+<li>Code Quality</li>
+<li>Resilience Against Reverse Engineering and Tampering</li>
+<li>Privacy</li>
+</ul>
+</section></section>
+<section>
+<section id="testing-profiles" class="title-slide slide level2">
+<h2>Testing Profiles</h2>
+
+</section>
+<section id="motivation-1" class="slide level3">
+<h3>Motivation</h3>
+<ul>
+<li>Der MASTG enthält aktuell 189 Tests</li>
+<li>Einige davon sind sehr aufwändig</li>
+<li>Es lohnt sich eine Teilmenge als Testprofil festzulegen</li>
+<li>Es gibt fertige Profile</li>
+</ul>
+</section>
+<section id="aufteilung" class="slide level3">
+<h3>Aufteilung</h3>
+<ul>
+<li>Sicherheit
+<ul>
+<li>L1 - Mindestanforderungen</li>
+<li>L2 - Zusatzanforderungen (Externe Gefahren)</li>
+<li>R - Maximalanforderungen (Nutzer nicht vertrauenswürdig)</li>
+</ul></li>
+<li>Privatsphäre
+<ul>
+<li>P - Mindestanforderungen</li>
+</ul></li>
+</ul>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
