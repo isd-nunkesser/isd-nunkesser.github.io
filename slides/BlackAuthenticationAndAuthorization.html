@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Crypto-graphy</title>
+  <title>Authenti-cation and Authori-zation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -36,7 +36,7 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Crypto-graphy</h1>
+  <h1 class="title">Authenti-cation and Authori-zation</h1>
 </section>
 
 <section>
@@ -44,43 +44,19 @@
 <h2>Einleitung</h2>
 
 </section>
-<section id="kryptographie" class="slide level3">
-<h3>Kryptographie</h3>
+<section id="übersicht" class="slide level3">
+<h3>Übersicht</h3>
 <ul>
-<li>Kryptographie ist essentiell für mobile Apps, da mobile Geräte:
-<ul>
-<li>hochgradig portabel sind</li>
-<li>leicht verloren gehen oder gestohlen werden können</li>
-</ul></li>
-<li>Bei physischem Zugriff kann ein Angreifer auf sensible Daten
-zugreifen:
-<ul>
-<li>Passwörter</li>
-<li>Finanzinformationen</li>
-<li>Personenbezogene Daten</li>
-<li>…</li>
-</ul></li>
-<li>Kryptographie schützt durch Verschlüsselung vor unbefugtem
+<li>Bestandteil der meisten Apps, insbesondere bei Verbindung zu
+Remote-Services</li>
+<li>Bieten zusätzliche Sicherheitsebene und verhindern unbefugten
 Zugriff</li>
-</ul>
-</section>
-<section id="zweck-der-sicherheitskontrollen" class="slide level3">
-<h3>Zweck der Sicherheitskontrollen</h3>
-<ul>
-<li>Sicherstellung der Kryptographie nach Industriestandards
-<ul>
-<li>z.B. NIST.SP.800-175B und NIST.SP.800-57</li>
-</ul></li>
-<li>Fokus auf Schlüsselverwaltung über den gesamten Lebenszyklus:
-<ul>
-<li>Schlüsselerzeugung</li>
-<li>Speicherung</li>
-<li>Schutz</li>
-</ul></li>
-<li>Schlechte Schlüsselverwaltung kann selbst stärkste Kryptographie
-kompromittieren</li>
-<li>Entwickler müssen Best Practices befolgen zum Schutz sensibler
-Nutzerdaten</li>
+<li>Durchsetzung muss am Remote-Endpunkt erfolgen, aber App muss Best
+Practices für sichere Protokollnutzung befolgen</li>
+<li>Authentifizierungsformen: Biometrie, PIN oder
+Multi-Faktor-Authentifizierung</li>
+<li>Korrekte Implementierung ist entscheidend für Wirksamkeit gegen
+unbefugten Zugriff</li>
 </ul>
 </section></section>
 <section>
@@ -88,18 +64,25 @@ Nutzerdaten</li>
 <h2>Verification Controls</h2>
 
 </section>
-<section id="masvs-crypto-1" class="slide level3">
-<h3>MASVS-CRYPTO-1</h3>
+<section id="masvs-auth-1" class="slide level3">
+<h3>MASVS-AUTH-1</h3>
 <blockquote>
-<p>The app employs current strong cryptography and uses it according to
-industry best practices.</p>
+<p>The app uses secure authentication and authorization protocols and
+follows the relevant best practices.</p>
 </blockquote>
 </section>
-<section id="masvs-crypto-2" class="slide level3">
-<h3>MASVS-CRYPTO-2</h3>
+<section id="masvs-auth-2" class="slide level3">
+<h3>MASVS-AUTH-2</h3>
 <blockquote>
-<p>The app performs key management according to industry best
-practices.</p>
+<p>The app performs local authentication securely according to the
+platform best practices.</p>
+</blockquote>
+</section>
+<section id="masvs-auth-3" class="slide level3">
+<h3>MASVS-AUTH-3</h3>
+<blockquote>
+<p>The app secures sensitive operations with additional
+authentication.</p>
 </blockquote>
 </section></section>
 <section>
@@ -107,61 +90,25 @@ practices.</p>
 <h2>Weakness Enumeration</h2>
 
 </section>
-<section id="masvs-crypto-1-1" class="slide level3">
-<h3>MASVS-CRYPTO-1</h3>
+<section id="masvs-auth-1-1" class="slide level3">
+<h3>MASVS-AUTH-1</h3>
 <p>L1, P</p>
 <ul>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0020">MASWE-0020</a>:
-Improper Encryption</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0005">MASWE-0005</a>:
+API Keys Hardcoded in the App Package</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0021">MASWE-0021</a>:
-Improper Hashing</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0036">MASWE-0036</a>:
+Authentication Material Stored Unencrypted on the Device</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0022">MASWE-0022</a>:
-Predictable Initialization Vectors</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0037">MASWE-0037</a>:
+Authentication Material Sent over Insecure Connections</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0023">MASWE-0023</a>:
-Risky Padding</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0038">MASWE-0038</a>:
+Authentication Tokens Not Validated</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0024">MASWE-0024</a>:
-Improper Use of Message Authentication Code (MAC)</li>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0025">MASWE-0025</a>:
-Improper Generation of Cryptographic Signatures</li>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0026">MASWE-0026</a>:
-Improper Verification of Cryptographic Signature</li>
-</ul>
-</section>
-<section class="slide level3">
-
-<p>L1, P (cont.)</p>
-<ul>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0027">MASWE-0027</a>:
-Improper Random Number Generation</li>
-</ul>
-<p>L2</p>
-<ul>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0019">MASWE-0019</a>:
-Risky Cryptography Implementations</li>
-</ul>
-</section>
-<section id="masvs-crypto-2-1" class="slide level3">
-<h3>MASVS-CRYPTO-2</h3>
-<p>L1, P</p>
-<ul>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0009">MASWE-0009</a>:
-Improper Cryptographic Key Generation</li>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0010">MASWE-0010</a>:
-Improper Cryptographic Key Derivation</li>
-<li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0014">MASWE-0014</a>:
-Cryptographic Keys Not Properly Protected at Rest</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0040">MASWE-0040</a>:
+Insecure Authentication in WebViews</li>
 </ul>
 </section>
 <section class="slide level3">
@@ -169,23 +116,67 @@ Cryptographic Keys Not Properly Protected at Rest</li>
 <p>L2</p>
 <ul>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0011">MASWE-0011</a>:
-Cryptographic Key Rotation Not Implemented</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0032">MASWE-0032</a>:
+Platform-provided Authentication APIs Not Used</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0012">MASWE-0012</a>:
-Insecure or Wrong Usage of Cryptographic Key</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0033">MASWE-0033</a>:
+Authentication or Authorization Protocol Security Best Practices Not
+Followed</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0015">MASWE-0015</a>:
-Deprecated Android KeyStore Implementations</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0035">MASWE-0035</a>:
+Passwordless Authentication Not Implemented</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0016">MASWE-0016</a>:
-Unsafe Handling of Imported Cryptographic Keys</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0039">MASWE-0039</a>:
+Shared Web Credentials and Website-association Not Implemented</li>
+</ul>
+</section>
+<section id="masvs-auth-2-1" class="slide level3">
+<h3>MASVS-AUTH-2</h3>
+<p>L1, P</p>
+<ul>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0017">MASWE-0017</a>:
-Cryptographic Keys Not Properly Protected on Export</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0041">MASWE-0041</a>:
+Authentication Enforced Only Locally Instead of on the Server-side</li>
 <li><a
-href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0018">MASWE-0018</a>:
-Cryptographic Keys Access Not Restricted</li>
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0042">MASWE-0042</a>:
+Authorization Enforced Only Locally Instead of on the Server-side</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p>L2</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0043">MASWE-0043</a>:
+App Custom PIN Not Bound to Platform KeyStore</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0044">MASWE-0044</a>:
+Biometric Authentication Can Be Bypassed</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0045">MASWE-0045</a>:
+Fallback to Non-biometric Credentials Allowed for Sensitive
+Transactions</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0046">MASWE-0046</a>:
+Crypto Keys Not Invalidated on New Biometric Enrollment</li>
+</ul>
+</section>
+<section id="masvs-auth-3-1" class="slide level3">
+<h3>MASVS-AUTH-3</h3>
+<p>L2</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0028">MASWE-0028</a>:
+MFA Implementation Best Practices Not Followed</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0029">MASWE-0029</a>:
+Step-Up Authentication Not Implemented After Login</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0030">MASWE-0030</a>:
+Re-Authenticates Not Triggered On Contextual State Changes</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-AUTH/MASWE-0031">MASWE-0031</a>:
+Insecure use of Android Protected Confirmation</li>
 </ul>
 </section></section>
 <section>
@@ -193,13 +184,19 @@ Cryptographic Keys Access Not Restricted</li>
 <h2>Testing Guide</h2>
 
 </section>
-<section id="masvs-crypto-1-2" class="slide level3">
-<h3>MASVS-CRYPTO-1</h3>
-<p><img data-src="../images/graphviz/owaspcrypto1.svg" /></p>
+<section id="masvs-auth-1-2" class="slide level3">
+<h3>MASVS-AUTH-1</h3>
+<p><img data-src="../images/graphviz/owaspauth1.svg" id="id"
+class="class" height="570" /><br />
+</p>
 </section>
-<section id="masvs-crypto-2-2" class="slide level3">
-<h3>MASVS-CRYPTO-2</h3>
-<p><img data-src="../images/graphviz/owaspcrypto2.svg" /></p>
+<section id="masvs-auth-2-2" class="slide level3">
+<h3>MASVS-AUTH-2</h3>
+<p><img data-src="../images/graphviz/owaspauth2.svg" /></p>
+</section>
+<section id="masvs-auth-3-2" class="slide level3">
+<h3>MASVS-AUTH-3</h3>
+<p><img data-src="../images/graphviz/owaspauth3.svg" /></p>
 </section></section>
     </div>
   </div>
