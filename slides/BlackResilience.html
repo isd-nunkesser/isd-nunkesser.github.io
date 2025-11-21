@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>Resilience Against Reverse Engineering and Tampering</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Resilience Against Reverse Engineering and
+Tampering</h1>
+</section>
+
+<section>
+<section id="einleitung" class="title-slide slide level2">
+<h2>Einleitung</h2>
+
+</section>
+<section id="übersicht" class="slide level3">
+<h3>Übersicht</h3>
+<ul>
+<li>Maßnahmen wie Code-Verschleierung, Anti-Debugging, Anti-Manipulation
+und Runtime Application Self-Protection (RASP) erhöhen die
+Widerstandsfähigkeit einer App</li>
+<li>Sie fügen der App mehrere Sicherheitsebenen hinzu, was Angriffe
+erschwert</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<ul>
+<li>Das Fehlen dieser Maßnahmen stellt nicht von sich aus eine
+Schwachstelle dar.</li>
+<li>Resilienzmaßnahmen bieten zusätzlichen Schutz gegen
+bedrohungsspezifische Angriffe.</li>
+</ul>
+</section>
+<section id="geschäftliche-perspektive" class="slide level3">
+<h3>Geschäftliche Perspektive</h3>
+<p>Hilft, Risiken zu mindern wie:</p>
+<ul>
+<li>Diebstahl oder Kompromittierung von proprietären Algorithmen,
+Geschäftsgeheimnissen, Kundendaten, KI- oder
+Machine-Learning-Modellen</li>
+<li>Betrug, Schummeln oder Umsatzverlust in Online-Spielen, Finanz-Apps
+oder Abonnementmodellen</li>
+<li>Rechtliche und reputationsschädigende Folgen aufgrund von Vertrags-
+oder Regelverstößen</li>
+<li>Schädigung des Markenimages durch negative Publicity oder
+Unzufriedenheit der Kunden</li>
+</ul>
+</section>
+<section id="transparenz-und-offene-prüfperspektive"
+class="slide level3">
+<h3>Transparenz und offene Prüfperspektive</h3>
+<p>In einigen Kontexten, wie z.B. bei Regierungs-, Gesundheits- oder
+anderen Anwendungen von öffentlichem Interesse, sind Resilienzmaßnahmen
+möglicherweise aus mehreren Gründen nicht ideal:</p>
+<ul>
+<li>Sie verringern die Transparenz darüber, was die kompilierte
+Anwendung tut.</li>
+<li>Unabhängige Überprüfung der kompilierten Anwendung ist
+schwieriger.</li>
+<li>Die Vielfalt der Smartphone-Betriebssysteme kann zu false positives
+führen, was potenziell legitime Benutzer ausschließt.</li>
+</ul>
+</section></section>
+<section>
+<section id="verification-controls" class="title-slide slide level2">
+<h2>Verification Controls</h2>
+
+</section>
+<section id="masvs-resilience-1" class="slide level3">
+<h3>MASVS-RESILIENCE-1</h3>
+<blockquote>
+<p>The app validates the integrity of the platform.</p>
+</blockquote>
+</section>
+<section id="masvs-resilience-2" class="slide level3">
+<h3>MASVS-RESILIENCE-2</h3>
+<blockquote>
+<p>The app implements anti-tampering mechanisms.</p>
+</blockquote>
+</section>
+<section id="masvs-resilience-3" class="slide level3">
+<h3>MASVS-RESILIENCE-3</h3>
+<blockquote>
+<p>The app implements anti-static analysis mechanisms.</p>
+</blockquote>
+</section>
+<section id="masvs-resilience-4" class="slide level3">
+<h3>MASVS-RESILIENCE-4</h3>
+<blockquote>
+<p>The app implements anti-dynamic analysis techniques.</p>
+</blockquote>
+</section></section>
+<section>
+<section id="weakness-enumeration" class="title-slide slide level2">
+<h2>Weakness Enumeration</h2>
+
+</section>
+<section id="masvs-resilience-1-1" class="slide level3">
+<h3>MASVS-RESILIENCE-1</h3>
+<p>L2</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0008">MASWE-0008</a>:
+Missing Device Secure Lock Verification Implementation</li>
+</ul>
+</section>
+<section class="slide level3">
+
+<p>R</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0097">MASWE-0097</a>:
+Root/Jailbreak Detection Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0098">MASWE-0098</a>:
+App Virtualization Environment Detection Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0099">MASWE-0099</a>:
+Emulator Detection Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0100">MASWE-0100</a>:
+Device Attestation Not Implemented</li>
+</ul>
+</section>
+<section id="masvs-resilience-2-1" class="slide level3">
+<h3>MASVS-RESILIENCE-2</h3>
+<p>R</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0104">MASWE-0104</a>:
+App Integrity Not Verified</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0105">MASWE-0105</a>:
+Integrity of App Resources Not Verified</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0106">MASWE-0106</a>:
+Official Store Verification Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0107">MASWE-0107</a>:
+Runtime Code Integrity Not Verified</li>
+</ul>
+</section>
+<section id="masvs-resilience-3-1" class="slide level3">
+<h3>MASVS-RESILIENCE-3</h3>
+<p>R</p>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0089">MASWE-0089</a>:
+Code Obfuscation Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0090">MASWE-0090</a>:
+Resource Obfuscation Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0091">MASWE-0091</a>:
+Anti-Deobfuscation Techniques Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0092">MASWE-0092</a>:
+Static Analysis Tools Not Prevented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0093">MASWE-0093</a>:
+Debugging Symbols Not Removed</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0094">MASWE-0094</a>:
+Non-Production Resources Not Removed</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0095">MASWE-0095</a>:
+Code That Disables Security Controls Not Removed</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0096">MASWE-0096</a>:
+Data Sent Unencrypted Over Encrypted Connections</li>
+</ul>
+</section>
+<section id="masvs-resilience-4-1" class="slide level3">
+<h3>MASVS-RESILIENCE-4</h3>
+<ul>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0067">MASWE-0067</a>:
+Debuggable Flag Not Disabled</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0101">MASWE-0101</a>:
+Debugger Detection Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0102">MASWE-0102</a>:
+Dynamic Analysis Tools Detection Not Implemented</li>
+<li><a
+href="https://mas.owasp.org/MASWE/MASVS-RESILIENCE/MASWE-0103">MASWE-0103</a>:
+RASP Techniques Not Implemented</li>
+</ul>
+</section></section>
+<section>
+<section id="testing-guide" class="title-slide slide level2">
+<h2>Testing Guide</h2>
+
+</section>
+<section id="masvs-resilience-1-2" class="slide level3">
+<h3>MASVS-RESILIENCE-1</h3>
+<p><img data-src="../images/graphviz/owaspresilience1.svg" /></p>
+</section>
+<section id="masvs-resilience-2-2" class="slide level3">
+<h3>MASVS-RESILIENCE-2</h3>
+<p><img data-src="../images/graphviz/owaspresilience2.svg" /></p>
+</section>
+<section id="masvs-resilience-3-2" class="slide level3">
+<h3>MASVS-RESILIENCE-3</h3>
+<p><img data-src="../images/graphviz/owaspresilience3.svg" /></p>
+</section>
+<section id="masvs-resilience-4-2" class="slide level3">
+<h3>MASVS-RESILIENCE-4</h3>
+<p><img data-src="../images/graphviz/owaspresilience4.svg" /></p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
