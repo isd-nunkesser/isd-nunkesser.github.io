@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
+      overflow: scroll;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -46,11 +46,23 @@
 </section>
 <section id="übersicht" class="slide level3">
 <h3>Übersicht</h3>
+<div id="left">
 <ul>
 <li>Bestandteil der meisten Apps, insbesondere bei Verbindung zu
 Remote-Services</li>
 <li>Bieten zusätzliche Sicherheitsebene und verhindern unbefugten
 Zugriff</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/Firefly-3.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section>
+<section class="slide level3">
+
+<ul>
 <li>Durchsetzung muss am Remote-Endpunkt erfolgen, aber App muss Best
 Practices für sichere Protokollnutzung befolgen</li>
 <li>Authentifizierungsformen: Biometrie, PIN oder
@@ -197,6 +209,32 @@ class="class" height="570" /><br />
 <section id="masvs-auth-3-2" class="slide level3">
 <h3>MASVS-AUTH-3</h3>
 <p><img data-src="../images/graphviz/owaspauth3.svg" /></p>
+</section></section>
+<section>
+<section id="anmerkungen" class="title-slide slide level2">
+<h2>Anmerkungen</h2>
+
+</section>
+<section id="tests" class="slide level3">
+<h3>Tests</h3>
+<ul>
+<li>MAS definiert hier nur wenige Tests</li>
+<li>Die definierten Tests fallen überwiegend in Kategorie L2</li>
+<li>Warum ist das so?</li>
+</ul>
+</section>
+<section id="storage" class="slide level3">
+<h3>Storage</h3>
+<ul>
+<li>Viele Sicherheitsrisiken im Client beruhen auf unsicherer
+Speicherung</li>
+<li>Dies ist Teil von STORAGE</li>
+<li>Priorität bei der Absicherung in diesem Bereich hat ansonsten vor
+allem Server-Side Validation</li>
+<li>Bei Vertiefungsinteresse: <a
+href="https://docs.talsec.app/appsec-articles/articles/owasp-top-10-for-flutter-m3-insecure-authentication-and-authorization-in-flutter">Authentication
+and Authorization in Flutter</a></li>
+</ul>
 </section></section>
     </div>
   </div>
