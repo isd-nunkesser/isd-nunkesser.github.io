@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
+      overflow: scroll;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -46,12 +46,22 @@
 </section>
 <section id="kryptographie" class="slide level3">
 <h3>Kryptographie</h3>
-<ul>
-<li>Kryptographie ist essentiell für mobile Apps, da mobile Geräte:
+<div id="left">
+<p>Kryptographie ist essentiell für mobile Apps, da mobile Geräte:</p>
 <ul>
 <li>hochgradig portabel sind</li>
 <li>leicht verloren gehen oder gestohlen werden können</li>
-</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/Firefly-2.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section>
+<section class="slide level3">
+
+<ul>
 <li>Bei physischem Zugriff kann ein Angreifer auf sensible Daten
 zugreifen:
 <ul>
@@ -67,10 +77,8 @@ Zugriff</li>
 <section id="zweck-der-sicherheitskontrollen" class="slide level3">
 <h3>Zweck der Sicherheitskontrollen</h3>
 <ul>
-<li>Sicherstellung der Kryptographie nach Industriestandards
-<ul>
-<li>z.B. NIST.SP.800-175B und NIST.SP.800-57</li>
-</ul></li>
+<li>Sicherstellung der Kryptographie nach Industriestandards (z.B.
+NIST.SP.800-175B und NIST.SP.800-57)</li>
 <li>Fokus auf Schlüsselverwaltung über den gesamten Lebenszyklus:
 <ul>
 <li>Schlüsselerzeugung</li>
@@ -79,8 +87,6 @@ Zugriff</li>
 </ul></li>
 <li>Schlechte Schlüsselverwaltung kann selbst stärkste Kryptographie
 kompromittieren</li>
-<li>Entwickler müssen Best Practices befolgen zum Schutz sensibler
-Nutzerdaten</li>
 </ul>
 </section></section>
 <section>
@@ -195,11 +201,78 @@ Cryptographic Keys Access Not Restricted</li>
 </section>
 <section id="masvs-crypto-1-2" class="slide level3">
 <h3>MASVS-CRYPTO-1</h3>
-<p><img data-src="../images/graphviz/owaspcrypto1.svg" /></p>
+<p><img data-src="../images/graphviz/owaspcrypto1.svg" id="id"
+class="class" height="570" /><br />
+</p>
 </section>
 <section id="masvs-crypto-2-2" class="slide level3">
 <h3>MASVS-CRYPTO-2</h3>
-<p><img data-src="../images/graphviz/owaspcrypto2.svg" /></p>
+<p><img data-src="../images/graphviz/owaspcrypto2.svg" id="id"
+class="class" height="570" /><br />
+</p>
+</section></section>
+<section>
+<section id="beispiel-mastg-test-0232" class="title-slide slide level2">
+<h2>Beispiel MASTG-TEST-0232</h2>
+
+</section>
+<section id="statischer-test" class="slide level3">
+<h3>Statischer Test</h3>
+<p>Test <a
+href="https://mas.owasp.org/MASTG/tests/android/MASVS-CRYPTO/MASTG-TEST-0232/">MASTG-TEST-0232</a>
+prüft, ob Weakness <a
+href="https://mas.owasp.org/MASWE/MASVS-CRYPTO/MASWE-0020/">MASWE-0020</a>
+zu Control <a
+href="https://mas.owasp.org/MASVS/controls/MASVS-CRYPTO-1/">MASVS-CRYPTO-1</a>
+vorhanden ist.</p>
+</section>
+<section id="weakness-und-control" class="slide level3">
+<h3>Weakness und Control</h3>
+<p>MASWE-0020</p>
+<blockquote>
+<p>Improper Encryption</p>
+</blockquote>
+<p>MASVS-CRYPTO-1</p>
+<blockquote>
+<p>The app employs current strong cryptography and uses it according to
+industry best practices.</p>
+</blockquote>
+</section>
+<section id="mastg-test-0232" class="slide level3">
+<h3>MASTG-TEST-0232</h3>
+<ul>
+<li>semgrep oder Frida können genutzt werden, um nicht empfohlene Modi
+zu finden</li>
+<li>Bei AES geht es hier vor allem um ECB</li>
+<li>Allerdings ist auch CBC nicht uneingeschränkt empfohlen</li>
+<li>Besser: GCM</li>
+</ul>
+</section>
+<section id="galoiscounter-mode-gcm" class="slide level3">
+<h3>Galois/Counter Mode (GCM)</h3>
+<ul>
+<li>IV wird wie bei Counter inkrementiert</li>
+<li>Fügt Authentifizierung hinzu
+<ul>
+<li>Basiert auf Multiplikationen im Galoiskörper</li>
+</ul></li>
+</ul>
+</section>
+<section id="wiederholung---flutter" class="slide level3">
+<h3>Wiederholung - Flutter</h3>
+<ul>
+<li><a
+href="https://pub.dev/packages/encrypt">https://pub.dev/packages/encrypt</a>
+(seit 23.06.2025 archiviert)</li>
+<li><a
+href="https://pub.dev/packages/encrypter_plus">https://pub.dev/packages/encrypter_plus</a>
+(ein vielversprechender Fork)</li>
+</ul>
+</section>
+<section id="beispiel-mit-encrypter-plus" class="slide level3">
+<h3>Beispiel mit Encrypter Plus</h3>
+<p><a
+href="https://github.com/RobinNunkesser/dart-flutter-aes/tree/main/aes_gcm">https://github.com/RobinNunkesser/dart-flutter-aes/tree/main/aes_gcm</a></p>
 </section></section>
     </div>
   </div>
