@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
+      overflow: scroll;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -32,7 +32,7 @@
     pre > code.sourceCode { white-space: pre; position: relative; }
     pre > code.sourceCode > span { line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
+    .sourceCode { overflow: scroll; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
     div.sourceCode { margin: 1em 0; }
     pre.sourceCode { margin: 0; }
@@ -606,7 +606,7 @@ Chiffre</li>
 <section id="beispiel-mit-pointycastle" class="slide level3">
 <h3>Beispiel mit PointyCastle</h3>
 <p><a
-href="https://github.com/RobinNunkesser/dart-flutter-aes-cbc">https://github.com/RobinNunkesser/dart-flutter-aes-cbc</a></p>
+href="https://github.com/RobinNunkesser/dart-flutter-aes/tree/main/aes_cbc">https://github.com/RobinNunkesser/dart-flutter-aes/tree/main/aes_cbc</a></p>
 </section></section>
 <section>
 <section id="reverse-engineering" class="title-slide slide level2">
@@ -663,6 +663,20 @@ href="https://mas.owasp.org/MASTG/tools/">Testing Tools</a> sind aktuell
 <li><a href="https://github.com/Impact-I/reFlutter">reFlutter</a></li>
 <li><a href="https://github.com/worawit/blutter">B(l)utter</a></li>
 </ul></li>
+</ul>
+</section>
+<section id="reflutter" class="slide level3">
+<h3>reFlutter</h3>
+<ul>
+<li>Kann Flutter Apps mit modifizierter Flutter Engine neu verpacken
+<ul>
+<li>Netzwerkverkehr kann analysiert werden</li>
+<li>Gute Zusammenarbeit mit Frida</li>
+<li>Wir konzentrieren uns hier auf das einfachere B(l)utter</li>
+</ul></li>
+<li><a
+href="https://swarm.ptsecurity.com/fork-bomb-for-flutter/">Beispiel BMW
+App</a></li>
 </ul>
 </section>
 <section id="blutter" class="slide level3">
@@ -970,6 +984,53 @@ class="sourceCode dart"><code class="sourceCode dart"><span id="cb21-1"><a href=
 <li>Das Frida-Script fängt die Aufrufe ebenfalls ab</li>
 <li>Bis auf das statische Hinterlegen der Original-Keys in Ordnung</li>
 </ul>
+</section></section>
+<section>
+<section id="beispiel---sqlite" class="title-slide slide level2">
+<h2>Beispiel - SQLite</h2>
+
+</section>
+<section id="einführung" class="slide level3">
+<h3>Einführung</h3>
+<ul>
+<li>Datenbanken auf dem Client dürfen ebenfalls keine ungeschützen
+sensiblen Daten beinhaltet</li>
+<li>Dies betrifft Weakness MASWE-0006 (Sensitive Data Stored Unencrypted
+in Private Storage Locations)</li>
+<li>OWASP MAS sieht dafür keine eigenen Tests und Demos vor, da dies ein
+Spezialfall erzeugter Dateien ist</li>
+</ul>
+</section></section>
+<section>
+<section id="beispiel---sqflite_sqlcipher"
+class="title-slide slide level2">
+<h2>Beispiel - sqflite_sqlcipher</h2>
+
+</section>
+<section id="sqflite_sqlcipher" class="slide level3">
+<h3>sqflite_sqlcipher</h3>
+<ul>
+<li><a
+href="https://pub.dev/packages/sqflite_sqlcipher">sqflite_sqlcipher</a>
+bietet die Nutzung von SQLCipher an</li>
+<li>256 bit AES Verschlüsselung der Datenbank</li>
+<li>Beispiel in <a
+href="https://pub.dev/packages/sqflite_sqlcipher/example">GitHub</a></li>
+</ul>
+</section>
+<section id="db-auslesen" class="slide level3">
+<h3>DB auslesen</h3>
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adb</span> pull /data/user/0/com.davidmartos96.example/databases/unencrypted.db</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">adb</span> pull /data/user/0/com.davidmartos96.example/databases/encrypted.db </span></code></pre></div>
+</section>
+<section id="ergebnis-2" class="slide level3">
+<h3>Ergebnis</h3>
+<p><img data-src="../images/mas/DBBrowser1.png" /></p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/mas/DBBrowser2.png" /></p>
 </section></section>
     </div>
   </div>
