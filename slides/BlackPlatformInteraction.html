@@ -28,6 +28,69 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        background-color: #2a211c;
+        color: #bdae9d;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #bdae9d;  padding-left: 4px; }
+    div.sourceCode
+      { color: #bdae9d; background-color: #2a211c; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ffff00; } /* Alert */
+    code span.an { color: #0066ff; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { } /* Attribute */
+    code span.bn { color: #44aa43; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #43a8ed; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #049b0a; } /* Char */
+    code span.cn { } /* Constant */
+    code span.co { color: #0066ff; font-weight: bold; font-style: italic; } /* Comment */
+    code span.do { color: #0066ff; font-style: italic; } /* Documentation */
+    code span.dt { text-decoration: underline; } /* DataType */
+    code span.dv { color: #44aa43; } /* DecVal */
+    code span.er { color: #ffff00; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #44aa43; } /* Float */
+    code span.fu { color: #ff9358; font-weight: bold; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #0066ff; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #43a8ed; font-weight: bold; } /* Keyword */
+    code span.op { } /* Operator */
+    code span.pp { font-weight: bold; } /* Preprocessor */
+    code span.sc { color: #049b0a; } /* SpecialChar */
+    code span.ss { color: #049b0a; } /* SpecialString */
+    code span.st { color: #049b0a; } /* String */
+    code span.va { } /* Variable */
+    code span.vs { color: #049b0a; } /* VerbatimString */
+    code span.wa { color: #ffff00; font-weight: bold; } /* Warning */
   </style>
   <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/black.css" id="theme">
 </head>
@@ -204,6 +267,78 @@ Tapjacking Attacks</li>
 <section id="masvs-platform-3-2" class="slide level3">
 <h3>MASVS-PLATFORM-3</h3>
 <p><img data-src="../images/graphviz/owaspplatform3.svg" /></p>
+</section></section>
+<section>
+<section id="beispiel-mastg-test-0289-mastg-test-0290"
+class="title-slide slide level2">
+<h2>Beispiel MASTG-TEST-0289 / MASTG-TEST-0290</h2>
+
+</section>
+<section id="statischer-test" class="slide level3">
+<h3>Statischer Test</h3>
+<p>Tests <a
+href="https://mas.owasp.org/MASTG/tests/android/MASVS-PLATFORM/MASTG-TEST-0289/">MASTG-TEST-0289</a>
+und <a
+href="https://mas.owasp.org/MASTG/tests/android/MASVS-PLATFORM/MASTG-TEST-0290/">MASTG-TEST-0290</a>
+prüfen, ob Weakness <a
+href="https://mas.owasp.org/MASWE/MASVS-PLATFORM/MASWE-0055/">MASWE-0055</a>
+zu Control <a
+href="https://mas.owasp.org/MASVS/controls/MASVS-PLATFORM-3/">MASVS-PLATFORM-3</a>
+vorhanden ist.</p>
+</section>
+<section id="weakness-und-control" class="slide level3">
+<h3>Weakness und Control</h3>
+<p>MASWE-0055</p>
+<blockquote>
+<p>Sensitive Data Leaked via Screenshots or Screen Recordings.</p>
+</blockquote>
+<p>MASVS-PLATFORM-3</p>
+<blockquote>
+<p>The app uses the user interface securely.</p>
+</blockquote>
+</section>
+<section id="mastg-test-0289" class="slide level3">
+<h3>MASTG-TEST-0289</h3>
+<ul>
+<li>Gehe von einem Screen mit sensiblen Daten in den Hintergrund</li>
+<li>Lade die Systemscreenshots vom Gerät</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adb</span> pull /data/system_ce/0/snapshots/foo.jpg</span></code></pre></div>
+<p>oder</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">adb</span> pull /data/system/foo.jpg</span></code></pre></div>
+</section>
+<section id="ergebnis" class="slide level3">
+<h3>Ergebnis</h3>
+<p><img data-src="../images/mas/15.jpg" /></p>
+</section></section>
+<section>
+<section id="beispiel-secure_application"
+class="title-slide slide level2">
+<h2>Beispiel <code>secure_application</code></h2>
+
+</section>
+<section id="secure_application" class="slide level3">
+<h3><code>secure_application</code></h3>
+<ul>
+<li><code>secure_application</code> schützt vor ungewollten
+Einsichten</li>
+<li>Beispielapp vorhanden in <a
+href="https://github.com/neckaros/secure_application/tree/master/example">GitHub</a></li>
+</ul>
+</section>
+<section id="secure" class="slide level3">
+<h3>Secure</h3>
+<p>Die Funktion <a
+href="https://pub.dev/documentation/secure_application/latest/secure_application_controller/SecureApplicationController/secure.html">secure</a>
+des <a
+href="SecureApplicationController">SecureApplicationController</a>
+verhindert beispielsweise Screenshots.</p>
+</section>
+<section class="slide level3">
+
+<p><img data-src="../images/mas/Screenshot_1763743378.png" /></p>
 </section></section>
     </div>
   </div>
