@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>Network Communication</title>
+  <title>Network Communi-cation</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
+      overflow: scroll;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -36,7 +36,7 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title">Network Communication</h1>
+  <h1 class="title">Network Communi-cation</h1>
 </section>
 
 <section>
@@ -46,8 +46,18 @@
 </section>
 <section id="übersicht" class="slide level3">
 <h3>Übersicht</h3>
+<div id="left">
+<p>Sichere Netzkommunikation als Kern der mobilen App-Sicherheit</p>
+</div>
+<div id="right">
+<p><img data-src="../images/mas/Firefly-4.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section>
+<section class="slide level3">
+
 <ul>
-<li>Sichere Netzkommunikation als Kern der mobilen App-Sicherheit</li>
 <li>Schutz von Vertraulichkeit und Integrität in Transit via TLS
 (Verschlüsselung + Endpunkt-Authentifizierung)</li>
 <li>Risiken: Umgehung/Deaktivierung von sicheren Defaults
@@ -123,7 +133,9 @@ Insecure Identity Pinning</li>
 </section>
 <section id="masvs-network-1-2" class="slide level3">
 <h3>MASVS-NETWORK-1</h3>
-<p><img data-src="../images/graphviz/owaspnetwork1.svg" /></p>
+<p><img data-src="../images/graphviz/owaspnetwork1.svg" id="id"
+class="class" height="570" /><br />
+</p>
 </section>
 <section id="masvs-network-2-2" class="slide level3">
 <h3>MASVS-NETWORK-2</h3>

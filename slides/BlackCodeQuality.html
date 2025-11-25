@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
-  <title>CodeQuality</title>
+  <title>Code Quality</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
   <style>
     .reveal .sourceCode {  /* see #7635 */
-      overflow: visible;
+      overflow: scroll;
     }
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -35,6 +35,9 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide">
+  <h1 class="title">Code Quality</h1>
+</section>
 
 <section>
 <section id="einleitung" class="title-slide slide level2">
@@ -43,6 +46,28 @@
 </section>
 <section id="übersicht" class="slide level3">
 <h3>Übersicht</h3>
+<div id="left">
+<ul>
+<li>Hohe interne Codequalität hilft Sicherheit zu schaffen</li>
+<li>Abhängigkeit von externem Code
+<ul>
+<li>Betriebssystem</li>
+<li>Bibliotheken</li>
+<li>…</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/mas/oskar-yildiz-cOkpTiJMGzA-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Foto von
+<a href="https://unsplash.com/de/@oskaryil?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oskar
+Yildiz</a> auf
+<a href="https://unsplash.com/de/fotos/grauer-laptop-computer-eingeschaltet-cOkpTiJMGzA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section class="slide level3">
+
 <ul>
 <li>Mobile Apps haben viele Dateneingangspunkte einschließlich UI, IPC,
 Netzwerk und Dateisystem.</li>
@@ -194,11 +219,15 @@ Insecure Object Deserialization</li>
 </section>
 <section id="masvs-code-3-2" class="slide level3">
 <h3>MASVS-CODE-3</h3>
-<p><img data-src="../images/graphviz/owaspcode3.svg" /></p>
+<p><img data-src="../images/graphviz/owaspcode3.svg" id="id"
+class="class" height="570" /><br />
+</p>
 </section>
 <section id="masvs-code-4-2" class="slide level3">
 <h3>MASVS-CODE-4</h3>
-<p><img data-src="../images/graphviz/owaspcode4.svg" /></p>
+<p><img data-src="../images/graphviz/owaspcode4.svg" id="id"
+class="class" height="570" /><br />
+</p>
 </section></section>
     </div>
   </div>
