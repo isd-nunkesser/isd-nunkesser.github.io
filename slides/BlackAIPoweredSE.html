@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>KI-gestützte Software-entwicklung</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/dist/reset.css">
+  <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: scroll;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/dist/theme/../../../css/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">KI-gestützte Software-entwicklung</h1>
+</section>
+
+<section>
+<section id="überblick" class="title-slide slide level2">
+<h2>Überblick</h2>
+
+</section>
+<section id="themen" class="slide level3">
+<h3>Themen</h3>
+<div id="left">
+<ul>
+<li>Künstliche Intelligenz
+<ul>
+<li>Bereiche und Algorithmen</li>
+<li>Anwendung in der Entwicklung</li>
+</ul></li>
+<li>Softwareentwicklung
+<ul>
+<li>Desktop, Mobile, Web, Backend, Unity</li>
+</ul></li>
+<li>Datenschutz und Sicherheit</li>
+<li>Wunschthemen</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/ai/Firefly-2.jpg" /></p>
+<p><span style="font-size: xx-small;float:right">Bild generiert mit
+<a href="https://firefly.adobe.com">Firefly</a></span></p>
+</div>
+</section></section>
+<section>
+<section id="veranstaltungen" class="title-slide slide level2">
+<h2>Veranstaltungen</h2>
+
+</section>
+<section id="app-entwicklung" class="slide level3">
+<h3>App Entwicklung</h3>
+<div id="left">
+<ul>
+<li>Programmieren von Apps</li>
+<li>Unterstützung durch KI</li>
+<li>Vertiefungsseminar</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/isd/22677.jpg" id="id" class="class"
+height="600" /><br />
+</p>
+</div>
+</section>
+<section id="semesterprojekt" class="slide level3">
+<h3>Semesterprojekt</h3>
+<div id="left">
+<ul>
+<li>Im 4. Semester</li>
+<li>Inhalte aus mehreren Veranstaltungen
+<ul>
+<li>IT-Projektmanagement</li>
+<li>Softwaretechnik</li>
+<li>App Frontends / Embedded Systems II</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/isd/image14.png" /></p>
+</div>
+</section>
+<section id="web-frontends" class="slide level3">
+<h3>Web Frontends</h3>
+<div id="left">
+<ul>
+<li>Im 4. Semester</li>
+<li>Webtechnologien
+<ul>
+<li>HTML</li>
+<li>JavaScript</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<iframe style="width: 100%; height: 550px; overflow: hidden;" src="https://playpager.com/embed/chess/index.html" scrolling="no">
+</iframe>
+</div>
+</section>
+<section id="mobile-security" class="slide level3">
+<h3>Mobile Security</h3>
+<div id="left">
+<ul>
+<li>Im 6. Semester</li>
+<li>Sichere Kommunikation bei mobilen Endgeräten</li>
+<li>Electronic Payment</li>
+<li>Privacy</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/isd/nahel-abdul-hadi-flha0KwRrRc-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;">Photo by
+<a href="https://unsplash.com/@nahelabdlhadi?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Nahel
+Abdul Hadi</a> on
+<a href="https://unsplash.com/s/photos/cyber-security?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="interaktive-grafikanwendungen" class="slide level3">
+<h3>Interaktive Grafikanwendungen</h3>
+<div id="left">
+<ul>
+<li>Im 7. Semester</li>
+<li>2D / 3D</li>
+<li>M.A.V.E.L.</li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/iga/U_Logo_White_RGB.svg" /></p>
+</div>
+</section>
+<section id="übergreifende-veranstaltungen" class="slide level3">
+<h3>Übergreifende Veranstaltungen</h3>
+<div id="left">
+<ul>
+<li>Computersicherheit und Datenbanken
+<ul>
+<li>Im 4. Semester</li>
+</ul></li>
+<li>Künstliche Intelligenz
+<ul>
+<li>Im 6. Semester</li>
+<li>Maschinelles Lernen und Problemlösen</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img data-src="../images/isd/mina-fc-3QKsG0fDrC8-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;">Photo by
+<a href="https://unsplash.com/@mina_fc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mina
+FC</a> on
+<a href="https://unsplash.com/s/photos/marvin-robot?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section>
+<section id="wahlbereich" class="slide level3">
+<h3>Wahlbereich</h3>
+<div id="left">
+<ul>
+<li>Im 7. Semester</li>
+<li>Wahlbereich Praxis
+<ul>
+<li>IT Consulting</li>
+<li>Web Backends</li>
+</ul></li>
+<li>Wahlbereich Sicherheit
+<ul>
+<li>Security Analysis</li>
+<li>IT-Sicherheit</li>
+</ul></li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/isd/einar-h-reynis-CgSeT8__Wgw-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;">Photo by
+<a href="https://unsplash.com/@einarr05?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Einar
+H. Reynis</a> on
+<a href="https://unsplash.com/s/photos/wooden-road-sign?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section></section>
+<section>
+<section id="berufsfelder" class="title-slide slide level2">
+<h2>Berufsfelder</h2>
+
+</section>
+<section id="beispiele" class="slide level3">
+<h3>Beispiele</h3>
+<div id="left">
+<ul>
+<li>Software Engineer</li>
+<li>Consultant</li>
+<li>Projektleitung / Teamleitung</li>
+<li>Selbstständigkeit</li>
+</ul>
+</div>
+<div id="right">
+<p><img
+data-src="../images/isd/peggy-anke-Wu2MXvbyt7w-unsplash.jpg" /></p>
+<p><span style="font-size: xx-small;">Photo by
+<a href="https://unsplash.com/@instagramfotografin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Peggy
+Anke</a> on
+<a href="https://unsplash.com/s/photos/digital-nomad-girl?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="reveal.js/plugin/notes/notes.js"></script>
+  <script src="reveal.js/plugin/search/search.js"></script>
+  <script src="reveal.js/plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
